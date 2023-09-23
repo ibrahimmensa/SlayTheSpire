@@ -9,10 +9,21 @@ public enum Screens
 //>>>>>>> b1837753be4a1a21093f454e5df7b81cb46b672f
 public class MainMenu : MonoBehaviour
 {
+    public Image BG;
     // Start is called before the first frame update
     void Start()
     {
         
+    }
+
+    private void OnEnable()
+    {
+        Invoke("fadeBG", 4);
+    }
+
+    public void fadeBG()
+    {
+        BG.GetComponent<Animator>().SetTrigger("fade");
     }
 
     // Update is called once per frame
