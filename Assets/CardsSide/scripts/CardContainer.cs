@@ -39,7 +39,7 @@ public class CardContainer : MonoBehaviour {
     [SerializeField]
     private EventsConfig eventsConfig;
     
-    private List<CardWrapper> cards = new List<CardWrapper>();
+    public List<CardWrapper> cards = new List<CardWrapper>();
 
     private RectTransform rectTransform;
     private CardWrapper currentDraggedCard;
@@ -48,6 +48,16 @@ public class CardContainer : MonoBehaviour {
     public Text HealthTxt;
     public Text PlayerCount;
     public int playerCount;
+
+    public GameObject [] Cards;
+    private void OnEnable()
+    {
+        PlaceCards();
+    }
+    private void OnDisable()
+    {
+        DestoryAllRemaining();
+    }
     private void Start() {
         playerCount = 3;
         PlayerCount.text = playerCount.ToString();
@@ -85,7 +95,13 @@ public class CardContainer : MonoBehaviour {
     void Update() {
         UpdateCards();
     }
-
+    void PlaceCards()
+    {
+        foreach (GameObject obj in Cards)
+        {
+            Instantiate(obj, gameObject.transform);
+        }
+    }
     void SetUpCards() {
         cards.Clear();
         foreach (Transform card in transform) {
@@ -228,7 +244,13 @@ public class CardContainer : MonoBehaviour {
         }
         currentDraggedCard = null;
     }
-    
+    void DestoryAllRemaining()
+    {
+        for(int a=0;a<gameObject.transform.childCount;a++)
+        {
+            DestroyCard(transform.GetChild(a).GetComponent<CardWrapper>());
+        }
+    }
     public void DestroyCard(CardWrapper card) {
         cards.Remove(card);
         eventsConfig.OnCardDestroy?.Invoke(new CardDestroy(card));
