@@ -121,4 +121,8 @@ public class GameManager : MonoBehaviour
     {
         CardContainerRef.GetComponent<CardContainer>().playerCount = 0;
     }
+    public void Home()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

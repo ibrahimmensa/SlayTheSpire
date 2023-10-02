@@ -35,6 +35,7 @@ namespace demo {
                             GameManager.Instance.CurseIndicator.SetActive(false);
                             GameManager.Instance.DefanceIndicator.SetActive(false);
                             GameManager.Instance.LevelComplete.SetActive(true);
+                            PlayerPrefs.SetInt("Levels", PlayerPrefs.GetInt("Levels") + 1);
                             container.gameObject.SetActive(false);
                         }
                     }
