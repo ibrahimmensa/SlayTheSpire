@@ -57,9 +57,12 @@ public class CardContainer : MonoBehaviour
 
     public GameObject[] Cards;
     public CardsManagement CardManagement;
+
+    public Animator shake;
+    public CardManager CM;
     private void OnEnable()
     {
-        PlaceCards();
+        Invoke(nameof(PlaceCards),0.5f);
     }
     private void OnDisable()
     {
@@ -109,28 +112,33 @@ public class CardContainer : MonoBehaviour
     {
         UpdateCards();
     }
+    public GameObject CGO;
     void PlaceCards()
     {
-        foreach (GameObject obj in Cards)
+        foreach (GameObject gAmeoBject in Cards)
         {
-            Instantiate(obj, gameObject.transform);
-            var cardObj = CardManagement.MyCards[Random.Range(0, CardManagement.MyCards.Length)];
-            CardManager CM = obj.GetComponent<CardManager>();
-
-            CM.Power.text = cardObj.MagicPowerRequired.ToString();
-            CM.cardName.text = cardObj.Card_Name;
-            CM.Discription.text = cardObj.disription;
-            CM.Rarity.text = cardObj.Rarity;
-
-            CM.Magic_power = cardObj.MagicPowerRequired;
-            CM.CurseEffect = cardObj.CurseEffect;
-            CM.EnemyDamage = cardObj.EnemyDamage;
-            CM.BlockedDamage = cardObj.BlockedDamage;
-            CM.Damage = cardObj.Damage;
-            CM.Defence = cardObj.Defence;
-            CM.Curse = cardObj.Curse;
-            CM.Medicated = cardObj.Medicated;
+            CGO = Instantiate(gAmeoBject, gameObject.transform);
+            mapData(CGO);
         }
+    }
+    public void mapData(GameObject card)
+    {
+        var cardObj = CardManagement.MyCards[Random.Range(0, CardManagement.MyCards.Length)];
+        CM = card.GetComponent<CardManager>();
+
+        CM.Power.text = cardObj.MagicPowerRequired.ToString();
+        CM.cardName.text = cardObj.Card_Name;
+        CM.Discription.text = cardObj.disription;
+        CM.Rarity.text = cardObj.Rarity;
+
+        CM.Magic_power = cardObj.MagicPowerRequired;
+        CM.CurseEffect = cardObj.CurseEffect;
+        CM.EnemyDamage = cardObj.EnemyDamage;
+        CM.BlockedDamage = cardObj.BlockedDamage;
+        CM.Damage = cardObj.Damage;
+        CM.Defence = cardObj.Defence;
+        CM.Curse = cardObj.Curse;
+        CM.Medicated = cardObj.Medicated;
     }
     void SetUpCards()
     {

@@ -17,4 +17,4 @@ MonoBehaviour:
   Gold: 99
   Description: The remaining soldior of the ironclad sold hi soul to harness demonic
     energies.
-  CharacterBG: {fileID: 21300000, guid: 5610544627f1320468d942e5fd540e78, type: 3}
+  CharacterBG: {fileID: 21300000, guid: b4fed6a9a151c9e4aaf461c285bd8e09, type: 3}

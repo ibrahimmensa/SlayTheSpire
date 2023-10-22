@@ -14,7 +14,8 @@ namespace demo {
             var CardM = evt.card.GetComponent<CardManager>();
             if (container.playerCount >= CardM.Magic_power  )
             {
-                if(CardM.Damage)
+                container.shake.enabled = true;
+                if (CardM.Damage)
                 {
                     if (container.EnemyHealth.fillAmount > 0)
                     {

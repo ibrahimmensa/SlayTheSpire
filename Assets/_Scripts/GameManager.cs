@@ -90,7 +90,7 @@ public class GameManager : MonoBehaviour
         CardContainerRef.SetActive(false);
         PlayerCount.SetActive(false);
         TurnTxt.text = "Enemy turn";
-        Enemy.enabled = true;
+        Enemy.enabled = false;
         yield return new WaitForSeconds(2.0f);
         if (cardsManagement.DefanceActivated)
         {
@@ -109,6 +109,7 @@ public class GameManager : MonoBehaviour
         }
         yield return new WaitForSeconds(0.2f);
         TurnTxt.text = "Player Turn";
+        Enemy.enabled = true;
         CardContainerRef.SetActive(true);
         PlayerCount.SetActive(true);
         CardContainerRef.GetComponent<CardContainer>().PlayerCount.text = CardContainerRef.GetComponent<CardContainer>().playerCount.ToString();
