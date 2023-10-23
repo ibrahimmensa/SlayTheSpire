@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     public Text HealthTxt;
 
 
-    public GameObject LevelComplete;
+    public GameObject LevelComplete,LevelFailed,enemy;
     public Text TurnTxt;
 
     public CardsManagement cardsManagement;
@@ -71,6 +71,8 @@ public class GameManager : MonoBehaviour
 
             if (LevelComplete.activeSelf)
                 return;
+            if (LevelFailed.activeSelf)
+                return;
 
             StartCoroutine(PlayerTurn());
         }
@@ -104,8 +106,13 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            PlayerHealth.fillAmount = PlayerHealth.fillAmount - 0.3f;
+            PlayerHealth.fillAmount -= 0.3f;
             PlayerHelthTxt.text = PlayerHealth.fillAmount * 100 + "/100";
+            if(PlayerHealth.fillAmount <= 0)
+            {
+                enemy.SetActive(false);
+                LevelFailed.SetActive(true);
+            }
         }
         yield return new WaitForSeconds(0.2f);
         TurnTxt.text = "Player Turn";

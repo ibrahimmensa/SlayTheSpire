@@ -37,4 +37,13 @@ public class MainMenu : MonoBehaviour
         yield return new WaitForSeconds(2.0f);
         BG.gameObject.SetActive(false);
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+    public void Play()
+    {
+        Destroy(BG);
+    }
 }
