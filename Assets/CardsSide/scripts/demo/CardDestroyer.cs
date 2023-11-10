@@ -5,46 +5,55 @@ using UnityEngine.SceneManagement;
 namespace demo {
     public class CardDestroyer : MonoBehaviour {
         public CardContainer container;
-
+        public SoundManager SoundManager;
+        public Sounds Sounds;
+        public InventoryCardManager InventoryCardManager;
+        public ScreenAnimations ScreenAnimations;
         private void OnEnable()
         {
             //container = GameManager.Instance.CardContainerRef.GetComponent<CardContainer>();
         }
         public void OnCardDestroyed(CardPlayed evt) {
             var CardM = evt.card.GetComponent<CardManager>();
+            //InventoryCardManager.lootedCards.Add(CardM.gameObject);
             if (container.playerCount >= CardM.Magic_power  )
             {
+                SoundManager.playSound(Sounds.AttackSounds[Random.Range(0, 2)]);
                 container.shake.enabled = true;
                 if (CardM.Damage)
                 {
-                    if (container.EnemyHealth.fillAmount > 0)
+                    if (GameManager.Instance.activeEnemy.EnemyHealth.fillAmount > 0)
                     {
                         if(container.CardManagement.CurseActivated)
                         {
-                            container.EnemyHealth.fillAmount -= (CardM.EnemyDamage + 0.1f);
+                            GameManager.Instance.activeEnemy.EnemyHealth.fillAmount -= (CardM.EnemyDamage + 0.1f);
                         }
                         else
                         {
-                            container.EnemyHealth.fillAmount -= CardM.EnemyDamage;
+                            GameManager.Instance.activeEnemy.EnemyHealth.fillAmount -= CardM.EnemyDamage;
                         }
-                        container.HealthTxt.text = container.EnemyHealth.fillAmount * 100 + "/100";
+                        GameManager.Instance.activeEnemy.HealthTxt.text = GameManager.Instance.activeEnemy.EnemyHealth.fillAmount * 100 + "/100";
 
                         container.playerCount -= CardM.Magic_power;
                         container.PlayerCount.text = container.playerCount.ToString();
-                        if (container.EnemyHealth.fillAmount <= 0)
+                        if (GameManager.Instance.activeEnemy.EnemyHealth.fillAmount <= 0)
                         {
                             GameManager.Instance.CurseIndicator.SetActive(false);
                             GameManager.Instance.DefanceIndicator.SetActive(false);
-                            GameManager.Instance.enemy.SetActive(false);
+                            GameManager.Instance.activeEnemy.gameObject.SetActive(false);
                             GameManager.Instance.LevelComplete.SetActive(true);
                             PlayerPrefs.SetInt("Levels", PlayerPrefs.GetInt("Levels") + 1);
                             container.gameObject.SetActive(false);
+                        }
+                        else
+                        {
+                            Instantiate(ScreenAnimations.Animations[Random.RandomRange(0, ScreenAnimations.Animations.Length)], GameManager.Instance.gameObject.transform);
                         }
                     }
                 }
                 else if(CardM.Defence)
                 {
-                    if (container.EnemyHealth.fillAmount > 0)
+                    if (GameManager.Instance.activeEnemy.EnemyHealth.fillAmount > 0)
                     {
 
                         container.CardManagement.DefanceActivated = true;
@@ -56,7 +65,7 @@ namespace demo {
                 }
                 else if(CardM.Curse)
                 {
-                    if (container.EnemyHealth.fillAmount > 0)
+                    if (GameManager.Instance.activeEnemy.EnemyHealth.fillAmount > 0)
                     {
                         container.CardManagement.CurseActivated = true;
                         container.CardManagement.Cursevalue = CardM.CurseEffect;
@@ -65,7 +74,7 @@ namespace demo {
                         container.PlayerCount.text = container.playerCount.ToString();
                     }
                 }
-                
+
                 container.DestroyCard(evt.card);
             }
             else

@@ -8,29 +8,43 @@ public class GameManager : MonoBehaviour
 {
     private static GameManager _instance;
 
+    [Header("ScriptableObject Refrances")]
+    public Enemies enemies;
+    public Sounds Sounds;
+    public ScreenAnimations ScreenAnimations;
+    public CardsManagement cardsManagement;
+
+
+    [Header("Cards")]
     public GameObject cardContainer;
     public GameObject CardContainerRef;
     public GameObject CardDestory;
     public Transform cardParent;
 
 
+    [Header("Player")]
     public GameObject PlayerCount;
     public Image PlayerHealth;
     public Text PlayerHelthTxt;
 
-    public Animator Enemy;
-
-    public Image EnemyHealth;
-    public Text HealthTxt;
 
 
-    public GameObject LevelComplete,LevelFailed,enemy;
-    public Text TurnTxt;
+    [Header("Screens")]
+    public GameObject LevelComplete;
+    public GameObject LevelFailed;
 
-    public CardsManagement cardsManagement;
+
+    [Header("Screens")]
     public GameObject CurseIndicator;
     public GameObject DefanceIndicator;
     public GameObject blocked;
+
+    public Enemies_Interactions activeEnemy;
+    public SoundManager SoundManager;
+    public Image BG;
+    public int num;
+    public Text DiscardpileTxt;
+
     public static GameManager Instance
     {
         get { return _instance; }
@@ -49,16 +63,18 @@ public class GameManager : MonoBehaviour
         // Set this instance as the singleton instance.
         _instance = this;
     }
+    private void OnEnable()
+    {
+        activeEnemy = Instantiate(enemies.All_Enemies[(PlayerPrefs.GetInt("Levels", 0))], transform);
+        num = Random.Range(0, Sounds.Background_Music.Length);
+        BG.sprite = Sounds.BGs[num];
+        SoundManager.bGM.clip = Sounds.Background_Music[num];
+        SoundManager.bGM.Play();
+    }
     // Start is called before the first frame update
     void Start()
     {
-        //CardContainerRef = Instantiate(cardContainer, cardParent);
-        //CardContainerRef.GetComponent<CardContainer>().EnemyHealth = EnemyHealth;
-        //CardContainerRef.GetComponent<CardContainer>().HealthTxt = HealthTxt;
-        //CardContainerRef.GetComponent<CardContainer>().PlayerCount = Card_PlayerCount;
-        //CardContainerRef.transform.SetSiblingIndex(3);
-        //CardDestory.SetActive(true);
-        TurnTxt.text = "Player Turn";
+        activeEnemy.TurnTxt.text = "Player Turn";
     }
 
     // Update is called once per frame
@@ -79,7 +95,6 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator PlayerTurn()
     {
-
         if (cardsManagement.CurseActivated)
         {
             cardsManagement.Cursevalue--;
@@ -91,8 +106,9 @@ public class GameManager : MonoBehaviour
         }
         CardContainerRef.SetActive(false);
         PlayerCount.SetActive(false);
-        TurnTxt.text = "Enemy turn";
-        Enemy.enabled = false;
+        activeEnemy.TurnTxt.text = "Enemy turn";
+        yield return new WaitForSeconds(2.0f);
+        activeEnemy.enemyAnimator.SetBool("Attack", true);
         yield return new WaitForSeconds(2.0f);
         if (cardsManagement.DefanceActivated)
         {
@@ -110,16 +126,18 @@ public class GameManager : MonoBehaviour
             PlayerHelthTxt.text = PlayerHealth.fillAmount * 100 + "/100";
             if(PlayerHealth.fillAmount <= 0)
             {
-                enemy.SetActive(false);
+                activeEnemy.gameObject.SetActive(false);
                 LevelFailed.SetActive(true);
             }
         }
+        //Instantiate(ScreenAnimations.Animations[0],transform);
+        SoundManager.playSound(Sounds.AttackSounds[Random.Range(0, 2)]);
         yield return new WaitForSeconds(0.2f);
-        TurnTxt.text = "Player Turn";
-        Enemy.enabled = true;
+        activeEnemy.enemyAnimator.SetBool("Attack", false);
         CardContainerRef.SetActive(true);
         PlayerCount.SetActive(true);
         CardContainerRef.GetComponent<CardContainer>().PlayerCount.text = CardContainerRef.GetComponent<CardContainer>().playerCount.ToString();
+        activeEnemy.TurnTxt.text = "Player Turn";
     }
     public void Next()
     {

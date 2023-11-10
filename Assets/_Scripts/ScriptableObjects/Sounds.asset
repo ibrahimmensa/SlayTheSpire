@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 515c0b8319d20404ebf0233a3985b445, type: 3}
+  m_Name: Sounds
+  m_EditorClassIdentifier: 
+  Volume: 1
+  AttackSounds:
+  - {fileID: 8300000, guid: 0a25ad58c27055d46b7238109038b19b, type: 3}
+  - {fileID: 8300000, guid: d4db4b4a360b32e4696cde06b181523d, type: 3}
+  - {fileID: 8300000, guid: d24a0fa449aa4e440be89a6bbdf5a748, type: 3}
+  levelcomplete: {fileID: 0}
+  LevelFailed: {fileID: 0}
+  Background_Music:
+  - {fileID: 8300000, guid: b76c1ab9d2d78074abaf5b3feb1790aa, type: 3}
+  - {fileID: 8300000, guid: 16a8acf37d476e549bdd6ef61ee3405a, type: 3}
+  BGs:
+  - {fileID: 21300000, guid: 1fbc5e24af8c10545a33e9f1bed96588, type: 3}
+  - {fileID: 21300000, guid: e5064da38020f7648a639ba3f2dbe6af, type: 3}

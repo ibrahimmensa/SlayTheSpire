@@ -19,4 +19,8 @@ public class ShakeAnimation : MonoBehaviour
     {
         GetComponent<Animator>().enabled = false;
     }
+    public void destoryObject()
+    {
+        Destroy(gameObject);
+    }
 }

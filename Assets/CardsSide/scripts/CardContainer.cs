@@ -45,8 +45,8 @@ public class CardContainer : MonoBehaviour
     private RectTransform rectTransform;
     private CardWrapper currentDraggedCard;
 
-    public Image EnemyHealth;
-    public Text HealthTxt;
+    //public Image EnemyHealth;
+    //public Text HealthTxt;
 
     public Image PlayerHealth;
     public Text PlayerHealthTxt;
@@ -54,7 +54,7 @@ public class CardContainer : MonoBehaviour
     public Text PlayerCount;
     public int playerCount;
     public GameObject ErrorMsg;
-
+    public Enemies enemies;
     public GameObject[] Cards;
     public CardsManagement CardManagement;
 
@@ -73,6 +73,7 @@ public class CardContainer : MonoBehaviour
         playerCount = 3;
         PlayerCount.text = playerCount.ToString();
         rectTransform = GetComponent<RectTransform>();
+        cardPlayConfig.playArea = GameManager.Instance.activeEnemy.GetComponent<RectTransform>();
         InitCards();
     }
 

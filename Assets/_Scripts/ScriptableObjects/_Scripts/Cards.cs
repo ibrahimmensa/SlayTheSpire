@@ -1,8 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName ="Newcard",menuName ="Card")]
+[CreateAssetMenu(fileName = "Newcard", menuName = "MSO/Card/NewCard")]
 public class Cards : ScriptableObject
 {
     [Header("Card Type")]
@@ -25,3 +26,5 @@ public class Cards : ScriptableObject
     public float EnemyDamage;
     public float BlockedDamage;
 }
+
+
