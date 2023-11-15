@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8aafa3b2c3a3da14d97cd39295b2ab21, type: 3}
-  m_Name: Attack 1
+  m_Name: Defence_3
   m_EditorClassIdentifier: 
-  Card_Name: Attack_03
-  Card_Type: Attack
-  disription: Damage 50 helth of enemy
-  Rarity: Common
-  MagicPowerRequired: 3
-  CurseEffect: 0
-  EnemyDamage: 0.75
-  BlockedDamage: 0
-  Damage: 1
-  Defence: 0
+  Damage: 0
+  Defence: 1
   Curse: 0
   Medicated: 0
+  Card_Name: Defense_03
+  Card_Type: Defense
+  disription: block 15 power attack of enemy
+  Rarity: common
+  MagicPowerRequired: 3
+  CurseEffect: 0
+  EnemyDamage: 0
+  BlockedDamage: 1

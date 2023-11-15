@@ -17,5 +17,8 @@ public class CardManager : MonoBehaviour
     public float EnemyDamage, BlockedDamage;
     public bool Damage, Defence, Curse,Medicated;
 
-   
+
+    [Header("Card Data")]
+    public Sprite cardSprite;
+
 }

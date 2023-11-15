@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8aafa3b2c3a3da14d97cd39295b2ab21, type: 3}
-  m_Name: Defence
+  m_Name: Curse_3
   m_EditorClassIdentifier: 
-  Damage: 0
-  Defence: 1
-  Curse: 0
-  Medicated: 0
-  Card_Name: Defense_01
-  Card_Type: Defense
-  disription: block 5 power attack of enemy
+  Card_Name: Curse_03
+  Card_Type: Curse
+  disription: it will remain in 7 turns
   Rarity: common
-  MagicPowerRequired: 1
-  CurseEffect: 0
+  MagicPowerRequired: 3
+  CurseEffect: 2
   EnemyDamage: 0
-  BlockedDamage: 1
+  BlockedDamage: 0
+  Damage: 0
+  Defence: 0
+  Curse: 1
+  Medicated: 0

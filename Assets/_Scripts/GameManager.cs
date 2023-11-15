@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour
+public class GameManager : MonoBehaviour 
 {
     private static GameManager _instance;
 
@@ -44,6 +44,10 @@ public class GameManager : MonoBehaviour
     public Image BG;
     public int num;
     public Text DiscardpileTxt;
+    public GameObject discard_Pile_Contant;
+    public GameObject Discard;
+
+    public int deathCount;
 
     public static GameManager Instance
     {
@@ -128,6 +132,7 @@ public class GameManager : MonoBehaviour
             {
                 activeEnemy.gameObject.SetActive(false);
                 LevelFailed.SetActive(true);
+                deathCount++;
             }
         }
         //Instantiate(ScreenAnimations.Animations[0],transform);
@@ -150,5 +155,19 @@ public class GameManager : MonoBehaviour
     public void Home()
     {
         SceneManager.LoadScene(0);
+    }
+    public void discardBack()
+    {
+        activeEnemy.gameObject.SetActive(true);
+    }
+
+    public void loadData(GameData data)
+    {
+        this.deathCount = data.deathCount;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.deathCount = this.deathCount;
     }
 }

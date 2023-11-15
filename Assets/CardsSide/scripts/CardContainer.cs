@@ -140,6 +140,7 @@ public class CardContainer : MonoBehaviour
         CM.Defence = cardObj.Defence;
         CM.Curse = cardObj.Curse;
         CM.Medicated = cardObj.Medicated;
+
     }
     void SetUpCards()
     {
@@ -323,6 +324,7 @@ public class CardContainer : MonoBehaviour
     {
         cards.Remove(card);
         eventsConfig.OnCardDestroy?.Invoke(new CardDestroy(card));
+
         Destroy(card.gameObject);
     }
 

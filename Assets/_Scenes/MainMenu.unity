@@ -9555,6 +9555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InventoryCardManager: {fileID: 11400000, guid: bb6a68ec9ed21114b80daeca45188b14,
     type: 2}
+  CardsManagement: {fileID: 11400000, guid: f74b4b9a70fc9154daf16710869b330f, type: 2}
   CardsParent: {fileID: 1476347710}
 --- !u!114 &1441616865
 MonoBehaviour:

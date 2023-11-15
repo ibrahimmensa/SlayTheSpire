@@ -19,6 +19,11 @@ public class Enemies_Interactions : MonoBehaviour
     private void Update()
     {
 
-        DPTxt.text = InventoryCardManager.lootedCards.Count.ToString();
+        DPTxt.text = InventoryCardManager.DP_Details.Count.ToString();
+    }
+    public void OpenDiscard()
+    {
+        GameManager.Instance.Discard.SetActive(true);
+        gameObject.SetActive(false);
     }
 }

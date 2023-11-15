@@ -573,9 +573,7 @@ MonoBehaviour:
   Defence: 0
   Curse: 0
   Medicated: 0
-  itemImage: {fileID: 8189785776420626734}
-  quantityTxt: {fileID: 9173840180514595409}
-  borderImage: {fileID: 0}
+  cardSprite: {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
 --- !u!114 &3912011480442577877
 MonoBehaviour:
   m_ObjectHideFlags: 0
