@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1165,16 +1165,12 @@ MonoBehaviour:
   playerCount: 3
   ErrorMsg: {fileID: 1889846804}
   enemies: {fileID: 11400000, guid: ce7d06390a1593d45a4f15b03286a24e, type: 2}
-  Cards:
-  - {fileID: 8579802451152539645, guid: 56244d6237065b14d9f1d2e1fdfd0861, type: 3}
-  - {fileID: 8579802451152539645, guid: 9b908e8997d23a34d9f0bd100bbbae01, type: 3}
-  - {fileID: 8579802451152539645, guid: c8832bf3645abd64295bf02d127575ee, type: 3}
-  - {fileID: 8579802451152539645, guid: 9a46c346a5d494643ba73766795ac312, type: 3}
-  - {fileID: 8579802451152539645, guid: 87286d2fa80fdca4cb13d3c0766cbf89, type: 3}
+  CardToDisplay: {fileID: 8579802451152539645, guid: 56244d6237065b14d9f1d2e1fdfd0861,
+    type: 3}
   CardManagement: {fileID: 11400000, guid: f74b4b9a70fc9154daf16710869b330f, type: 2}
   shake: {fileID: 2081688378}
   CM: {fileID: 0}
-  CGO: {fileID: 0}
+  setCardIndex: {fileID: 11400000, guid: 3df95f635e6d8284da624c9eed2e5b00, type: 2}
 --- !u!1 &309523467
 GameObject:
   m_ObjectHideFlags: 0
@@ -3794,16 +3790,7 @@ MonoBehaviour:
   InventoryCardManager: {fileID: 11400000, guid: bb6a68ec9ed21114b80daeca45188b14,
     type: 2}
   ScreenAnimations: {fileID: 11400000, guid: 8885b99d55ebfbc4fab6a667de5e69ea, type: 2}
-  toSaveCards:
-  - {fileID: 11400000, guid: 7c29a3825b3f0ff4f9147887fd734c8d, type: 2}
-  - {fileID: 11400000, guid: 39a5c455f2b6cf74d8ac15ecd1479bbc, type: 2}
-  - {fileID: 11400000, guid: 56d7222c29702794bb4bbec913f6fc04, type: 2}
-  - {fileID: 11400000, guid: 74a795590eff84a47bc7b81117193568, type: 2}
-  - {fileID: 11400000, guid: 871da8320b374284d8c30d369edee982, type: 2}
-  - {fileID: 11400000, guid: 67c13372f52361a4da8bf37c0181d473, type: 2}
-  - {fileID: 11400000, guid: 5525fd65ece650d47a3a811a94ba1b22, type: 2}
-  - {fileID: 11400000, guid: 8ff6cdb7f2e331d44a4b61d06cf8be4e, type: 2}
-  - {fileID: 11400000, guid: 18b1bf7aaee4d9c418bb473f2dee3947, type: 2}
+  toSaveCards: {fileID: 11400000, guid: 3df95f635e6d8284da624c9eed2e5b00, type: 2}
 --- !u!4 &1364501464
 Transform:
   m_ObjectHideFlags: 0
@@ -4420,6 +4407,8 @@ MonoBehaviour:
   Sounds: {fileID: 11400000, guid: 7958a0f29274c054ab52ce8556eafd24, type: 2}
   ScreenAnimations: {fileID: 11400000, guid: 8885b99d55ebfbc4fab6a667de5e69ea, type: 2}
   cardsManagement: {fileID: 11400000, guid: f74b4b9a70fc9154daf16710869b330f, type: 2}
+  CM: {fileID: 11400000, guid: 3e331700666746b4d8691131d398239e, type: 2}
+  DataPersistenceManager: {fileID: 1993260364}
   cardContainer: {fileID: 2916785600929823214, guid: 01b044b9fcbb4764f8407a7d0165c29a,
     type: 3}
   CardContainerRef: {fileID: 305458006}
@@ -4440,6 +4429,7 @@ MonoBehaviour:
   DiscardpileTxt: {fileID: 0}
   discard_Pile_Contant: {fileID: 1538270553}
   Discard: {fileID: 1716491017}
+  deathCount: 0
 --- !u!1 &1631455183
 GameObject:
   m_ObjectHideFlags: 0
@@ -5615,6 +5605,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1972421767}
   m_CullTransparentMesh: 1
+--- !u!1 &1993260363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1993260365}
+  - component: {fileID: 1993260364}
+  m_Layer: 0
+  m_Name: DataPersistanceManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1993260364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993260363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4276fdeff094ca1409832cab7636cb83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameData:
+    deathCount: 0
+  fileName: Text.game
+--- !u!4 &1993260365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993260363}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 941.2014, y: 375.75253, z: -288.241}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1994815005
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,8 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour 
+public class GameManager : MonoBehaviour, IDataPersistence
 {
+
     private static GameManager _instance;
 
     [Header("ScriptableObject Refrances")]
@@ -13,6 +14,11 @@ public class GameManager : MonoBehaviour
     public Sounds Sounds;
     public ScreenAnimations ScreenAnimations;
     public CardsManagement cardsManagement;
+    public CharactersManagment CM;
+
+
+    [Header("Save Data")]
+    public DataPersistenceManager DataPersistenceManager;
 
 
     [Header("Cards")]
@@ -132,7 +138,9 @@ public class GameManager : MonoBehaviour
             {
                 activeEnemy.gameObject.SetActive(false);
                 LevelFailed.SetActive(true);
+                DataPersistenceManager.gameData.deathCount++;
                 deathCount++;
+                CM.TotalDeaths = CM.TotalDeaths+deathCount;
             }
         }
         //Instantiate(ScreenAnimations.Animations[0],transform);
@@ -146,6 +154,7 @@ public class GameManager : MonoBehaviour
     }
     public void Next()
     {
+        DataPersistenceManager.SaveGame();
         SceneManager.LoadScene(1);
     }
     public void EndTurn()
@@ -163,11 +172,12 @@ public class GameManager : MonoBehaviour
 
     public void loadData(GameData data)
     {
-        this.deathCount = data.deathCount;
+        //CM.TotalDeaths = data.deathCount;
+        //deathCount = CM.TotalDeaths;
     }
 
     public void SaveData(ref GameData data)
     {
-        data.deathCount = this.deathCount;
+        //data.deathCount = CM.TotalDeaths;
     }
 }

@@ -13,7 +13,7 @@ public class CardManager : MonoBehaviour
     public Text Rarity;
 
     [Header("Card Data")]
-    public int Magic_power, CurseEffect;
+    public int Magic_power, CurseEffect, CardIndex;
     public float EnemyDamage, BlockedDamage;
     public bool Damage, Defence, Curse,Medicated;
 

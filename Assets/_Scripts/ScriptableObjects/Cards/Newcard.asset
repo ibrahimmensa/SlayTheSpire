@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aafa3b2c3a3da14d97cd39295b2ab21, type: 3}
+  m_Name: Newcard
+  m_EditorClassIdentifier: 
+  cardsDetails:
+  - Damage: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    Card_Name: Attack
+    CardIndex: 0
+    Card_Type: common
+    disription: damage 5 point of enemy
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect: 0
+    EnemyDamage: 0
+    BlockedDamage: 0
+    cardSprite: {fileID: 21300000, guid: 19927db9a9e68a94b8ead4edd2a3a6e2, type: 3}
+  - Damage: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    Card_Name: Defence
+    CardIndex: 0
+    Card_Type: common
+    disription: Block 5 attack of emeny
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect: 0
+    EnemyDamage: 0
+    BlockedDamage: 0
+    cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
+  - Damage: 0
+    Defence: 0
+    Curse: 1
+    Medicated: 0
+    Card_Name: Curse
+    CardIndex: 0
+    Card_Type: common
+    disription: Apply curse on on time attack
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect: 0
+    EnemyDamage: 0
+    BlockedDamage: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+  - Damage: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    Card_Name: Attack
+    CardIndex: 0
+    Card_Type: common
+    disription: damage 10 point of enemy
+    Rarity: 
+    MagicPowerRequired: 2
+    CurseEffect: 0
+    EnemyDamage: 0
+    BlockedDamage: 0
+    cardSprite: {fileID: 21300000, guid: 19927db9a9e68a94b8ead4edd2a3a6e2, type: 3}
+  - Damage: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    Card_Name: Defence
+    CardIndex: 0
+    Card_Type: common
+    disription: Block 10 attack of emeny
+    Rarity: 
+    MagicPowerRequired: 2
+    CurseEffect: 0
+    EnemyDamage: 0
+    BlockedDamage: 0
+    cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
+  - Damage: 0
+    Defence: 0
+    Curse: 1
+    Medicated: 0
+    Card_Name: Curse
+    CardIndex: 0
+    Card_Type: common
+    disription: Apply curse on two time attack
+    Rarity: 
+    MagicPowerRequired: 2
+    CurseEffect: 0
+    EnemyDamage: 0
+    BlockedDamage: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+  - Damage: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    Card_Name: Attack
+    CardIndex: 0
+    Card_Type: common
+    disription: damage 5 point of enemy
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect: 0
+    EnemyDamage: 0
+    BlockedDamage: 0
+    cardSprite: {fileID: 21300000, guid: 19927db9a9e68a94b8ead4edd2a3a6e2, type: 3}
+  - Damage: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    Card_Name: Attack
+    CardIndex: 0
+    Card_Type: common
+    disription: damage 5 point of enemy
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect: 0
+    EnemyDamage: 0
+    BlockedDamage: 0
+    cardSprite: {fileID: 21300000, guid: 19927db9a9e68a94b8ead4edd2a3a6e2, type: 3}
+  - Damage: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    Card_Name: Attack
+    CardIndex: 0
+    Card_Type: common
+    disription: damage 5 point of enemy
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect: 0
+    EnemyDamage: 0
+    BlockedDamage: 0
+    cardSprite: {fileID: 21300000, guid: 19927db9a9e68a94b8ead4edd2a3a6e2, type: 3}
+  - Damage: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    Card_Name: Attack
+    CardIndex: 0
+    Card_Type: common
+    disription: damage 5 point of enemy
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect: 0
+    EnemyDamage: 0
+    BlockedDamage: 0
+    cardSprite: {fileID: 21300000, guid: 19927db9a9e68a94b8ead4edd2a3a6e2, type: 3}

@@ -7,11 +7,7 @@ using UnityEngine.UI;
 public class InventoryCardManager : ScriptableObject
 {
     public Discardpile Discardpile;
-
-
-    public List<Cards> DP_Details;
-
-    public List<Discardpile> DP;
+    public List<CardsData> DP_Details;
 }
 [System.Serializable]
 public class Discardpile

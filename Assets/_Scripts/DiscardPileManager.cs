@@ -16,7 +16,7 @@ public class DiscardPileManager : MonoBehaviour
         for(int card=0;card<ICM.DP_Details.Count;card++)
         {
             index = card;
-            DCard = Instantiate(cardContainer.Cards[0], GameManager.Instance.discard_Pile_Contant.transform);
+            DCard = Instantiate(cardContainer.CardToDisplay, GameManager.Instance.discard_Pile_Contant.transform);
             mapdata(DCard);
         }
     }
@@ -26,18 +26,18 @@ public class DiscardPileManager : MonoBehaviour
         CM = C.GetComponent<CardManager>();
 
         CM.gameObject.GetComponent<Image>().sprite = ICM.Discardpile.CardSprite[index];
-        CM.Power.text = cardObj.MagicPowerRequired.ToString();
-        CM.cardName.text = cardObj.Card_Name;
-        CM.Discription.text = cardObj.disription;
-        CM.Rarity.text = cardObj.Rarity;
+        //CM.Power.text = cardObj.MagicPowerRequired.ToString();
+        //CM.cardName.text = cardObj.Card_Name;
+        //CM.Discription.text = cardObj.disription;
+        //CM.Rarity.text = cardObj.Rarity;
 
-        CM.Magic_power = cardObj.MagicPowerRequired;
-        CM.CurseEffect = cardObj.CurseEffect;
-        CM.EnemyDamage = cardObj.EnemyDamage;
-        CM.BlockedDamage = cardObj.BlockedDamage;
-        CM.Damage = cardObj.Damage;
-        CM.Defence = cardObj.Defence;
-        CM.Curse = cardObj.Curse;
-        CM.Medicated = cardObj.Medicated;
+        //CM.Magic_power = cardObj.MagicPowerRequired;
+        //CM.CurseEffect = cardObj.CurseEffect;
+        //CM.EnemyDamage = cardObj.EnemyDamage;
+        //CM.BlockedDamage = cardObj.BlockedDamage;
+        //CM.Damage = cardObj.Damage;
+        //CM.Defence = cardObj.Defence;
+        //CM.Curse = cardObj.Curse;
+        //CM.Medicated = cardObj.Medicated;
     }
 }

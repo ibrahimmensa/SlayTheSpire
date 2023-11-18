@@ -55,14 +55,21 @@ public class CardContainer : MonoBehaviour
     public int playerCount;
     public GameObject ErrorMsg;
     public Enemies enemies;
-    public GameObject[] Cards;
+    public GameObject CardToDisplay;
     public CardsManagement CardManagement;
 
     public Animator shake;
     public CardManager CM;
+    public Cards setCardIndex;
+    GameObject CGO;
+
     private void OnEnable()
     {
         Invoke(nameof(PlaceCards),0.5f);
+        for(int index=0;index< setCardIndex.cardsDetails.Length;index++)
+        {
+            setCardIndex.cardsDetails[index].CardIndex = index; 
+        }
     }
     private void OnDisable()
     {
@@ -113,18 +120,17 @@ public class CardContainer : MonoBehaviour
     {
         UpdateCards();
     }
-    public GameObject CGO;
     void PlaceCards()
     {
-        foreach (GameObject gAmeoBject in Cards)
+        for (int cd = 0; cd < 5; cd++)
         {
-            CGO = Instantiate(gAmeoBject, gameObject.transform);
+            CGO = Instantiate(CardToDisplay, gameObject.transform);
             mapData(CGO);
         }
     }
     public void mapData(GameObject card)
     {
-        var cardObj = CardManagement.MyCards[Random.Range(0, CardManagement.MyCards.Length)];
+        var cardObj = CardManagement.CardData.cardsDetails[Random.Range(0, CardManagement.CardData.cardsDetails.Length)];
         CM = card.GetComponent<CardManager>();
 
         CM.Power.text = cardObj.MagicPowerRequired.ToString();
