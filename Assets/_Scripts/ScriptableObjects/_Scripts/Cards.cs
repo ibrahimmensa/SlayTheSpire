@@ -6,14 +6,17 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Newcard", menuName = "MSO/Card/CardsData")]
 public class Cards : ScriptableObject
 {
-    public CardsData[] cardsDetails;
+    public CardsData[] AttackCards;
+    public CardsData[] DefanceCards;
+    public CardsData[] curseCards;
+    public CardsData[] MedicatedCards;
 }
 [System.Serializable]
 public class CardsData
 {
     [Header("Card Type")]
     [Space()]
-    public bool Damage;
+    public bool Attack;
     public bool Defence;
     public bool Curse;
     public bool Medicated;
@@ -36,6 +39,8 @@ public class CardsData
     [Header("Card Powers")]
     [Space()]
     public Sprite cardSprite;
+
+    public bool displayed;
 }
 
 

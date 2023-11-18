@@ -8,6 +8,7 @@ public class InventoryCardManager : ScriptableObject
 {
     public Discardpile Discardpile;
     public List<CardsData> DP_Details;
+    public int dPL;
 }
 [System.Serializable]
 public class Discardpile

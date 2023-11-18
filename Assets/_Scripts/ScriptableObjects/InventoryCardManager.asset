@@ -13,6 +13,56 @@ MonoBehaviour:
   m_Name: InventoryCardManager
   m_EditorClassIdentifier: 
   Discardpile:
-    CardName: []
-    CardSprite: []
-  DP_Details: []
+    CardName:
+    - Attack
+    - Curse
+    - Attack
+    - Attack
+    - Attack
+    - Attack
+    - Curse
+    - Attack
+    - Defence
+    - Defence
+    - Curse
+    - Attack
+    - Attack
+    - Defence
+    - Curse
+    - Defence
+    - Curse
+    - Attack
+    CardSprite:
+    - {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+    - {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+    - {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+    - {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+    - {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+    - {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+    - {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+    - {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+    - {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+    - {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+    - {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+    - {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+    - {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+    - {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+    - {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+    - {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+    - {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+    - {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+  DP_Details:
+  - Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    Card_Name: Attack
+    CardIndex: 0
+    Card_Type: common
+    disription: Damage 5 points of enemy
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect: 0
+    EnemyDamage: 0.2
+    BlockedDamage: 0
+    cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}

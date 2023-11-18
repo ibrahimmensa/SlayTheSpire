@@ -168,6 +168,10 @@ public class GameManager : MonoBehaviour, IDataPersistence
     public void discardBack()
     {
         activeEnemy.gameObject.SetActive(true);
+        for(int i=0;i<discard_Pile_Contant.transform.childCount;i++)
+        {
+            Destroy(discard_Pile_Contant.transform.GetChild(i));
+        }
     }
 
     public void loadData(GameData data)

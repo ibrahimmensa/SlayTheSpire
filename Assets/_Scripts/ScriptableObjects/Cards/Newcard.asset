@@ -12,144 +12,175 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8aafa3b2c3a3da14d97cd39295b2ab21, type: 3}
   m_Name: Newcard
   m_EditorClassIdentifier: 
-  cardsDetails:
-  - Damage: 1
+  AttackCards:
+  - Attack: 1
     Defence: 0
     Curse: 0
     Medicated: 0
     Card_Name: Attack
     CardIndex: 0
     Card_Type: common
-    disription: damage 5 point of enemy
+    disription: Damage 5 points of enemy
     Rarity: 
     MagicPowerRequired: 1
     CurseEffect: 0
-    EnemyDamage: 0
+    EnemyDamage: 0.2
     BlockedDamage: 0
-    cardSprite: {fileID: 21300000, guid: 19927db9a9e68a94b8ead4edd2a3a6e2, type: 3}
-  - Damage: 0
-    Defence: 1
+    cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
+  - Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    Card_Name: Attack
+    CardIndex: 1
+    Card_Type: common
+    disription: Damage 10 points of enemy
+    Rarity: 
+    MagicPowerRequired: 2
+    CurseEffect: 0
+    EnemyDamage: 0.4
+    BlockedDamage: 0
+    cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
+  - Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    Card_Name: Attack
+    CardIndex: 2
+    Card_Type: common
+    disription: Damage 15 points of enemy
+    Rarity: 
+    MagicPowerRequired: 3
+    CurseEffect: 0
+    EnemyDamage: 0.6
+    BlockedDamage: 0
+    cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
+  DefanceCards:
+  - Attack: 1
+    Defence: 0
     Curse: 0
     Medicated: 0
     Card_Name: Defence
     CardIndex: 0
     Card_Type: common
-    disription: Block 5 attack of emeny
+    disription: Block 5 points attack of enemy
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect: 0
+    EnemyDamage: 0
+    BlockedDamage: 5
+    cardSprite: {fileID: 21300000, guid: 19927db9a9e68a94b8ead4edd2a3a6e2, type: 3}
+  - Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    Card_Name: Defence
+    CardIndex: 1
+    Card_Type: common
+    disription: Block 10 points attack of enemy
+    Rarity: 
+    MagicPowerRequired: 2
+    CurseEffect: 0
+    EnemyDamage: 0
+    BlockedDamage: 0
+    cardSprite: {fileID: 21300000, guid: 19927db9a9e68a94b8ead4edd2a3a6e2, type: 3}
+  - Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    Card_Name: Defence
+    CardIndex: 2
+    Card_Type: common
+    disription: Block 15 points attack of enemy
+    Rarity: 
+    MagicPowerRequired: 3
+    CurseEffect: 0
+    EnemyDamage: 0
+    BlockedDamage: 0
+    cardSprite: {fileID: 21300000, guid: 19927db9a9e68a94b8ead4edd2a3a6e2, type: 3}
+  curseCards:
+  - Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    Card_Name: Curse
+    CardIndex: 0
+    Card_Type: common
+    disription: apply one time curse on enemy
     Rarity: 
     MagicPowerRequired: 1
     CurseEffect: 0
     EnemyDamage: 0
     BlockedDamage: 0
-    cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
-  - Damage: 0
+    cardSprite: {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+  - Attack: 1
     Defence: 0
-    Curse: 1
+    Curse: 0
     Medicated: 0
     Card_Name: Curse
+    CardIndex: 1
+    Card_Type: common
+    disription: apply 2 time curse on enemy
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect: 0
+    EnemyDamage: 0
+    BlockedDamage: 0
+    cardSprite: {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+  - Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    Card_Name: Curse
+    CardIndex: 2
+    Card_Type: common
+    disription: apply 3 time curse on enemy
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect: 0
+    EnemyDamage: 0
+    BlockedDamage: 0
+    cardSprite: {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+  MedicatedCards:
+  - Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    Card_Name: Medicated
     CardIndex: 0
     Card_Type: common
-    disription: Apply curse on on time attack
+    disription: Gain 5 points of health
     Rarity: 
     MagicPowerRequired: 1
     CurseEffect: 0
     EnemyDamage: 0
     BlockedDamage: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
-  - Damage: 1
+  - Attack: 1
     Defence: 0
     Curse: 0
     Medicated: 0
-    Card_Name: Attack
+    Card_Name: Medicated
     CardIndex: 0
     Card_Type: common
-    disription: damage 10 point of enemy
+    disription: Gain 5 points of health
     Rarity: 
-    MagicPowerRequired: 2
-    CurseEffect: 0
-    EnemyDamage: 0
-    BlockedDamage: 0
-    cardSprite: {fileID: 21300000, guid: 19927db9a9e68a94b8ead4edd2a3a6e2, type: 3}
-  - Damage: 0
-    Defence: 1
-    Curse: 0
-    Medicated: 0
-    Card_Name: Defence
-    CardIndex: 0
-    Card_Type: common
-    disription: Block 10 attack of emeny
-    Rarity: 
-    MagicPowerRequired: 2
-    CurseEffect: 0
-    EnemyDamage: 0
-    BlockedDamage: 0
-    cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
-  - Damage: 0
-    Defence: 0
-    Curse: 1
-    Medicated: 0
-    Card_Name: Curse
-    CardIndex: 0
-    Card_Type: common
-    disription: Apply curse on two time attack
-    Rarity: 
-    MagicPowerRequired: 2
+    MagicPowerRequired: 1
     CurseEffect: 0
     EnemyDamage: 0
     BlockedDamage: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
-  - Damage: 1
+  - Attack: 1
     Defence: 0
     Curse: 0
     Medicated: 0
-    Card_Name: Attack
+    Card_Name: Medicated
     CardIndex: 0
     Card_Type: common
-    disription: damage 5 point of enemy
+    disription: Gain 5 points of health
     Rarity: 
     MagicPowerRequired: 1
     CurseEffect: 0
     EnemyDamage: 0
     BlockedDamage: 0
-    cardSprite: {fileID: 21300000, guid: 19927db9a9e68a94b8ead4edd2a3a6e2, type: 3}
-  - Damage: 1
-    Defence: 0
-    Curse: 0
-    Medicated: 0
-    Card_Name: Attack
-    CardIndex: 0
-    Card_Type: common
-    disription: damage 5 point of enemy
-    Rarity: 
-    MagicPowerRequired: 1
-    CurseEffect: 0
-    EnemyDamage: 0
-    BlockedDamage: 0
-    cardSprite: {fileID: 21300000, guid: 19927db9a9e68a94b8ead4edd2a3a6e2, type: 3}
-  - Damage: 1
-    Defence: 0
-    Curse: 0
-    Medicated: 0
-    Card_Name: Attack
-    CardIndex: 0
-    Card_Type: common
-    disription: damage 5 point of enemy
-    Rarity: 
-    MagicPowerRequired: 1
-    CurseEffect: 0
-    EnemyDamage: 0
-    BlockedDamage: 0
-    cardSprite: {fileID: 21300000, guid: 19927db9a9e68a94b8ead4edd2a3a6e2, type: 3}
-  - Damage: 1
-    Defence: 0
-    Curse: 0
-    Medicated: 0
-    Card_Name: Attack
-    CardIndex: 0
-    Card_Type: common
-    disription: damage 5 point of enemy
-    Rarity: 
-    MagicPowerRequired: 1
-    CurseEffect: 0
-    EnemyDamage: 0
-    BlockedDamage: 0
-    cardSprite: {fileID: 21300000, guid: 19927db9a9e68a94b8ead4edd2a3a6e2, type: 3}
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}

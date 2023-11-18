@@ -66,10 +66,18 @@ public class CardContainer : MonoBehaviour
     private void OnEnable()
     {
         Invoke(nameof(PlaceCards),0.5f);
-        for(int index=0;index< setCardIndex.cardsDetails.Length;index++)
-        {
-            setCardIndex.cardsDetails[index].CardIndex = index; 
-        }
+        //for(int index=0;index< setCardIndex.AttackCards.Length;index++)
+        //{
+        //    setCardIndex.AttackCards[index].CardIndex = index;
+        //}
+        //for (int index = 0; index < setCardIndex.AttackCards.Length; index++)
+        //{
+        //    setCardIndex.AttackCards[index].CardIndex = index;
+        //}
+        //for (int index = 0; index < setCardIndex.AttackCards.Length; index++)
+        //{
+        //    setCardIndex.AttackCards[index].CardIndex = index;
+        //}
     }
     private void OnDisable()
     {
@@ -88,6 +96,7 @@ public class CardContainer : MonoBehaviour
     {
         SetUpCards();
         SetCardsAnchor();
+        CardsArrange();
     }
 
     private void SetCardsRotation()
@@ -120,9 +129,10 @@ public class CardContainer : MonoBehaviour
     {
         UpdateCards();
     }
+    int cd;
     void PlaceCards()
     {
-        for (int cd = 0; cd < 5; cd++)
+        for (cd = 0; cd < 5; cd++)
         {
             CGO = Instantiate(CardToDisplay, gameObject.transform);
             mapData(CGO);
@@ -130,7 +140,19 @@ public class CardContainer : MonoBehaviour
     }
     public void mapData(GameObject card)
     {
-        var cardObj = CardManagement.CardData.cardsDetails[Random.Range(0, CardManagement.CardData.cardsDetails.Length)];
+        CardsData cardObj;
+        if (cd <2)
+        {
+              cardObj = CardManagement.CardData.AttackCards[Random.Range(0, CardManagement.CardData.AttackCards.Length)];
+        }
+        else if(cd <4)
+        {
+             cardObj = CardManagement.CardData.DefanceCards[Random.Range(0, CardManagement.CardData.DefanceCards.Length)];
+        }
+        else
+        {
+             cardObj = CardManagement.CardData.curseCards[Random.Range(0, CardManagement.CardData.curseCards.Length)];
+        }
         CM = card.GetComponent<CardManager>();
 
         CM.Power.text = cardObj.MagicPowerRequired.ToString();
@@ -142,11 +164,19 @@ public class CardContainer : MonoBehaviour
         CM.CurseEffect = cardObj.CurseEffect;
         CM.EnemyDamage = cardObj.EnemyDamage;
         CM.BlockedDamage = cardObj.BlockedDamage;
-        CM.Damage = cardObj.Damage;
+        CM.Attack = cardObj.Attack;
         CM.Defence = cardObj.Defence;
         CM.Curse = cardObj.Curse;
         CM.Medicated = cardObj.Medicated;
+        CM.gameObject.GetComponent<Image>().sprite = cardObj.cardSprite;
 
+    }
+    public void CardsArrange()
+    {
+        foreach(CardWrapper obj in cards)
+        {
+            obj.gameObject.transform.SetSiblingIndex(3);
+        }
     }
     void SetUpCards()
     {

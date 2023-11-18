@@ -21,7 +21,7 @@ namespace demo {
             {
                 SoundManager.playSound(Sounds.AttackSounds[Random.Range(0, 2)]);
                 container.shake.enabled = true;
-                if (CardM.Damage)
+                if (CardM.Attack)
                 {
                     if (GameManager.Instance.activeEnemy.EnemyHealth.fillAmount > 0)
                     {
@@ -86,7 +86,7 @@ namespace demo {
                 //InventoryCardManager.discard_Pile.Add(PlayerPrefs.GetString("Card"));
                 InventoryCardManager.Discardpile.CardName.Add(CardM.cardName.text.ToString());
                 InventoryCardManager.Discardpile.CardSprite.Add(CardM.cardSprite);
-                InventoryCardManager.DP_Details.Add(toSaveCards.cardsDetails[CardM.CardIndex]);
+                saveCard(CardM);
                 CardM.gameObject.transform.SetParent(GameManager.Instance.discard_Pile_Contant.transform);
                 container.DestroyCard(evt.card);
             }
@@ -95,6 +95,25 @@ namespace demo {
                 container.ErrorMsg.SetActive(true);
             }
             
+        }
+        public void saveCard(CardManager CardM)
+        {
+            if (CardM.Attack)
+            {
+                InventoryCardManager.DP_Details.Add(toSaveCards.AttackCards[CardM.CardIndex]);
+            }
+            else if (CardM.Defence)
+            {
+                InventoryCardManager.DP_Details.Add(toSaveCards.DefanceCards[CardM.CardIndex]);
+            }
+            else if (CardM.Curse)
+            {
+                InventoryCardManager.DP_Details.Add(toSaveCards.curseCards[CardM.CardIndex]);
+            }
+            else if (CardM.Medicated)
+            {
+                InventoryCardManager.DP_Details.Add(toSaveCards.MedicatedCards[CardM.CardIndex]);
+            }
         }
         
     }

@@ -15,7 +15,7 @@ public class CardManager : MonoBehaviour
     [Header("Card Data")]
     public int Magic_power, CurseEffect, CardIndex;
     public float EnemyDamage, BlockedDamage;
-    public bool Damage, Defence, Curse,Medicated;
+    public bool Attack, Defence, Curse,Medicated;
 
 
     [Header("Card Data")]
