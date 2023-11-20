@@ -22,6 +22,11 @@ public class MenuManager : MonoBehaviour
     void Start()
     {
         SwitchScreen(Screns.MAINMENU);
+        if(PlayerPrefs.GetInt("start",0) == 0)
+        {
+            PlayerPrefs.DeleteAll();
+            PlayerPrefs.SetInt("start", 1);
+        }
     }
 
     public  void SwitchScreen(Screns screens)

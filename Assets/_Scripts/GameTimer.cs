@@ -63,7 +63,7 @@ public class GameTimer : MonoBehaviour
     }
     private void OnApplicationQuit()
     {
-        StopGame();
+        //StopGame();
         Debug.Log("app quit");
     }
 }
