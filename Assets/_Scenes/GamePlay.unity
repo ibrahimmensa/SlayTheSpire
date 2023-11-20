@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3791,6 +3791,7 @@ MonoBehaviour:
     type: 2}
   ScreenAnimations: {fileID: 11400000, guid: 8885b99d55ebfbc4fab6a667de5e69ea, type: 2}
   toSaveCards: {fileID: 11400000, guid: 3df95f635e6d8284da624c9eed2e5b00, type: 2}
+  CM: {fileID: 11400000, guid: 3e331700666746b4d8691131d398239e, type: 2}
 --- !u!4 &1364501464
 Transform:
   m_ObjectHideFlags: 0
@@ -5830,7 +5831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

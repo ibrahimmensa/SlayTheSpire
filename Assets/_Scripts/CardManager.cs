@@ -20,5 +20,6 @@ public class CardManager : MonoBehaviour
 
     [Header("Card Data")]
     public Sprite cardSprite;
+    public Image centerImg;
 
 }

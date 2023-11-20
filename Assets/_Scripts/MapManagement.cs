@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class MapManagement : MonoBehaviour
 {
     public GameObject[] Levels;
+    public CharactersManagment CM;
     
     // Start is called before the first frame update
     void Start()
@@ -23,9 +24,13 @@ public class MapManagement : MonoBehaviour
     {
         
     }
-    public void LoadLevel(GameObject Selected)
+    public void LoadLevel(int num)
     {
-        Selected.SetActive(true);
+        CM.LoadLevel = num;
+        Invoke(nameof(load), 11.0f);
+    }
+    void load()
+    {
         SceneManager.LoadScene(1);
     }
 }

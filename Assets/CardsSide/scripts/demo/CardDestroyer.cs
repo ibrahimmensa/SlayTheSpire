@@ -10,9 +10,13 @@ namespace demo {
         public InventoryCardManager InventoryCardManager;
         public ScreenAnimations ScreenAnimations;
         public Cards toSaveCards;
+        public CharactersManagment CM;
         private void OnEnable()
         {
-            //container = GameManager.Instance.CardContainerRef.GetComponent<CardContainer>();
+            container.CardManagement.Cursevalue = 0;
+            container.CardManagement.defanceValue = 0;
+            container.CardManagement.CurseActivated = false;
+            container.CardManagement.DefanceActivated = false;
         }
         public void OnCardDestroyed(CardPlayed evt) {
             var CardM = evt.card.GetComponent<CardManager>();
@@ -41,15 +45,15 @@ namespace demo {
                         {
                             //write file to save cards data
 
-
-
-
-
+                            CM.LoadLevel++;
                             GameManager.Instance.CurseIndicator.SetActive(false);
                             GameManager.Instance.DefanceIndicator.SetActive(false);
                             GameManager.Instance.activeEnemy.gameObject.SetActive(false);
                             GameManager.Instance.LevelComplete.SetActive(true);
-                            PlayerPrefs.SetInt("Levels", PlayerPrefs.GetInt("Levels") + 1);
+                            if(CM.LoadLevel > PlayerPrefs.GetInt("Levels",0))
+                            {
+                                PlayerPrefs.SetInt("Levels", CM.LoadLevel);
+                            }
                             container.gameObject.SetActive(false);
                            
                         }
@@ -75,6 +79,7 @@ namespace demo {
                 {
                     if (GameManager.Instance.activeEnemy.EnemyHealth.fillAmount > 0)
                     {
+                        Debug.Log("curse value: " + CardM.CurseEffect);
                         container.CardManagement.CurseActivated = true;
                         container.CardManagement.Cursevalue = CardM.CurseEffect;
                         GameManager.Instance.CurseIndicator.SetActive(true);

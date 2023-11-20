@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
     }
     private void OnEnable()
     {
-        activeEnemy = Instantiate(enemies.All_Enemies[(PlayerPrefs.GetInt("Levels", 0))], transform);
+        activeEnemy = Instantiate(enemies.All_Enemies[CM.LoadLevel], transform);
         num = Random.Range(0, Sounds.Background_Music.Length);
         BG.sprite = Sounds.BGs[num];
         SoundManager.bGM.clip = Sounds.Background_Music[num];
@@ -108,8 +108,9 @@ public class GameManager : MonoBehaviour, IDataPersistence
         if (cardsManagement.CurseActivated)
         {
             cardsManagement.Cursevalue--;
-            if (cardsManagement.Cursevalue == 0)
+            if (cardsManagement.Cursevalue <= 0)
             {
+                cardsManagement.Cursevalue = 0;
                 cardsManagement.CurseActivated = false;
                 CurseIndicator.SetActive(false);
             }
@@ -123,8 +124,9 @@ public class GameManager : MonoBehaviour, IDataPersistence
         if (cardsManagement.DefanceActivated)
         {
             cardsManagement.defanceValue--;
-            if (cardsManagement.defanceValue == 0)
+            if (cardsManagement.defanceValue <= 0)
             {
+                cardsManagement.defanceValue = 0;
                 cardsManagement.DefanceActivated = false;
                 DefanceIndicator.SetActive(false);
             }

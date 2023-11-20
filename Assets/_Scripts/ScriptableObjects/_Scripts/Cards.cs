@@ -39,6 +39,7 @@ public class CardsData
     [Header("Card Powers")]
     [Space()]
     public Sprite cardSprite;
+    public Sprite centerImg;
 
     public bool displayed;
 }

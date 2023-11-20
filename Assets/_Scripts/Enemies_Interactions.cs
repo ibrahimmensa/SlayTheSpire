@@ -23,7 +23,7 @@ public class Enemies_Interactions : MonoBehaviour
     }
     public void OpenDiscard()
     {
-        GameManager.Instance.Discard.SetActive(true);
-        gameObject.SetActive(false);
+        //GameManager.Instance.Discard.SetActive(true);
+        //gameObject.SetActive(false);
     }
 }

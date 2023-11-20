@@ -7,4 +7,5 @@ public class CharactersManagment : ScriptableObject
 {
     public int TotalDeaths;
     public Characters[] Players;
+    public int LoadLevel;
 }

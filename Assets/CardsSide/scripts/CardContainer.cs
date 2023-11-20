@@ -66,18 +66,6 @@ public class CardContainer : MonoBehaviour
     private void OnEnable()
     {
         Invoke(nameof(PlaceCards),0.5f);
-        //for(int index=0;index< setCardIndex.AttackCards.Length;index++)
-        //{
-        //    setCardIndex.AttackCards[index].CardIndex = index;
-        //}
-        //for (int index = 0; index < setCardIndex.AttackCards.Length; index++)
-        //{
-        //    setCardIndex.AttackCards[index].CardIndex = index;
-        //}
-        //for (int index = 0; index < setCardIndex.AttackCards.Length; index++)
-        //{
-        //    setCardIndex.AttackCards[index].CardIndex = index;
-        //}
     }
     private void OnDisable()
     {
@@ -149,9 +137,15 @@ public class CardContainer : MonoBehaviour
         {
              cardObj = CardManagement.CardData.DefanceCards[Random.Range(0, CardManagement.CardData.DefanceCards.Length)];
         }
+        //else if(cd < 4)
+        //{
+        //     cardObj = CardManagement.CardData.curseCards[Random.Range(0, CardManagement.CardData.curseCards.Length)];
+        //}
         else
         {
-             cardObj = CardManagement.CardData.curseCards[Random.Range(0, CardManagement.CardData.curseCards.Length)];
+            //cardObj = CardManagement.CardData.MedicatedCards[Random.Range(0, CardManagement.CardData.MedicatedCards.Length)];
+            cardObj = CardManagement.CardData.curseCards[Random.Range(0, CardManagement.CardData.curseCards.Length)];
+
         }
         CM = card.GetComponent<CardManager>();
 
@@ -169,13 +163,16 @@ public class CardContainer : MonoBehaviour
         CM.Curse = cardObj.Curse;
         CM.Medicated = cardObj.Medicated;
         CM.gameObject.GetComponent<Image>().sprite = cardObj.cardSprite;
+        CM.centerImg.sprite = cardObj.centerImg;
 
     }
     public void CardsArrange()
     {
-        foreach(CardWrapper obj in cards)
+        for(int a=Random.Range(0,4); a<cards.Count;a++)
         {
-            obj.gameObject.transform.SetSiblingIndex(3);
+            var temp = cards[a];
+            cards.Remove(cards[a]);
+            cards.Add(temp);
         }
     }
     void SetUpCards()
