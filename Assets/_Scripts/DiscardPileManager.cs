@@ -16,8 +16,7 @@ public class DiscardPileManager : MonoBehaviour
     private void OnEnable()
     {
         dp_Lenth = ICM.DP_Details.Count;
-        if(ICM.dPL != dp_Lenth)
-            AddCards();
+        AddCards();
     }
 
 
@@ -47,9 +46,9 @@ public class DiscardPileManager : MonoBehaviour
         CM.Rarity.text = cardObj.Rarity;
 
         CM.Magic_power = cardObj.MagicPowerRequired;
-        CM.CurseEffect = cardObj.CurseEffect;
-        CM.EnemyDamage = cardObj.EnemyDamage;
-        CM.BlockedDamage = cardObj.BlockedDamage;
+        //CM.CurseEffect = cardObj.CurseEffect;
+        //CM.EnemyDamage = cardObj.EnemyDamage;
+        //CM.BlockedDamage = cardObj.BlockedDamage;
         CM.Attack = cardObj.Attack;
         CM.Defence = cardObj.Defence;
         CM.Curse = cardObj.Curse;

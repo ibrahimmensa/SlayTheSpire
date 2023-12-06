@@ -120,6 +120,7 @@ public class CardContainer : MonoBehaviour
     int cd;
     void PlaceCards()
     {
+        CardManagement.turns++;
         for (cd = 0; cd < 5; cd++)
         {
             CGO = Instantiate(CardToDisplay, gameObject.transform);
@@ -135,17 +136,11 @@ public class CardContainer : MonoBehaviour
         }
         else if(cd <4)
         {
-             cardObj = CardManagement.CardData.DefanceCards[Random.Range(0, CardManagement.CardData.DefanceCards.Length)];
+            cardObj = CardManagement.CardData.AD_Cards[Random.Range(0, CardManagement.CardData.AD_Cards.Length)];
         }
-        //else if(cd < 4)
-        //{
-        //     cardObj = CardManagement.CardData.curseCards[Random.Range(0, CardManagement.CardData.curseCards.Length)];
-        //}
         else
         {
-            //cardObj = CardManagement.CardData.MedicatedCards[Random.Range(0, CardManagement.CardData.MedicatedCards.Length)];
-            cardObj = CardManagement.CardData.curseCards[Random.Range(0, CardManagement.CardData.curseCards.Length)];
-
+            cardObj = CardManagement.CardData.DefanceCards[Random.Range(0, CardManagement.CardData.DefanceCards.Length)];
         }
         CM = card.GetComponent<CardManager>();
 
@@ -155,13 +150,14 @@ public class CardContainer : MonoBehaviour
         CM.Rarity.text = cardObj.Rarity;
 
         CM.Magic_power = cardObj.MagicPowerRequired;
-        CM.CurseEffect = cardObj.CurseEffect;
-        CM.EnemyDamage = cardObj.EnemyDamage;
-        CM.BlockedDamage = cardObj.BlockedDamage;
+        CM.CurseEffect = Random.Range(cardObj.CurseEffect_min, cardObj.CurseEffect_max);
+        CM.EnemyDamage = Random.Range(cardObj.EnemyDamage_min, cardObj.EnemyDamage_max);
+        CM.BlockedDamage = Random.Range(cardObj.BlockedDamage_min, cardObj.BlockedDamage_max);
         CM.Attack = cardObj.Attack;
         CM.Defence = cardObj.Defence;
         CM.Curse = cardObj.Curse;
         CM.Medicated = cardObj.Medicated;
+        CM.AD_Cards = cardObj.AttackDefence;
         CM.gameObject.GetComponent<Image>().sprite = cardObj.cardSprite;
         CM.centerImg.sprite = cardObj.centerImg;
 

@@ -107,13 +107,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
     {
         if (cardsManagement.CurseActivated)
         {
-            cardsManagement.Cursevalue--;
-            if (cardsManagement.Cursevalue <= 0)
-            {
-                cardsManagement.Cursevalue = 0;
-                cardsManagement.CurseActivated = false;
-                CurseIndicator.SetActive(false);
-            }
+            IfCurse();
         }
         CardContainerRef.SetActive(false);
         PlayerCount.SetActive(false);
@@ -123,29 +117,15 @@ public class GameManager : MonoBehaviour, IDataPersistence
         yield return new WaitForSeconds(2.0f);
         if (cardsManagement.DefanceActivated)
         {
-            cardsManagement.defanceValue--;
-            if (cardsManagement.defanceValue <= 0)
-            {
-                cardsManagement.defanceValue = 0;
-                cardsManagement.DefanceActivated = false;
-                DefanceIndicator.SetActive(false);
-            }
-            blocked.SetActive(true);
+            IfDefanse();
         }
         else
         {
-            PlayerHealth.fillAmount -= 0.3f;
-            PlayerHelthTxt.text = PlayerHealth.fillAmount * 100 + "/100";
-            if(PlayerHealth.fillAmount <= 0)
-            {
-                activeEnemy.gameObject.SetActive(false);
-                LevelFailed.SetActive(true);
-                DataPersistenceManager.gameData.deathCount++;
-                deathCount++;
-                CM.TotalDeaths = CM.TotalDeaths+deathCount;
-            }
+            ApplyDanageToPlayer();
         }
-        //Instantiate(ScreenAnimations.Animations[0],transform);
+
+
+        Instantiate(enemies.All_Enemies[CM.LoadLevel].Effect,transform);
         SoundManager.playSound(Sounds.AttackSounds[Random.Range(0, 2)]);
         yield return new WaitForSeconds(0.2f);
         activeEnemy.enemyAnimator.SetBool("Attack", false);
@@ -153,7 +133,56 @@ public class GameManager : MonoBehaviour, IDataPersistence
         PlayerCount.SetActive(true);
         CardContainerRef.GetComponent<CardContainer>().PlayerCount.text = CardContainerRef.GetComponent<CardContainer>().playerCount.ToString();
         activeEnemy.TurnTxt.text = "Player Turn";
+        Invoke(nameof(BtnOn), 2f);
     }
+
+
+    //Funtionality
+    //---------------------------------------------------------------------------------------------------------------------------------------------
+    public void IfCurse()
+    {
+        cardsManagement.Cursevalue--;
+        if (cardsManagement.Cursevalue <= 0)
+        {
+            cardsManagement.Cursevalue = 0;
+            cardsManagement.CurseActivated = false;
+            CurseIndicator.SetActive(false);
+        }
+    }
+    public void IfDefanse()
+    {
+        cardsManagement.defanceValue--;
+        if (cardsManagement.defanceValue <= 0)
+        {
+            cardsManagement.defanceValue = 0;
+            cardsManagement.DefanceActivated = false;
+            DefanceIndicator.SetActive(false);
+        }
+        blocked.SetActive(true);
+    }
+    public void ApplyDanageToPlayer()
+    {
+        CardContainerRef.GetComponent<CardContainer>().shake.enabled = true;
+        PlayerHealth.fillAmount -= 0.3f;
+        float h = PlayerHealth.fillAmount * 100;
+        PlayerHelthTxt.text = (int)h + "/100";
+        if (PlayerHealth.fillAmount <= 0)
+        {
+            PlayerDead();
+        }
+    }
+    public void PlayerDead()
+    {
+        activeEnemy.gameObject.SetActive(false);
+        LevelFailed.SetActive(true);
+        DataPersistenceManager.gameData.deathCount++;
+        deathCount++;
+        CM.TotalDeaths += deathCount;
+    }
+
+
+    //Buttons
+    //------------------------------------------------------------------------------------------------------------------------------
     public void Next()
     {
         DataPersistenceManager.SaveGame();
@@ -162,6 +191,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
     public void EndTurn()
     {
         CardContainerRef.GetComponent<CardContainer>().playerCount = 0;
+        activeEnemy.endTurn.interactable = false;
     }
     public void Home()
     {
@@ -176,6 +206,13 @@ public class GameManager : MonoBehaviour, IDataPersistence
         }
     }
 
+    public void BtnOn()
+    {
+        activeEnemy.endTurn.interactable = true;
+    }
+
+    //Data Saving
+    //----------------------------------------------------------------------------------------------------------------------------------
     public void loadData(GameData data)
     {
         //CM.TotalDeaths = data.deathCount;

@@ -11,14 +11,14 @@ public class Enemies_Interactions : MonoBehaviour
     public Text HealthTxt;
     public Text TurnTxt;
     public Text DPTxt;
-
+    public Image Effect;
+    public Button endTurn;
     public void EndTurn()
     {
         GameManager.Instance.EndTurn();
     }
     private void Update()
     {
-
         DPTxt.text = InventoryCardManager.DP_Details.Count.ToString();
     }
     public void OpenDiscard()
