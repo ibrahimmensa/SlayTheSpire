@@ -45,14 +45,23 @@ public class CardsData
     public float BlockedDamage_min;
     [Range(0, 1)]
     public float BlockedDamage_max;
+    [Range(0, 1)]
+    public float PlayerHeal_min;
+    [Range(0, 1)]
+    public float PlayerHeal_max;
 
 
-    [Header("Card Powers")]
+    [Header("Card Sprites")]
     [Space()]
     public Sprite cardSprite;
     public Sprite centerImg;
 
     public bool displayed;
+
+
+    [Header("Card Group")]
+    [Space()]
+    public bool rodentGroup;
 }
 
 
