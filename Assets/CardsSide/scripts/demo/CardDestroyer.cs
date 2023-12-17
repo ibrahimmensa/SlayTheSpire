@@ -69,18 +69,18 @@ namespace demo {
             {
                 InventoryCardManager.DP_Details.Add(toSaveCards.AttackCards[CardM.CardIndex]);
             }
-            else if (CardM.Defence)
-            {
-                InventoryCardManager.DP_Details.Add(toSaveCards.DefanceCards[CardM.CardIndex]);
-            }
-            else if (CardM.Curse)
-            {
-                InventoryCardManager.DP_Details.Add(toSaveCards.curseCards[CardM.CardIndex]);
-            }
-            else if (CardM.Medicated)
-            {
-                InventoryCardManager.DP_Details.Add(toSaveCards.MedicatedCards[CardM.CardIndex]);
-            }
+            //else if (CardM.Defence)
+            //{
+            //    InventoryCardManager.DP_Details.Add(toSaveCards.DefanceCards[CardM.CardIndex]);
+            //}
+            //else if (CardM.Curse)
+            //{
+            //    InventoryCardManager.DP_Details.Add(toSaveCards.curseCards[CardM.CardIndex]);
+            //}
+            //else if (CardM.Medicated)
+            //{
+            //    InventoryCardManager.DP_Details.Add(toSaveCards.MedicatedCards[CardM.CardIndex]);
+            //}
         }
         public void Attack(CardManager CardM)
         {

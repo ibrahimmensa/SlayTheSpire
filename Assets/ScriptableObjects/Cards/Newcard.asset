@@ -18,6 +18,8 @@ MonoBehaviour:
     Curse: 0
     Medicated: 0
     AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
     Card_Name: Banana
     CardIndex: 0
     Card_Type: common
@@ -32,6 +34,9 @@ MonoBehaviour:
     BlockedDamage_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
     cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
     centerImg: {fileID: 21300000, guid: 85e88b02834b5c04f837063d097c3ccb, type: 3}
     displayed: 0
@@ -41,6 +46,8 @@ MonoBehaviour:
     Curse: 0
     Medicated: 0
     AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
     Card_Name: Baby boy
     CardIndex: 1
     Card_Type: common
@@ -55,108 +62,20 @@ MonoBehaviour:
     BlockedDamage_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
     cardSprite: {fileID: 21300000, guid: 19927db9a9e68a94b8ead4edd2a3a6e2, type: 3}
     centerImg: {fileID: 21300000, guid: 20ff2bd4447e96e4a89bd10245869fe4, type: 3}
     displayed: 0
     rodentGroup: 0
-  - Attack: 1
-    Defence: 0
-    Curse: 0
-    Medicated: 0
-    AttackDefence: 0
-    Card_Name: Cleaver
-    CardIndex: 2
-    Card_Type: common
-    disription: Damage 6-8 points of enemy
-    Rarity: 
-    MagicPowerRequired: 3
-    CurseEffect_min: 0
-    CurseEffect_max: 0
-    EnemyDamage_min: 0.6
-    EnemyDamage_max: 0.8
-    BlockedDamage_min: 0
-    BlockedDamage_max: 0
-    PlayerHeal_min: 0
-    PlayerHeal_max: 0
-    cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
-    centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
-    displayed: 0
-    rodentGroup: 0
-  - Attack: 1
-    Defence: 0
-    Curse: 0
-    Medicated: 0
-    AttackDefence: 0
-    Card_Name: Knife
-    CardIndex: 3
-    Card_Type: common
-    disription: Damage 5-8 points of enemy
-    Rarity: 
-    MagicPowerRequired: 3
-    CurseEffect_min: 0
-    CurseEffect_max: 0
-    EnemyDamage_min: 0.2
-    EnemyDamage_max: 0.4
-    BlockedDamage_min: 0
-    BlockedDamage_max: 0
-    PlayerHeal_min: 0
-    PlayerHeal_max: 0
-    cardSprite: {fileID: 21300000, guid: 19927db9a9e68a94b8ead4edd2a3a6e2, type: 3}
-    centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
-    displayed: 0
-    rodentGroup: 0
-  - Attack: 1
-    Defence: 0
-    Curse: 0
-    Medicated: 0
-    AttackDefence: 0
-    Card_Name: Shot gun
-    CardIndex: 4
-    Card_Type: common
-    disription: Damage 4-8 points of enemy
-    Rarity: 
-    MagicPowerRequired: 2
-    CurseEffect_min: 0
-    CurseEffect_max: 0
-    EnemyDamage_min: 0.4
-    EnemyDamage_max: 0.8
-    BlockedDamage_min: 0
-    BlockedDamage_max: 0
-    PlayerHeal_min: 0
-    PlayerHeal_max: 0
-    cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
-    centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
-    displayed: 0
-    rodentGroup: 0
-  - Attack: 1
-    Defence: 0
-    Curse: 0
-    Medicated: 0
-    AttackDefence: 0
-    Card_Name: Mouse
-    CardIndex: 5
-    Card_Type: uncommon
-    disription: Damage 1-2 points of enemy
-    Rarity: 
-    MagicPowerRequired: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
-    EnemyDamage_min: 0.1
-    EnemyDamage_max: 0.2
-    BlockedDamage_min: 0
-    BlockedDamage_max: 0
-    PlayerHeal_min: 0
-    PlayerHeal_max: 0
-    cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
-    centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
-    displayed: 0
-    rodentGroup: 1
-  DefanceCards:
   - Attack: 0
     Defence: 1
     Curse: 0
     Medicated: 0
     AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
     Card_Name: Brown hat
     CardIndex: 0
     Card_Type: common
@@ -171,62 +90,20 @@ MonoBehaviour:
     BlockedDamage_max: 0.3
     PlayerHeal_min: 0
     PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
     cardSprite: {fileID: 21300000, guid: 7b27e5d920f90ed4c88d3e949429b16f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
     rodentGroup: 0
-  - Attack: 0
-    Defence: 1
-    Curse: 0
-    Medicated: 0
-    AttackDefence: 0
-    Card_Name: Brown Wool Coat
-    CardIndex: 1
-    Card_Type: uncommon
-    disription: Block 1-3 attacks of enemy
-    Rarity: 
-    MagicPowerRequired: 2
-    CurseEffect_min: 0
-    CurseEffect_max: 0
-    EnemyDamage_min: 0
-    EnemyDamage_max: 0
-    BlockedDamage_min: 0.4
-    BlockedDamage_max: 0.7
-    PlayerHeal_min: 0
-    PlayerHeal_max: 0
-    cardSprite: {fileID: 21300000, guid: 7b27e5d920f90ed4c88d3e949429b16f, type: 3}
-    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
-  - Attack: 0
-    Defence: 1
-    Curse: 0
-    Medicated: 0
-    AttackDefence: 0
-    Card_Name: Cactus Hat
-    CardIndex: 2
-    Card_Type: uncommon
-    disription: Block 1-3 attacks of enemy
-    Rarity: 
-    MagicPowerRequired: 1
-    CurseEffect_min: 0
-    CurseEffect_max: 0
-    EnemyDamage_min: 0
-    EnemyDamage_max: 0
-    BlockedDamage_min: 0.5
-    BlockedDamage_max: 0.5
-    PlayerHeal_min: 0
-    PlayerHeal_max: 0
-    cardSprite: {fileID: 21300000, guid: 7b27e5d920f90ed4c88d3e949429b16f, type: 3}
-    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
-  AD_Cards:
   - Attack: 0
     Defence: 0
     Curse: 0
     Medicated: 0
     AttackDefence: 1
+    Rehuffle: 0
+    cashCards: 0
     Card_Name: Antlers hat
     CardIndex: 0
     Card_Type: common
@@ -241,155 +118,104 @@ MonoBehaviour:
     BlockedDamage_max: 0.2
     PlayerHeal_min: 0
     PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
     displayed: 0
     rodentGroup: 0
-  - Attack: 0
+  - Attack: 1
     Defence: 0
     Curse: 0
-    Medicated: 0
-    AttackDefence: 1
-    Card_Name: Brown buffalo hat
-    CardIndex: 0
-    Card_Type: common
-    disription: Damage 1 and Block 2 attack
-    Rarity: 
-    MagicPowerRequired: 1
-    CurseEffect_min: 0
-    CurseEffect_max: 0
-    EnemyDamage_min: 0.2
-    EnemyDamage_max: 0.3
-    BlockedDamage_min: 0.1
-    BlockedDamage_max: 0.1
-    PlayerHeal_min: 0
-    PlayerHeal_max: 0
-    cardSprite: {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
-    centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
-    displayed: 0
-    rodentGroup: 0
-  - Attack: 0
-    Defence: 0
-    Curse: 0
-    Medicated: 0
-    AttackDefence: 1
-    Card_Name: Blue poncho
-    CardIndex: 0
-    Card_Type: common
-    disription: Damage 1 and Block 2 attack
-    Rarity: 
-    MagicPowerRequired: 1
-    CurseEffect_min: 0
-    CurseEffect_max: 0
-    EnemyDamage_min: 0.1
-    EnemyDamage_max: 0.1
-    BlockedDamage_min: 0.2
-    BlockedDamage_max: 0.4
-    PlayerHeal_min: 0
-    PlayerHeal_max: 0
-    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
-    centerImg: {fileID: 21300000, guid: 20ff2bd4447e96e4a89bd10245869fe4, type: 3}
-    displayed: 0
-    rodentGroup: 0
-  - Attack: 0
-    Defence: 0
-    Curse: 0
-    Medicated: 0
-    AttackDefence: 1
-    Card_Name: Black bear hat
-    CardIndex: 0
-    Card_Type: common
-    disription: Damage 1 and Block 2 attack
-    Rarity: 
-    MagicPowerRequired: 1
-    CurseEffect_min: 0
-    CurseEffect_max: 0
-    EnemyDamage_min: 0.2
-    EnemyDamage_max: 0.2
-    BlockedDamage_min: 0.2
-    BlockedDamage_max: 0.2
-    PlayerHeal_min: 0
-    PlayerHeal_max: 0
-    cardSprite: {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
-    centerImg: {fileID: 21300000, guid: 20ff2bd4447e96e4a89bd10245869fe4, type: 3}
-    displayed: 0
-    rodentGroup: 0
-  curseCards:
-  - Attack: 0
-    Defence: 0
-    Curse: 1
     Medicated: 0
     AttackDefence: 0
-    Card_Name: Curse
-    CardIndex: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Knife
+    CardIndex: 3
     Card_Type: common
-    disription: apply one time curse on enemy
+    disription: Damage 5-8 points of enemy
     Rarity: 
-    MagicPowerRequired: 1
+    MagicPowerRequired: 3
     CurseEffect_min: 0
     CurseEffect_max: 0
-    EnemyDamage_min: 0
-    EnemyDamage_max: 0
+    EnemyDamage_min: 0.2
+    EnemyDamage_max: 0.4
     BlockedDamage_min: 0
     BlockedDamage_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    cardSprite: {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
-    centerImg: {fileID: 21300000, guid: 85e88b02834b5c04f837063d097c3ccb, type: 3}
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 19927db9a9e68a94b8ead4edd2a3a6e2, type: 3}
+    centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
     displayed: 0
     rodentGroup: 0
   - Attack: 0
-    Defence: 0
-    Curse: 1
+    Defence: 1
+    Curse: 0
     Medicated: 0
     AttackDefence: 0
-    Card_Name: Curse
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Brown Wool Coat
     CardIndex: 1
-    Card_Type: common
-    disription: apply 2 time curse on enemy
+    Card_Type: uncommon
+    disription: Block 1-3 attacks of enemy
     Rarity: 
     MagicPowerRequired: 2
     CurseEffect_min: 0
     CurseEffect_max: 0
     EnemyDamage_min: 0
     EnemyDamage_max: 0
-    BlockedDamage_min: 0
-    BlockedDamage_max: 0
+    BlockedDamage_min: 0.4
+    BlockedDamage_max: 0.7
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    cardSprite: {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
-    centerImg: {fileID: 21300000, guid: 20ff2bd4447e96e4a89bd10245869fe4, type: 3}
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 7b27e5d920f90ed4c88d3e949429b16f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
     rodentGroup: 0
-  - Attack: 0
+  - Attack: 1
     Defence: 0
-    Curse: 1
+    Curse: 0
     Medicated: 0
     AttackDefence: 0
-    Card_Name: Curse
-    CardIndex: 2
-    Card_Type: common
-    disription: apply 3 time curse on enemy
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Mouse
+    CardIndex: 5
+    Card_Type: uncommon
+    disription: Damage 1-2 points of enemy
     Rarity: 
-    MagicPowerRequired: 3
+    MagicPowerRequired: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
-    EnemyDamage_min: 0
-    EnemyDamage_max: 0
+    EnemyDamage_min: 0.1
+    EnemyDamage_max: 0.2
     BlockedDamage_min: 0
     BlockedDamage_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    cardSprite: {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
     centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
     displayed: 0
-    rodentGroup: 0
-  MedicatedCards:
+    rodentGroup: 1
   - Attack: 0
     Defence: 0
     Curse: 0
     Medicated: 1
     AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
     Card_Name: Cheese
     CardIndex: 0
     Card_Type: Rare
@@ -404,6 +230,933 @@ MonoBehaviour:
     BlockedDamage_max: 0
     PlayerHeal_min: 0.4
     PlayerHeal_max: 0.4
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 0
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 1
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Brown buffalo hat
+    CardIndex: 0
+    Card_Type: common
+    disription: Damage 1 and Block 2 attack
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0.2
+    EnemyDamage_max: 0.3
+    BlockedDamage_min: 0.1
+    BlockedDamage_max: 0.1
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+    centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Cactus Hat
+    CardIndex: 2
+    Card_Type: uncommon
+    disription: Block 1-3 attacks of enemy
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0
+    EnemyDamage_max: 0
+    BlockedDamage_min: 0.5
+    BlockedDamage_max: 0.5
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 7b27e5d920f90ed4c88d3e949429b16f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Chef hat
+    CardIndex: 4
+    Card_Type: common
+    disription: ' use Cleaver after Chef hat Cleaver critical will increase by 75%'
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0
+    EnemyDamage_max: 0
+    BlockedDamage_min: 0.3
+    BlockedDamage_max: 0.5
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
+    centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Red Parrot
+    CardIndex: 0
+    Card_Type: common
+    disription: increases the damage by 2 of all your attack cards
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0.4
+    EnemyDamage_max: 0.6
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+    centerImg: {fileID: 21300000, guid: 20ff2bd4447e96e4a89bd10245869fe4, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Cleaver
+    CardIndex: 2
+    Card_Type: common
+    disription: Damage 6-8 points of enemy
+    Rarity: 
+    MagicPowerRequired: 3
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0.6
+    EnemyDamage_max: 0.8
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
+    centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 0
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 1
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Blue poncho
+    CardIndex: 0
+    Card_Type: common
+    disription: Damage 1 and Block 2 attack
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0.1
+    EnemyDamage_max: 0.1
+    BlockedDamage_min: 0.2
+    BlockedDamage_max: 0.4
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: 20ff2bd4447e96e4a89bd10245869fe4, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Dual lil shooters
+    CardIndex: 0
+    Card_Type: common
+    disription: Damage 2 points of enemy
+    Rarity: 
+    MagicPowerRequired: 2
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0.2
+    EnemyDamage_max: 0.4
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
+    centerImg: {fileID: 21300000, guid: 85e88b02834b5c04f837063d097c3ccb, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 0
+    Defence: 0
+    Curse: 0
+    Medicated: 1
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Apple
+    CardIndex: 0
+    Card_Type: Rare
+    disription: Gain 1-2 points of health
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0
+    EnemyDamage_max: 0
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0.1
+    PlayerHeal_max: 0.2
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 0
+    Defence: 0
+    Curse: 0
+    Medicated: 1
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Stake
+    CardIndex: 0
+    Card_Type: Rare
+    disription: Gain 2.5-4 points of health
+    Rarity: 
+    MagicPowerRequired: 2
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0
+    EnemyDamage_max: 0
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0.25
+    PlayerHeal_max: 0.4
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 0
+    Defence: 0
+    Curse: 0
+    Medicated: 1
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Sloppy Stake
+    CardIndex: 0
+    Card_Type: Rare
+    disription: Gain 2.5-4 points of health
+    Rarity: 
+    MagicPowerRequired: 3
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0
+    EnemyDamage_max: 0
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0.3
+    PlayerHeal_max: 0.5
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 0
+    Defence: 0
+    Curse: 0
+    Medicated: 1
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Turkey leg
+    CardIndex: 0
+    Card_Type: Rare
+    disription: Add 5 status cards in your deck
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0
+    EnemyDamage_max: 0
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0.25
+    PlayerHeal_max: 0.35
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 0
+    Defence: 0
+    Curse: 0
+    Medicated: 1
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Harm
+    CardIndex: 0
+    Card_Type: Rare
+    disription: Gain 2.5-4 points of health
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0
+    EnemyDamage_max: 0
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0.2
+    PlayerHeal_max: 0.3
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Bone
+    CardIndex: 5
+    Card_Type: uncommon
+    disription: Damage 1-2 points of enemy
+    Rarity: 
+    MagicPowerRequired: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0.2
+    EnemyDamage_max: 0.4
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
+    centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
+    displayed: 0
+    rodentGroup: 1
+  - Attack: 0
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 1
+    cashCards: 0
+    Card_Name: Royal Flush Clubs
+    CardIndex: 0
+    Card_Type: Rare
+    disription: Reshuffle the cards in your hand
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0
+    EnemyDamage_max: 0
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 0
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 1
+    cashCards: 0
+    Card_Name: Royal Flush Clubs
+    CardIndex: 0
+    Card_Type: Rare
+    disription: Reshuffle all the cards you have
+    Rarity: 
+    MagicPowerRequired: 3
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0
+    EnemyDamage_max: 0
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 0
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 1
+    cashCards: 0
+    Card_Name: Royal Flush Diamond
+    CardIndex: 0
+    Card_Type: Rare
+    disription: Reshuffle all the cards you have
+    Rarity: 
+    MagicPowerRequired: 2
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0
+    EnemyDamage_max: 0
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 0
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 1
+    cashCards: 0
+    Card_Name: Royal Flush Hearts
+    CardIndex: 0
+    Card_Type: Rare
+    disription: Reshuffle all the cards you have
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0
+    EnemyDamage_max: 0
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 0
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 1
+    Card_Name: Cash card
+    CardIndex: 0
+    Card_Type: Rare
+    disription: 25% more reward in Gold
+    Rarity: 
+    MagicPowerRequired: 2
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0
+    EnemyDamage_max: 0
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 0
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 1
+    Card_Name: Gold Scorpian
+    CardIndex: 0
+    Card_Type: Rare
+    disription: Reduce 20% of health to give you 1 Magic Power
+    Rarity: 
+    MagicPowerRequired: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0
+    EnemyDamage_max: 0
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 1
+    ReducePlayerHealth: 0.2
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 0
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 1
+    Card_Name: Silver Scrorpian
+    CardIndex: 0
+    Card_Type: Rare
+    disription: Reduce health by 20% and give strength of 2 points
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0
+    EnemyDamage_max: 0
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 2
+    ReducePlayerHealth: 0.2
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 0
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 1
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Gold Shotgun
+    CardIndex: 0
+    Card_Type: Rare
+    disription: Does 5% damage to you and attack
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0.7
+    EnemyDamage_max: 1
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0.05
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Gold Rifle
+    CardIndex: 0
+    Card_Type: Rare
+    disription: 'Vlunerability Enemy by 20% (Fragile Enemy) '
+    Rarity: 
+    MagicPowerRequired: 2
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0.8
+    EnemyDamage_max: 1
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Pistol
+    CardIndex: 0
+    Card_Type: Rare
+    disription: Attack
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0.4
+    EnemyDamage_max: 0.6
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Six Shooter
+    CardIndex: 0
+    Card_Type: Rare
+    disription: Attack
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0.3
+    EnemyDamage_max: 0.5
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Gold Six Shooter
+    CardIndex: 0
+    Card_Type: Rare
+    disription: Attack
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0.3
+    EnemyDamage_max: 0.5
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Gold Six Shooter
+    CardIndex: 0
+    Card_Type: Rare
+    disription: Attack
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0.3
+    EnemyDamage_max: 0.5
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Sawn Off
+    CardIndex: 0
+    Card_Type: Rare
+    disription: Attack
+    Rarity: 
+    MagicPowerRequired: 2
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0.8
+    EnemyDamage_max: 1
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Gold Sawn Off
+    CardIndex: 0
+    Card_Type: Rare
+    disription: Attack
+    Rarity: 
+    MagicPowerRequired: 2
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0.8
+    EnemyDamage_max: 1
+    BlockedDamage_min: 0
+    BlockedDamage_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: ' Sparkle Boots'
+    CardIndex: 0
+    Card_Type: Rare
+    disription: ' 25% to dodge next attack'
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0
+    EnemyDamage_max: 0
+    BlockedDamage_min: 0.3
+    BlockedDamage_max: 0.5
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: 'Skull Boots '
+    CardIndex: 0
+    Card_Type: Rare
+    disription: 10% chance to dodge next attack, 25% reflect
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0
+    EnemyDamage_max: 0
+    BlockedDamage_min: 0.3
+    BlockedDamage_max: 0.5
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: 'Heart Boots '
+    CardIndex: 0
+    Card_Type: Rare
+    disription: 10 to 20% Dodge chance, heals 25% of the damage
+    Rarity: 
+    MagicPowerRequired: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0
+    EnemyDamage_max: 0
+    BlockedDamage_min: 0.3
+    BlockedDamage_max: 0.5
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Diamond Boots
+    CardIndex: 0
+    Card_Type: Rare
+    disription: '20 30% dodge, if used you get 10% more reward in loot '
+    Rarity: 
+    MagicPowerRequired: 2
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0
+    EnemyDamage_max: 0
+    BlockedDamage_min: 0.3
+    BlockedDamage_max: 0.5
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - Attack: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Cigar
+    CardIndex: 0
+    Card_Type: Rare
+    disription: 50% less accuracy to both player and Enemy for one turn
+    Rarity: 
+    MagicPowerRequired: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    EnemyDamage_min: 0
+    EnemyDamage_max: 0
+    BlockedDamage_min: 0.3
+    BlockedDamage_max: 0.5
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    MagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0

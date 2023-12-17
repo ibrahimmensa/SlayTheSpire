@@ -130,18 +130,18 @@ public class CardContainer : MonoBehaviour
     public void mapData(GameObject card)
     {
         CardsData cardObj;
-        if (cd <2)
-        {
-              cardObj = CardManagement.CardData.AttackCards[Random.Range(0, CardManagement.CardData.AttackCards.Length)];
-        }
-        else if(cd <4)
-        {
-            cardObj = CardManagement.CardData.AD_Cards[Random.Range(0, CardManagement.CardData.AD_Cards.Length)];
-        }
-        else
-        {
-            cardObj = CardManagement.CardData.DefanceCards[Random.Range(0, CardManagement.CardData.DefanceCards.Length)];
-        }
+        cardObj = CardManagement.CardData.AttackCards[Random.Range(0, CardManagement.CardData.AttackCards.Length)];
+        //if (cd <2)
+        //{
+        //}
+        //else if(cd <4)
+        //{
+        //    cardObj = CardManagement.CardData.AD_Cards[Random.Range(0, CardManagement.CardData.AD_Cards.Length)];
+        //}
+        //else
+        //{
+        //    cardObj = CardManagement.CardData.DefanceCards[Random.Range(0, CardManagement.CardData.DefanceCards.Length)];
+        //}
         CM = card.GetComponent<CardManager>();
 
         CM.Power.text = cardObj.MagicPowerRequired.ToString();

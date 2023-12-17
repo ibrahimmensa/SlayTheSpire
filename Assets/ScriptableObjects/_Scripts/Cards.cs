@@ -7,10 +7,6 @@ using UnityEngine;
 public class Cards : ScriptableObject
 {
     public CardsData[] AttackCards;
-    public CardsData[] DefanceCards;
-    public CardsData[] AD_Cards;
-    public CardsData[] curseCards;
-    public CardsData[] MedicatedCards;
 }
 [System.Serializable]
 public class CardsData
@@ -22,6 +18,8 @@ public class CardsData
     public bool Curse;
     public bool Medicated;
     public bool AttackDefence;
+    public bool Rehuffle;
+    public bool cashCards;
     [Header("Card Details")]
     [Space()]
     public string Card_Name;
@@ -49,7 +47,12 @@ public class CardsData
     public float PlayerHeal_min;
     [Range(0, 1)]
     public float PlayerHeal_max;
-
+    [Range(0, 3)]
+    public float MagicPower;
+    [Range(0, 1)]
+    public float ReducePlayerHealth;
+    [Range(0, 1)]
+    public float IncreesPlayerHealth;
 
     [Header("Card Sprites")]
     [Space()]
