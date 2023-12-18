@@ -11,4 +11,5 @@ public class CardsManagement : ScriptableObject
     public int defanceValue;
     public bool DefanceActivated;
     public int turns;
+    public bool twoMouseCardsUsed;
 }

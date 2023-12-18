@@ -359,7 +359,7 @@ MonoBehaviour:
     Card_Name: Cleaver
     CardIndex: 2
     Card_Type: common
-    disription: Damage 6-8 points of enemy
+    disription: Block defance cards for the next turn
     Rarity: 
     MagicPowerRequired: 3
     CurseEffect_min: 0
@@ -641,7 +641,7 @@ MonoBehaviour:
     Card_Type: Rare
     disription: Reshuffle all the cards you have
     Rarity: 
-    MagicPowerRequired: 3
+    MagicPowerRequired: 2
     CurseEffect_min: 0
     CurseEffect_max: 0
     EnemyDamage_min: 0
@@ -756,13 +756,13 @@ MonoBehaviour:
     MagicPowerRequired: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
-    EnemyDamage_min: 0
-    EnemyDamage_max: 0
+    EnemyDamage_min: 0.4
+    EnemyDamage_max: 0.6
     BlockedDamage_min: 0
     BlockedDamage_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    MagicPower: 1
+    MagicPower: 0
     ReducePlayerHealth: 0.2
     IncreesPlayerHealth: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}

@@ -54,6 +54,7 @@ public class CardContainer : MonoBehaviour
     public Text PlayerCount;
     public int playerCount;
     public GameObject ErrorMsg;
+    public GameObject DefanseError;
     public Enemies enemies;
     public GameObject CardToDisplay;
     public CardsManagement CardManagement;
@@ -120,8 +121,17 @@ public class CardContainer : MonoBehaviour
     int cd;
     void PlaceCards()
     {
+        int CardsInHand;
         CardManagement.turns++;
-        for (cd = 0; cd < 5; cd++)
+        if(CardManagement.twoMouseCardsUsed)
+        {
+            CardsInHand = 6;
+        }
+        else
+        {
+            CardsInHand = 5;
+        }
+        for (cd = 0; cd < CardsInHand; cd++)
         {
             CGO = Instantiate(CardToDisplay, gameObject.transform);
             mapData(CGO);
@@ -153,11 +163,17 @@ public class CardContainer : MonoBehaviour
         CM.CurseEffect = Random.Range(cardObj.CurseEffect_min, cardObj.CurseEffect_max);
         CM.EnemyDamage = Random.Range(cardObj.EnemyDamage_min, cardObj.EnemyDamage_max);
         CM.BlockedDamage = Random.Range(cardObj.BlockedDamage_min, cardObj.BlockedDamage_max);
+        CM.Medication = Random.Range(cardObj.PlayerHeal_min, cardObj.PlayerHeal_max);
+        CM.ReducePlayerHelth = cardObj.ReducePlayerHealth;
+        CM.IncreesPlayerHelth = cardObj.IncreesPlayerHealth;
+        CM.MagicPowerToIncrees = cardObj.MagicPower;
         CM.Attack = cardObj.Attack;
         CM.Defence = cardObj.Defence;
         CM.Curse = cardObj.Curse;
         CM.Medicated = cardObj.Medicated;
         CM.AD_Cards = cardObj.AttackDefence;
+        CM.Cash_cards = cardObj.cashCards;
+        CM.Reshuffle_cards = cardObj.Rehuffle;
         CM.gameObject.GetComponent<Image>().sprite = cardObj.cardSprite;
         CM.centerImg.sprite = cardObj.centerImg;
 

@@ -1,4 +1,5 @@
 using events;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,6 +13,7 @@ namespace demo {
         public ScreenAnimations ScreenAnimations;
         public Cards toSaveCards;
         public CharactersManagment CM;
+        public CardsManagement CardsManager;
         private void OnEnable()
         {
             container.CardManagement.Cursevalue = 0;
@@ -33,8 +35,15 @@ namespace demo {
                 }
                 else if(CardM.Defence)
                 {
-                    Defense(CardM);
-                    Debug.Log("Defance: " + CardM.BlockedDamage);
+                    if(!GameManager.Instance.blockDefanceCards)
+                    {
+                        Defense(CardM);
+                        Debug.Log("Defance: " + CardM.BlockedDamage);
+                    }
+                    else
+                    {
+                        container.DefanseError.SetActive(true);
+                    }
                 }
                 else if(CardM.Curse)
                 {
@@ -45,6 +54,19 @@ namespace demo {
                 {
                     AD_cards(CardM);
                     Debug.Log("Attack: " + CardM.EnemyDamage+""+ "Defance: " + CardM.BlockedDamage);
+                }
+                else if(CardM.Cash_cards)
+                {
+                    Cash_cards(CardM);
+                    Debug.Log("Attack: " + CardM.EnemyDamage + "" + "Defance: " + CardM.ReducePlayerHelth + "" + "MP: " + CardM.MagicPowerToIncrees);
+                }
+                else if (CardM.Reshuffle_cards)
+                {
+                    StartCoroutine(Resguffle_Handscards(CardM));
+                }
+                else if (CardM.Medicated)
+                {
+                    Medicated(CardM);
                 }
                 save(CardM);
                 container.DestroyCard(evt.card);
@@ -86,9 +108,53 @@ namespace demo {
         {
             if (GameManager.Instance.activeEnemy.EnemyHealth.fillAmount > 0)
             {
+
+                //Attack cases
+
+                if(CardM.cardName.text == "Mouse")
+                {
+                    if(GameManager.Instance.RatCard == 0)
+                    {
+                        GameManager.Instance.RatCard++;
+                    }
+                    else
+                    {
+                        CardsManager.twoMouseCardsUsed = true;
+                    }
+                }
+                else if(CardM.cardName.text == "Red Parrot")
+                {
+                    GameManager.Instance.redParrotActivated = true;
+                }
+                else if (CardM.cardName.text == "Cleaver")
+                {
+                    GameManager.Instance.blockDefanceCards = true;
+                }
+                else if (CardM.cardName.text == "Dual lil shooters")
+                {
+                    GameManager.Instance.dualShoter = true;
+                }
+                else if (CardM.cardName.text == "Gold Shotgun")
+                {
+                   GameManager.Instance.PlayerHealth.fillAmount -= 0.15f;
+                    float gh = GameManager.Instance.PlayerHealth.fillAmount * 100;
+                    GameManager.Instance.PlayerHelthTxt.text = (int)gh + "/100";
+                }
+
+
                 if (container.CardManagement.CurseActivated)
                 {
                     GameManager.Instance.activeEnemy.EnemyHealth.fillAmount -= (CardM.EnemyDamage + 0.1f);
+                }
+                else if(GameManager.Instance.redParrotActivated)
+                {
+                    CardM.EnemyDamage *= 2;
+                    GameManager.Instance.activeEnemy.EnemyHealth.fillAmount -= CardM.EnemyDamage;
+                }
+                else if (GameManager.Instance.dualShoter)
+                {
+                    CardM.EnemyDamage *= 2;
+                    GameManager.Instance.activeEnemy.EnemyHealth.fillAmount -= CardM.EnemyDamage;
                 }
                 else
                 {
@@ -115,6 +181,10 @@ namespace demo {
             if (GameManager.Instance.activeEnemy.EnemyHealth.fillAmount > 0)
             {
                 container.CardManagement.DefanceActivated = true;
+                if(GameManager.Instance.dualShoter)
+                {
+                    CardM.BlockedDamage *= 2;
+                }
                 container.CardManagement.defanceValue = (int)CardM.BlockedDamage;
                 GameManager.Instance.DefanceIndicator.SetActive(true);
                 container.playerCount -= CardM.Magic_power;
@@ -138,6 +208,10 @@ namespace demo {
             if (GameManager.Instance.activeEnemy.EnemyHealth.fillAmount > 0)
             {
                 container.CardManagement.DefanceActivated = true;
+                if (GameManager.Instance.dualShoter)
+                {
+                    CardM.BlockedDamage *= 2;
+                }
                 container.CardManagement.defanceValue = (int)CardM.BlockedDamage;
                 GameManager.Instance.DefanceIndicator.SetActive(true);
                 container.playerCount -= CardM.Magic_power;
@@ -150,6 +224,10 @@ namespace demo {
                 }
                 else
                 {
+                    if (GameManager.Instance.dualShoter)
+                    {
+                        CardM.EnemyDamage *= 2;
+                    }
                     GameManager.Instance.activeEnemy.EnemyHealth.fillAmount -= CardM.EnemyDamage;
                 }
                 float h = GameManager.Instance.activeEnemy.EnemyHealth.fillAmount * 100;
@@ -165,6 +243,80 @@ namespace demo {
                     Effects();
                 }
             }
+        }
+
+        public void Cash_cards(CardManager CardM)
+        {
+            if (GameManager.Instance.activeEnemy.EnemyHealth.fillAmount > 0)
+            {
+                
+                if (GameManager.Instance.dualShoter)
+                {
+                    CardM.ReducePlayerHelth *= 2;
+                }
+                container.CardManagement.defanceValue = (int)CardM.BlockedDamage;
+
+                if(CardM.BlockedDamage > 0)
+                    container.CardManagement.DefanceActivated = true;
+
+                GameManager.Instance.DefanceIndicator.SetActive(true);
+                if (CardM.cardName.text == "Gold Scorpian")
+                {
+                    container.playerCount += container.playerCount;
+                    GameManager.Instance.PlayerHealth.fillAmount -= CardM.ReducePlayerHelth;
+                    float gh = GameManager.Instance.PlayerHealth.fillAmount * 100;
+                    GameManager.Instance.PlayerHelthTxt.text = (int)gh + "/100";
+                    Debug.Log("Gold Scrorpian played !!");
+                }
+                else if (CardM.cardName.text == "Silver Scrorpian")
+                {
+                    container.playerCount = CardM.Magic_power + CardM.MagicPowerToIncrees;
+                    GameManager.Instance.PlayerHealth.fillAmount -= CardM.ReducePlayerHelth;
+                    float gh = GameManager.Instance.PlayerHealth.fillAmount * 100;
+                    GameManager.Instance.PlayerHelthTxt.text = (int)gh + "/100";
+                    Debug.Log("Silver Scrorpian played !!");
+                }
+                else
+                {
+                    container.playerCount -= CardM.Magic_power;
+                }
+                container.PlayerCount.text = container.playerCount.ToString();
+
+
+                GameManager.Instance.activeEnemy.EnemyHealth.fillAmount -= CardM.EnemyDamage;
+                float h = GameManager.Instance.activeEnemy.EnemyHealth.fillAmount * 100;
+                GameManager.Instance.activeEnemy.HealthTxt.text = (int)h + "/100";
+
+
+                if (GameManager.Instance.activeEnemy.EnemyHealth.fillAmount <= 0)
+                {
+                    LevelComplete();
+                }
+                else
+                {
+                    Effects();
+                }
+            }
+        }
+        IEnumerator Resguffle_Handscards(CardManager CardM)
+        {
+            container.playerCount -= CardM.Magic_power;
+            if (container.playerCount > 0)
+            {
+                GameManager.Instance.BtnOff();
+                GameManager.Instance.CardContainerRef.SetActive(false);
+                yield return new WaitForSeconds(0.5f);
+                GameManager.Instance.CardContainerRef.SetActive(true);
+                container.PlayerCount.text = container.playerCount.ToString();
+                yield return new WaitForSeconds(0.1f);
+                GameManager.Instance.BtnOn();
+            }
+        }
+        public void Medicated(CardManager CardM)
+        {
+            GameManager.Instance.PlayerHealth.fillAmount += CardM.Medication;
+            float gh = GameManager.Instance.PlayerHealth.fillAmount * 100;
+            GameManager.Instance.PlayerHelthTxt.text = (int)gh + "/100";
         }
         public void LevelComplete()
         {

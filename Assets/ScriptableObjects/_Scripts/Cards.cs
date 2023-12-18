@@ -48,7 +48,7 @@ public class CardsData
     [Range(0, 1)]
     public float PlayerHeal_max;
     [Range(0, 3)]
-    public float MagicPower;
+    public int MagicPower;
     [Range(0, 1)]
     public float ReducePlayerHealth;
     [Range(0, 1)]

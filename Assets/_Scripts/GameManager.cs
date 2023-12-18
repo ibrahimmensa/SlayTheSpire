@@ -21,6 +21,11 @@ public class GameManager : MonoBehaviour, IDataPersistence
     public DataPersistenceManager DataPersistenceManager;
 
 
+    public int RatCard;
+    public bool redParrotActivated;
+    public bool blockDefanceCards;
+    public bool dualShoter;
+
     [Header("Cards")]
     public GameObject cardContainer;
     public GameObject CardContainerRef;
@@ -80,6 +85,10 @@ public class GameManager : MonoBehaviour, IDataPersistence
         BG.sprite = Sounds.BGs[num];
         SoundManager.bGM.clip = Sounds.Background_Music[num];
         SoundManager.bGM.Play();
+        RatCard = 0;
+        redParrotActivated = false;
+        blockDefanceCards = false;
+        dualShoter = false;
     }
     // Start is called before the first frame update
     void Start()
@@ -134,6 +143,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         CardContainerRef.GetComponent<CardContainer>().PlayerCount.text = CardContainerRef.GetComponent<CardContainer>().playerCount.ToString();
         activeEnemy.TurnTxt.text = "Player Turn";
         Invoke(nameof(BtnOn), 2f);
+        CardDestory.SetActive(true);
     }
 
 
@@ -210,7 +220,10 @@ public class GameManager : MonoBehaviour, IDataPersistence
     {
         activeEnemy.endTurn.interactable = true;
     }
-
+    public void BtnOff()
+    {
+        activeEnemy.endTurn.interactable = false;
+    }
     //Data Saving
     //----------------------------------------------------------------------------------------------------------------------------------
     public void loadData(GameData data)
