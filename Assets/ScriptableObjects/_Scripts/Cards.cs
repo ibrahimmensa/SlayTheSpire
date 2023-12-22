@@ -11,6 +11,7 @@ public class Cards : ScriptableObject
 [System.Serializable]
 public class CardsData
 {
+    public string name;
     [Header("Card Type")]
     [Space()]
     public bool Attack;
@@ -26,33 +27,50 @@ public class CardsData
     public int CardIndex;
     public string Card_Type;
     public string disription;
-    public string Rarity;
 
     [Header("Card Powers")]
     [Space()]
     public int MagicPowerRequired;
-    [Range(0, 1)]
+    [Range(0, 10)]
+
+    [Header("Curse")]
+    [Space()]
     public int CurseEffect_min;
-    [Range(0, 1)]
+    [Range(0, 10)]
     public int CurseEffect_max;
-    [Range(0, 1)]
-    public float EnemyDamage_min;
-    [Range(0, 1)]
-    public float EnemyDamage_max;
-    [Range(0, 1)]
-    public float BlockedDamage_min;
-    [Range(0, 1)]
-    public float BlockedDamage_max;
-    [Range(0, 1)]
-    public float PlayerHeal_min;
-    [Range(0, 1)]
-    public float PlayerHeal_max;
+    [Range(0, 10)]
+
+    [Header("Attack")]
+    [Space()]
+    public int Attack_min;
+    [Range(0, 10)]
+    public int Attack_max;
+    [Range(0, 10)]
+
+    [Header("Defense")]
+    [Space()]
+    public int Defense_min;
+    [Range(0, 10)]
+    public int Defense_max;
+    [Range(0, 10)]
+
+    [Header("PlayerHeal")]
+    [Space()]
+    public int PlayerHeal_min;
+    [Range(0, 10)]
+    public int PlayerHeal_max;
     [Range(0, 3)]
-    public int MagicPower;
-    [Range(0, 1)]
-    public float ReducePlayerHealth;
-    [Range(0, 1)]
-    public float IncreesPlayerHealth;
+
+    [Header("MagicPower")]
+    [Space()]
+    public int IncreesedMagicPower;
+    [Range(0, 10)]
+
+    [Header("PlayerHealth")]
+    [Space()]
+    public int ReducePlayerHealth;
+    [Range(0, 10)]
+    public int IncreesPlayerHealth;
 
     [Header("Card Sprites")]
     [Space()]

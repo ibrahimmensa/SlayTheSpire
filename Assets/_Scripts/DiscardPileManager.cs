@@ -43,7 +43,6 @@ public class DiscardPileManager : MonoBehaviour
         CM.Power.text = cardObj.MagicPowerRequired.ToString();
         CM.cardName.text = cardObj.Card_Name;
         CM.Discription.text = cardObj.disription;
-        CM.Rarity.text = cardObj.Rarity;
 
         CM.Magic_power = cardObj.MagicPowerRequired;
         //CM.CurseEffect = cardObj.CurseEffect;

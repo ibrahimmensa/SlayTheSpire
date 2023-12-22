@@ -546,7 +546,7 @@ MonoBehaviour:
   InventoryCardManager: {fileID: 11400000, guid: bb6a68ec9ed21114b80daeca45188b14,
     type: 2}
   enemyAnimator: {fileID: 4248051514802774105}
-  EnemyHealth: {fileID: 4248051513739773878}
+  EnemyHealth: 50
   HealthTxt: {fileID: 4248051513933180138}
   TurnTxt: {fileID: 4248051513392159003}
   DPTxt: {fileID: 7211133301474475693}
@@ -928,8 +928,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.0306, y: -24.067715}
-  m_SizeDelta: {x: 367.6288, y: 25.014}
+  m_AnchoredPosition: {x: -16.0306, y: -32.385708}
+  m_SizeDelta: {x: 367.6288, y: 41.6499}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4248051513933180140
 CanvasRenderer:
@@ -972,7 +972,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100/100
+  m_Text: 50/50
 --- !u!114 &4248051513933180141
 MonoBehaviour:
   m_ObjectHideFlags: 0

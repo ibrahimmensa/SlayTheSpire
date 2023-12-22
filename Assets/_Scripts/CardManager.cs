@@ -13,8 +13,8 @@ public class CardManager : MonoBehaviour
     public Text Rarity;
 
     [Header("Card Data")]
-    public int Magic_power, CurseEffect, CardIndex,MagicPowerToIncrees;
-    public float EnemyDamage, BlockedDamage,ReducePlayerHelth, IncreesPlayerHelth , Medication;
+    public int Magic_power, CurseEffect, CardIndex, IncreesedMagicPower;
+    public int EnemyDamage, BlockedDamage,ReducePlayerHelth, IncreesPlayerHelth , Medication;
     public bool Attack, Defence, Curse,Medicated,AD_Cards,Cash_cards,Reshuffle_cards;
 
 

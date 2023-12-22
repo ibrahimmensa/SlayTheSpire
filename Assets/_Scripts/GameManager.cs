@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
 
     public int RatCard;
-    public bool redParrotActivated;
+   // public bool redParrotActivated;
     public bool blockDefanceCards;
     public bool dualShoter;
 
@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
     [Header("Player")]
     public GameObject PlayerCount;
-    public Image PlayerHealth;
+    public int PlayerHealth;
     public Text PlayerHelthTxt;
 
 
@@ -86,7 +86,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         SoundManager.bGM.clip = Sounds.Background_Music[num];
         SoundManager.bGM.Play();
         RatCard = 0;
-        redParrotActivated = false;
+       // redParrotActivated = false;
         blockDefanceCards = false;
         dualShoter = false;
     }
@@ -173,10 +173,9 @@ public class GameManager : MonoBehaviour, IDataPersistence
     public void ApplyDanageToPlayer()
     {
         CardContainerRef.GetComponent<CardContainer>().shake.enabled = true;
-        PlayerHealth.fillAmount -= 0.3f;
-        float h = PlayerHealth.fillAmount * 100;
-        PlayerHelthTxt.text = (int)h + "/100";
-        if (PlayerHealth.fillAmount <= 0)
+        PlayerHealth -= 3;
+        PlayerHelthTxt.text = PlayerHealth.ToString() + "/20";
+        if (PlayerHealth <= 0)
         {
             PlayerDead();
         }

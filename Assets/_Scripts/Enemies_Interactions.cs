@@ -7,7 +7,7 @@ public class Enemies_Interactions : MonoBehaviour
 {
     public InventoryCardManager InventoryCardManager;
     public Animator enemyAnimator;
-    public Image EnemyHealth;
+    public int EnemyHealth;
     public Text HealthTxt;
     public Text TurnTxt;
     public Text DPTxt;

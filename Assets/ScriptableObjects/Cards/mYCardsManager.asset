@@ -17,3 +17,5 @@ MonoBehaviour:
   CurseActivated: 0
   defanceValue: 0
   DefanceActivated: 0
+  turns: 28
+  twoMouseCardsUsed: 0
