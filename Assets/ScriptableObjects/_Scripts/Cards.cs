@@ -12,6 +12,8 @@ public class Cards : ScriptableObject
 public class CardsData
 {
     public string name;
+
+    public bool canShow;
     [Header("Card Type")]
     [Space()]
     public bool Attack;

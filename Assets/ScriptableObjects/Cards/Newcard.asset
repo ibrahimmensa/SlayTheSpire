@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AttackCards:
   - name: Banana
+    canShow: 1
     Attack: 1
     Defence: 0
     Curse: 0
@@ -42,6 +43,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Baby boy
+    canShow: 1
     Attack: 1
     Defence: 0
     Curse: 0
@@ -70,6 +72,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Brown hat
+    canShow: 1
     Attack: 0
     Defence: 1
     Curse: 0
@@ -98,6 +101,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Antlers hat
+    canShow: 1
     Attack: 0
     Defence: 0
     Curse: 0
@@ -126,6 +130,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Knife
+    canShow: 1
     Attack: 1
     Defence: 0
     Curse: 0
@@ -154,6 +159,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Brown Wool Coat
+    canShow: 1
     Attack: 0
     Defence: 1
     Curse: 0
@@ -182,6 +188,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Mouse
+    canShow: 0
     Attack: 1
     Defence: 0
     Curse: 0
@@ -210,6 +217,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 1
   - name: Cheese
+    canShow: 0
     Attack: 0
     Defence: 0
     Curse: 0
@@ -238,6 +246,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Brown buffalo hat
+    canShow: 0
     Attack: 0
     Defence: 0
     Curse: 0
@@ -266,6 +275,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Cactus Hat
+    canShow: 0
     Attack: 0
     Defence: 1
     Curse: 0
@@ -294,6 +304,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Chef hat
+    canShow: 0
     Attack: 0
     Defence: 1
     Curse: 0
@@ -322,6 +333,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Red Parrot
+    canShow: 0
     Attack: 1
     Defence: 0
     Curse: 0
@@ -350,6 +362,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Cleaver
+    canShow: 0
     Attack: 1
     Defence: 0
     Curse: 0
@@ -378,6 +391,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Blue poncho
+    canShow: 0
     Attack: 0
     Defence: 0
     Curse: 0
@@ -406,6 +420,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Dual lil shooters
+    canShow: 0
     Attack: 1
     Defence: 0
     Curse: 0
@@ -434,6 +449,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Apple
+    canShow: 0
     Attack: 0
     Defence: 0
     Curse: 0
@@ -462,6 +478,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Stake
+    canShow: 0
     Attack: 0
     Defence: 0
     Curse: 0
@@ -490,6 +507,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Sloppy Stake
+    canShow: 0
     Attack: 0
     Defence: 0
     Curse: 0
@@ -518,6 +536,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Turkey leg
+    canShow: 0
     Attack: 0
     Defence: 0
     Curse: 0
@@ -546,6 +565,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Harm
+    canShow: 0
     Attack: 0
     Defence: 0
     Curse: 0
@@ -574,6 +594,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Bone
+    canShow: 0
     Attack: 1
     Defence: 0
     Curse: 0
@@ -602,6 +623,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 1
   - name: Royal Flush Clubs
+    canShow: 0
     Attack: 0
     Defence: 0
     Curse: 0
@@ -630,6 +652,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Royal Flush spades
+    canShow: 0
     Attack: 0
     Defence: 0
     Curse: 0
@@ -658,6 +681,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Royal Flush Diamond
+    canShow: 0
     Attack: 0
     Defence: 0
     Curse: 0
@@ -686,6 +710,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Royal Flush Hearts
+    canShow: 0
     Attack: 0
     Defence: 0
     Curse: 0
@@ -714,6 +739,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Cash card
+    canShow: 0
     Attack: 0
     Defence: 0
     Curse: 0
@@ -742,6 +768,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Gold Scorpian
+    canShow: 0
     Attack: 1
     Defence: 0
     Curse: 0
@@ -770,6 +797,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Silver Scrorpian
+    canShow: 0
     Attack: 1
     Defence: 0
     Curse: 0
@@ -798,6 +826,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Gold Shotgun
+    canShow: 0
     Attack: 1
     Defence: 0
     Curse: 0
@@ -826,6 +855,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Gold Rifle
+    canShow: 0
     Attack: 1
     Defence: 0
     Curse: 0
@@ -854,6 +884,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Pistol
+    canShow: 0
     Attack: 1
     Defence: 0
     Curse: 0
@@ -882,6 +913,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Six Shooter
+    canShow: 0
     Attack: 1
     Defence: 0
     Curse: 0
@@ -910,6 +942,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Gold Six Shooter
+    canShow: 0
     Attack: 1
     Defence: 0
     Curse: 0
@@ -938,6 +971,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Sawn Off
+    canShow: 0
     Attack: 1
     Defence: 0
     Curse: 0
@@ -966,6 +1000,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Gold Sawn Off
+    canShow: 0
     Attack: 1
     Defence: 0
     Curse: 0
@@ -994,6 +1029,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: ' Sparkle Boots'
+    canShow: 0
     Attack: 0
     Defence: 1
     Curse: 0
@@ -1022,6 +1058,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: 'Skull Boots '
+    canShow: 0
     Attack: 0
     Defence: 1
     Curse: 0
@@ -1050,6 +1087,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: 'Heart Boots '
+    canShow: 0
     Attack: 0
     Defence: 1
     Curse: 0
@@ -1078,6 +1116,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Diamond Boots
+    canShow: 0
     Attack: 0
     Defence: 1
     Curse: 0
@@ -1106,6 +1145,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Cigar
+    canShow: 0
     Attack: 0
     Defence: 1
     Curse: 0

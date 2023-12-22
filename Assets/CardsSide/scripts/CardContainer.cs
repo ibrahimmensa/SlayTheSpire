@@ -64,9 +64,15 @@ public class CardContainer : MonoBehaviour
     public Cards setCardIndex;
     GameObject CGO;
 
+    public List<CardsData> Deck = new List<CardsData>();
     private void OnEnable()
     {
         Invoke(nameof(PlaceCards),0.5f);
+        foreach(CardsData cards in CardManagement.CardData.AttackCards)
+        {
+            if (cards.canShow)
+                Deck.Add(cards);
+        }
     }
     private void OnDisable()
     {
@@ -142,7 +148,10 @@ public class CardContainer : MonoBehaviour
     public void mapData(GameObject card)
     {
         CardsData cardObj;
-        cardObj = CardManagement.CardData.AttackCards[Random.Range(0, CardManagement.CardData.AttackCards.Length)];
+        //cardObj = CardManagement.CardData.AttackCards[Random.Range(0, CardManagement.CardData.AttackCards.Length)];
+
+        cardObj = Deck[Random.Range( 0,Deck.Count)];
+
         //if (cd <2)
         //{
         //}
