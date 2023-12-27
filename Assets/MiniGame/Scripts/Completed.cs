@@ -18,6 +18,6 @@ public class Completed : MonoBehaviour
     }
     public void Restart()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("MiniGame_01");
     }
 }

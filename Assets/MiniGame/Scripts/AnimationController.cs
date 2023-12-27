@@ -37,6 +37,7 @@ public class AnimationController : MonoBehaviour
     }
     public void ActiveButtons()
     {
+        GetComponent<Animator>().enabled = false;
         foreach(Button btn in cardBtn)
         {
             btn.interactable = true;

@@ -21,7 +21,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b58b5f083cdaad7409d4851ed0bbec00, type: 2}
+  m_Motion: {fileID: 7400000, guid: bae101e217daa8646b49fc33fef010f6, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -58,7 +58,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GameObject 2
+  m_Name: CardRotation_3
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Show
@@ -132,7 +132,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b58b5f083cdaad7409d4851ed0bbec00, type: 2}
+  m_Motion: {fileID: 7400000, guid: bae101e217daa8646b49fc33fef010f6, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

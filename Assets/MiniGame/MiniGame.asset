@@ -9,13 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b1ee03c8c2deb64fb8824cb078140d9, type: 3}
-  m_Name: mYCardsManager
+  m_Script: {fileID: 11500000, guid: 2388ae25b6040d54f93a19571fdd8163, type: 3}
+  m_Name: MiniGame
   m_EditorClassIdentifier: 
-  CardData: {fileID: 11400000, guid: 3df95f635e6d8284da624c9eed2e5b00, type: 2}
-  Cursevalue: 0
-  CurseActivated: 0
-  defanceValue: 0
-  DefanceActivated: 0
-  turns: 30
-  twoMouseCardsUsed: 0
+  totalTurns: 0
+  winCounts: 0
+  loseCounts: 0

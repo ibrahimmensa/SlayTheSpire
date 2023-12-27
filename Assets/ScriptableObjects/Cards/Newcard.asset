@@ -188,7 +188,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Mouse
-    canShow: 0
+    canShow: 1
     Attack: 1
     Defence: 0
     Curse: 0
@@ -217,7 +217,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 1
   - name: Cheese
-    canShow: 0
+    canShow: 1
     Attack: 0
     Defence: 0
     Curse: 0
@@ -246,7 +246,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Brown buffalo hat
-    canShow: 0
+    canShow: 1
     Attack: 0
     Defence: 0
     Curse: 0
@@ -275,7 +275,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Cactus Hat
-    canShow: 0
+    canShow: 1
     Attack: 0
     Defence: 1
     Curse: 0
@@ -304,7 +304,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Chef hat
-    canShow: 0
+    canShow: 1
     Attack: 0
     Defence: 1
     Curse: 0
@@ -333,7 +333,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Red Parrot
-    canShow: 0
+    canShow: 1
     Attack: 1
     Defence: 0
     Curse: 0
@@ -362,7 +362,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Cleaver
-    canShow: 0
+    canShow: 1
     Attack: 1
     Defence: 0
     Curse: 0
@@ -391,7 +391,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Blue poncho
-    canShow: 0
+    canShow: 1
     Attack: 0
     Defence: 0
     Curse: 0
@@ -420,7 +420,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Dual lil shooters
-    canShow: 0
+    canShow: 1
     Attack: 1
     Defence: 0
     Curse: 0
@@ -449,7 +449,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Apple
-    canShow: 0
+    canShow: 1
     Attack: 0
     Defence: 0
     Curse: 0
@@ -478,7 +478,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Stake
-    canShow: 0
+    canShow: 1
     Attack: 0
     Defence: 0
     Curse: 0
@@ -507,7 +507,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Sloppy Stake
-    canShow: 0
+    canShow: 1
     Attack: 0
     Defence: 0
     Curse: 0
@@ -536,7 +536,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Turkey leg
-    canShow: 0
+    canShow: 1
     Attack: 0
     Defence: 0
     Curse: 0
@@ -565,7 +565,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Harm
-    canShow: 0
+    canShow: 1
     Attack: 0
     Defence: 0
     Curse: 0
@@ -594,7 +594,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Bone
-    canShow: 0
+    canShow: 1
     Attack: 1
     Defence: 0
     Curse: 0
@@ -623,7 +623,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 1
   - name: Royal Flush Clubs
-    canShow: 0
+    canShow: 1
     Attack: 0
     Defence: 0
     Curse: 0
@@ -632,7 +632,7 @@ MonoBehaviour:
     Rehuffle: 1
     cashCards: 0
     Card_Name: Royal Flush Clubs
-    CardIndex: 0
+    CardIndex: 21
     Card_Type: UnCommon
     disription: Reshuffle the cards in your hand
     MagicPowerRequired: 1
@@ -652,7 +652,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Royal Flush spades
-    canShow: 0
+    canShow: 1
     Attack: 0
     Defence: 0
     Curse: 0
@@ -661,7 +661,7 @@ MonoBehaviour:
     Rehuffle: 1
     cashCards: 0
     Card_Name: Royal Flush spades
-    CardIndex: 0
+    CardIndex: 22
     Card_Type: Legendary Card
     disription: Reshuffle all the cards you have
     MagicPowerRequired: 3
@@ -681,7 +681,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Royal Flush Diamond
-    canShow: 0
+    canShow: 1
     Attack: 0
     Defence: 0
     Curse: 0
@@ -690,7 +690,7 @@ MonoBehaviour:
     Rehuffle: 1
     cashCards: 0
     Card_Name: Royal Flush Diamond
-    CardIndex: 0
+    CardIndex: 23
     Card_Type: Rare
     disription: Reshuffle all the cards you have
     MagicPowerRequired: 2
@@ -710,7 +710,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Royal Flush Hearts
-    canShow: 0
+    canShow: 1
     Attack: 0
     Defence: 0
     Curse: 0
@@ -719,7 +719,7 @@ MonoBehaviour:
     Rehuffle: 1
     cashCards: 0
     Card_Name: Royal Flush Hearts
-    CardIndex: 0
+    CardIndex: 24
     Card_Type: 'Epic '
     disription: Reshuffle all the cards you have
     MagicPowerRequired: 1
@@ -748,7 +748,7 @@ MonoBehaviour:
     Rehuffle: 0
     cashCards: 1
     Card_Name: Cash card
-    CardIndex: 0
+    CardIndex: 25
     Card_Type: Rare
     disription: 25% more reward in Gold
     MagicPowerRequired: 2
@@ -768,7 +768,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Gold Scorpian
-    canShow: 0
+    canShow: 1
     Attack: 1
     Defence: 0
     Curse: 0
@@ -777,7 +777,7 @@ MonoBehaviour:
     Rehuffle: 0
     cashCards: 0
     Card_Name: Gold Scorpian
-    CardIndex: 0
+    CardIndex: 26
     Card_Type: Rare
     disription: Reduce 20% of health to give you 1 Magic Power
     MagicPowerRequired: 0
@@ -806,7 +806,7 @@ MonoBehaviour:
     Rehuffle: 0
     cashCards: 0
     Card_Name: Silver Scrorpian
-    CardIndex: 0
+    CardIndex: 27
     Card_Type: UnCommon
     disription: Reduce health by 20% and give strength of 2 points
     MagicPowerRequired: 1
@@ -816,9 +816,9 @@ MonoBehaviour:
     Attack_max: 5
     Defense_min: 0
     Defense_max: 0
-    PlayerHeal_min: 0
-    PlayerHeal_max: 0
-    IncreesedMagicPower: 2
+    PlayerHeal_min: 2
+    PlayerHeal_max: 2
+    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
@@ -826,7 +826,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Gold Shotgun
-    canShow: 0
+    canShow: 1
     Attack: 1
     Defence: 0
     Curse: 0
@@ -835,7 +835,7 @@ MonoBehaviour:
     Rehuffle: 0
     cashCards: 0
     Card_Name: Gold Shotgun
-    CardIndex: 0
+    CardIndex: 28
     Card_Type: Common
     disription: Does 20% damage to you and Danage 10 points to enemy
     MagicPowerRequired: 3
@@ -855,7 +855,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Gold Rifle
-    canShow: 0
+    canShow: 1
     Attack: 1
     Defence: 0
     Curse: 0
@@ -864,7 +864,7 @@ MonoBehaviour:
     Rehuffle: 0
     cashCards: 0
     Card_Name: Gold Rifle
-    CardIndex: 0
+    CardIndex: 29
     Card_Type: Rare
     disription: Damage 8-10 point of enemy and Vlunerability Enemy by 20%
     MagicPowerRequired: 2
@@ -884,7 +884,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Pistol
-    canShow: 0
+    canShow: 1
     Attack: 1
     Defence: 0
     Curse: 0
@@ -893,7 +893,7 @@ MonoBehaviour:
     Rehuffle: 0
     cashCards: 0
     Card_Name: Pistol
-    CardIndex: 0
+    CardIndex: 30
     Card_Type: '-'
     disription: Damage 4-6 point of enemy
     MagicPowerRequired: 1
@@ -913,7 +913,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Six Shooter
-    canShow: 0
+    canShow: 1
     Attack: 1
     Defence: 0
     Curse: 0
@@ -922,7 +922,7 @@ MonoBehaviour:
     Rehuffle: 0
     cashCards: 0
     Card_Name: Six Shooter
-    CardIndex: 0
+    CardIndex: 31
     Card_Type: '-'
     disription: Damage 3-5 point of enemy
     MagicPowerRequired: 1
@@ -942,7 +942,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Gold Six Shooter
-    canShow: 0
+    canShow: 1
     Attack: 1
     Defence: 0
     Curse: 0
@@ -951,7 +951,7 @@ MonoBehaviour:
     Rehuffle: 0
     cashCards: 0
     Card_Name: Gold Six Shooter
-    CardIndex: 0
+    CardIndex: 32
     Card_Type: '-'
     disription: Damage 3-5 point of enemy
     MagicPowerRequired: 1
@@ -971,7 +971,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Sawn Off
-    canShow: 0
+    canShow: 1
     Attack: 1
     Defence: 0
     Curse: 0
@@ -980,7 +980,7 @@ MonoBehaviour:
     Rehuffle: 0
     cashCards: 0
     Card_Name: Sawn Off
-    CardIndex: 0
+    CardIndex: 33
     Card_Type: '-'
     disription: Damage 8-10 point of enemy
     MagicPowerRequired: 2
@@ -1000,7 +1000,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Gold Sawn Off
-    canShow: 0
+    canShow: 1
     Attack: 1
     Defence: 0
     Curse: 0
@@ -1009,7 +1009,7 @@ MonoBehaviour:
     Rehuffle: 0
     cashCards: 0
     Card_Name: Gold Sawn Off
-    CardIndex: 0
+    CardIndex: 34
     Card_Type: '-'
     disription: Damage 8-10 point of enemy
     MagicPowerRequired: 2
@@ -1029,7 +1029,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: ' Sparkle Boots'
-    canShow: 0
+    canShow: 1
     Attack: 0
     Defence: 1
     Curse: 0
@@ -1038,7 +1038,7 @@ MonoBehaviour:
     Rehuffle: 0
     cashCards: 0
     Card_Name: ' Sparkle Boots'
-    CardIndex: 0
+    CardIndex: 35
     Card_Type: Common
     disription: Block 3 to 5 attacks of enemy
     MagicPowerRequired: 1
@@ -1058,7 +1058,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: 'Skull Boots '
-    canShow: 0
+    canShow: 1
     Attack: 0
     Defence: 1
     Curse: 0
@@ -1067,7 +1067,7 @@ MonoBehaviour:
     Rehuffle: 0
     cashCards: 0
     Card_Name: 'Skull Boots '
-    CardIndex: 0
+    CardIndex: 36
     Card_Type: '-'
     disription: Block 3 to 5 attacks of enemy
     MagicPowerRequired: 1
@@ -1087,7 +1087,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: 'Heart Boots '
-    canShow: 0
+    canShow: 1
     Attack: 0
     Defence: 1
     Curse: 0
@@ -1096,7 +1096,7 @@ MonoBehaviour:
     Rehuffle: 0
     cashCards: 0
     Card_Name: 'Heart Boots '
-    CardIndex: 0
+    CardIndex: 37
     Card_Type: '-'
     disription: Block 3 to 5 attacks of enemy
     MagicPowerRequired: 1
@@ -1116,7 +1116,7 @@ MonoBehaviour:
     displayed: 0
     rodentGroup: 0
   - name: Diamond Boots
-    canShow: 0
+    canShow: 1
     Attack: 0
     Defence: 1
     Curse: 0
@@ -1125,7 +1125,7 @@ MonoBehaviour:
     Rehuffle: 0
     cashCards: 0
     Card_Name: Diamond Boots
-    CardIndex: 0
+    CardIndex: 38
     Card_Type: '-'
     disription: Block 3 to 5 attacks of enemy
     MagicPowerRequired: 2
@@ -1154,7 +1154,7 @@ MonoBehaviour:
     Rehuffle: 0
     cashCards: 0
     Card_Name: Cigar
-    CardIndex: 0
+    CardIndex: 39
     Card_Type: Rare
     disription: 50% less accuracy to both player and Enemy for one turn
     MagicPowerRequired: 0

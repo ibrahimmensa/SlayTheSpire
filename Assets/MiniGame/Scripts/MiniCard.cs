@@ -9,6 +9,7 @@ public class MiniCard : MonoBehaviour
     public MiniGameManager miniGameManager;
     public AnimationController animController;
     public Button CardBtn;
+    public MiniGame MiniGame;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,7 @@ public class MiniCard : MonoBehaviour
     {
         if(animController.onclick)
         {
+            MiniGame.totalTurns++;
             var card = GetComponent<MiniCard>();
             miniGameManager.Fader.SetActive(true);
             if(animController.aAz)
@@ -31,10 +33,12 @@ public class MiniCard : MonoBehaviour
                 if (card.aAz)
                 {
                     Invoke(nameof(LevelCompleted), 0.3f);
+                    MiniGame.winCounts++;
                 }
                 else
                 {
                     Invoke(nameof(LevelFailed), 0.3f);
+                    MiniGame.loseCounts++;
                 }
             }
             else if(animController.jAck)
@@ -42,10 +46,12 @@ public class MiniCard : MonoBehaviour
                 if (card.jAck)
                 {
                     Invoke(nameof(LevelCompleted), 0.3f);
+                    MiniGame.winCounts++;
                 }
                 else
                 {
                     Invoke(nameof(LevelFailed), 0.3f);
+                    MiniGame.loseCounts++;
                 }
             }
         }
