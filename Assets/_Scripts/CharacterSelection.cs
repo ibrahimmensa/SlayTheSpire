@@ -30,6 +30,6 @@ public class CharacterSelection : MonoBehaviour
         Health.GetComponent<Text>().text = "HP: " + PM.Players[CharacterSelected].Health + "/" + PM.Players[CharacterSelected].Health;
         Gold.GetComponent<Text>().text = "Gold: " + PM.Players[CharacterSelected].Gold;
         Description.GetComponent<Text>().text = PM.Players[CharacterSelected].Description;
-        BG.sprite = PM.Players[CharacterSelected].CharacterBG;
+        //BG.sprite = PM.Players[CharacterSelected].CharacterBG;
     }
 }

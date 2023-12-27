@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Enemies_Interactions : MonoBehaviour
 {
-    public InventoryCardManager InventoryCardManager;
+   // public InventoryCardManager InventoryCardManager;
     public Animator enemyAnimator;
     public int EnemyHealth;
     public Text HealthTxt;
@@ -19,7 +19,7 @@ public class Enemies_Interactions : MonoBehaviour
     }
     private void Update()
     {
-        DPTxt.text = InventoryCardManager.DP_Details.Count.ToString();
+        //DPTxt.text = InventoryCardManager.DP_Details.Count.ToString();
     }
     public void OpenDiscard()
     {

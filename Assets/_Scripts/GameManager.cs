@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -32,6 +33,9 @@ public class GameManager : MonoBehaviour, IDataPersistence
     public GameObject CardDestory;
     public Transform cardParent;
 
+
+    [Header("Coins")]
+    public Text TotalCoins;
 
     [Header("Player")]
     public GameObject PlayerCount;
@@ -74,7 +78,6 @@ public class GameManager : MonoBehaviour, IDataPersistence
             Destroy(this.gameObject);
             return;
         }
-
         // Set this instance as the singleton instance.
         _instance = this;
     }
@@ -89,13 +92,18 @@ public class GameManager : MonoBehaviour, IDataPersistence
        // redParrotActivated = false;
         blockDefanceCards = false;
         dualShoter = false;
-    }
+
+        cardsManagement.Cursevalue = 0;
+        cardsManagement.defanceValue = 0;
+        cardsManagement.CurseActivated = false;
+        cardsManagement.DefanceActivated = false;
+    }       
     // Start is called before the first frame update
     void Start()
     {
         activeEnemy.TurnTxt.text = "Player Turn";
     }
-
+    bool turnStarted;
     // Update is called once per frame
     void Update()
     {
@@ -106,14 +114,29 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
             if (LevelComplete.activeSelf)
                 return;
+
             if (LevelFailed.activeSelf)
                 return;
 
-            StartCoroutine(PlayerTurn());
+            if(!turnStarted)
+                StartCoroutine(PlayerTurn());
+
+           
+
         }
+        if (cardsManagement.DefanceActivated)
+        {
+            DefanceIndicator.SetActive(true);
+        }
+        else
+        {
+            DefanceIndicator.SetActive(false);
+        }
+        TotalCoins.text = PlayerPrefs.GetInt("Coins", 0).ToString();
     }
     IEnumerator PlayerTurn()
     {
+        turnStarted = true;
         if (cardsManagement.CurseActivated)
         {
             IfCurse();
@@ -126,6 +149,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         yield return new WaitForSeconds(2.0f);
         if (cardsManagement.DefanceActivated)
         {
+            cardsManagement.defanceValue--;
             IfDefanse();
         }
         else
@@ -161,12 +185,10 @@ public class GameManager : MonoBehaviour, IDataPersistence
     }
     public void IfDefanse()
     {
-        cardsManagement.defanceValue--;
         if (cardsManagement.defanceValue <= 0)
         {
             cardsManagement.defanceValue = 0;
             cardsManagement.DefanceActivated = false;
-            DefanceIndicator.SetActive(false);
         }
         blocked.SetActive(true);
     }
@@ -218,6 +240,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
     public void BtnOn()
     {
         activeEnemy.endTurn.interactable = true;
+        turnStarted = false;
     }
     public void BtnOff()
     {

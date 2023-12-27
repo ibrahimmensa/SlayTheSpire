@@ -14,6 +14,7 @@ public class CardsData
     public string name;
 
     public bool canShow;
+    public bool looted;
     [Header("Card Type")]
     [Space()]
     public bool Attack;

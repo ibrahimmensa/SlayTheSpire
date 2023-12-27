@@ -9,17 +9,13 @@ namespace demo {
         public CardContainer container;
         public SoundManager SoundManager;
         public Sounds Sounds;
-        public InventoryCardManager InventoryCardManager;
+        //public InventoryCardManager InventoryCardManager;
         public ScreenAnimations ScreenAnimations;
         public Cards toSaveCards;
         public CharactersManagment CM;
         public CardsManagement CardsManager;
         private void OnEnable()
         {
-            container.CardManagement.Cursevalue = 0;
-            container.CardManagement.defanceValue = 0;
-            container.CardManagement.CurseActivated = false;
-            container.CardManagement.DefanceActivated = false;
         }
         public void OnCardDestroyed(CardPlayed evt) {
             var CardM = evt.card.GetComponent<CardManager>();
@@ -68,7 +64,6 @@ namespace demo {
                 {
                     Medicated(CardM);
                 }
-                save(CardM);
                 container.DestroyCard(evt.card);
             }
             else
@@ -76,21 +71,6 @@ namespace demo {
                 container.ErrorMsg.SetActive(true);
             }
             
-        }
-        public void save(CardManager CardM)
-        {
-            PlayerPrefs.SetString("Card", CardM.cardName.text);
-            InventoryCardManager.Discardpile.CardName.Add(CardM.cardName.text.ToString());
-            InventoryCardManager.Discardpile.CardSprite.Add(CardM.cardSprite);
-            saveCard(CardM);
-            CardM.gameObject.transform.SetParent(GameManager.Instance.discard_Pile_Contant.transform);
-        }
-        public void saveCard(CardManager CardM)
-        {
-            if (CardM.Attack)
-            {
-                InventoryCardManager.DP_Details.Add(toSaveCards.AttackCards[CardM.CardIndex]);
-            }
         }
         public void Attack(CardManager CardM)
         {
@@ -159,13 +139,15 @@ namespace demo {
         {
             if (GameManager.Instance.activeEnemy.EnemyHealth > 0)
             {
-                container.CardManagement.DefanceActivated = true;
                 if(GameManager.Instance.dualShoter)
                 {
                     CardM.BlockedDamage *= 2;
                 }
-                container.CardManagement.defanceValue = (int)CardM.BlockedDamage;
-                GameManager.Instance.DefanceIndicator.SetActive(true);
+                if(container.CardManagement.defanceValue == 0)
+                {
+                    container.CardManagement.DefanceActivated = true;
+                    container.CardManagement.defanceValue = (int)CardM.BlockedDamage;
+                }
                 container.playerCount -= CardM.Magic_power;
                 container.PlayerCount.text = container.playerCount.ToString();
             }
@@ -186,13 +168,15 @@ namespace demo {
         {
             if (GameManager.Instance.activeEnemy.EnemyHealth > 0)
             {
-                container.CardManagement.DefanceActivated = true;
                 if (GameManager.Instance.dualShoter)
                 {
                     CardM.BlockedDamage *= 2;
                 }
-                container.CardManagement.defanceValue = (int)CardM.BlockedDamage;
-                GameManager.Instance.DefanceIndicator.SetActive(true);
+                if (container.CardManagement.defanceValue == 0)
+                {
+                    container.CardManagement.DefanceActivated = true;
+                    container.CardManagement.defanceValue = (int)CardM.BlockedDamage;
+                }
                 container.playerCount -= CardM.Magic_power;
                 container.PlayerCount.text = container.playerCount.ToString();
 
@@ -232,12 +216,11 @@ namespace demo {
                 {
                     CardM.ReducePlayerHelth *= 2;
                 }
-                container.CardManagement.defanceValue = (int)CardM.BlockedDamage;
+                if (container.CardManagement.defanceValue == 0)
+                {
+                    container.CardManagement.defanceValue = (int)CardM.BlockedDamage;
+                }
 
-                if(CardM.BlockedDamage > 0)
-                    container.CardManagement.DefanceActivated = true;
-
-                GameManager.Instance.DefanceIndicator.SetActive(true);
                 container.playerCount -= CardM.Magic_power;
                 container.PlayerCount.text = container.playerCount.ToString();
 
