@@ -126,6 +126,12 @@ public class GameManager : MonoBehaviour, IDataPersistence
         }
         if (cardsManagement.DefanceActivated)
         {
+            if (LevelComplete.activeSelf)
+                return;
+
+            if (LevelFailed.activeSelf)
+                return;
+
             DefanceIndicator.SetActive(true);
         }
         else
@@ -227,6 +233,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
     public void Home()
     {
         SceneManager.LoadScene(0);
+        Debug.Log("btn pressed");
     }
     public void discardBack()
     {

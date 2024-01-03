@@ -7,7 +7,7 @@ public class RewardManager : MonoBehaviour
 {
 
     public CardsManagement CardManagement;
-    public CardManager CM;
+    public CardManager[] CM;
 
     public List<CardsData> cardsNotInDeck = new List<CardsData>();
 
@@ -21,43 +21,48 @@ public class RewardManager : MonoBehaviour
             if (!card.canShow)
                 cardsNotInDeck.Add(card);
         }
-        mapData(CM.gameObject);
+        for(int a=0;a<CM.Length;a++)
+        {
+            mapData(CM[a].gameObject,a);
+        }
     }
 
-    public void mapData(GameObject card)
+    public void mapData(GameObject card,int Index)
     {
         if(cardsNotInDeck.Count > 0)
         {
+            
             cardObj = cardsNotInDeck[Random.Range(0, cardsNotInDeck.Count)];
 
-            CM.Power.text = cardObj.MagicPowerRequired.ToString();
-            CM.cardName.text = cardObj.Card_Name;
-            CM.Discription.text = cardObj.disription;
-            CM.Magic_power = cardObj.MagicPowerRequired;
-            CM.CurseEffect = Random.Range(cardObj.CurseEffect_min, cardObj.CurseEffect_max);
-            CM.EnemyDamage = Random.Range(cardObj.Attack_min, cardObj.Attack_max);
-            CM.BlockedDamage = Random.Range(cardObj.Defense_min, cardObj.Defense_max);
-            CM.Medication = Random.Range(cardObj.PlayerHeal_min, cardObj.PlayerHeal_max);
-            CM.ReducePlayerHelth = cardObj.ReducePlayerHealth;
-            CM.IncreesPlayerHelth = cardObj.IncreesPlayerHealth;
-            CM.IncreesedMagicPower = cardObj.IncreesedMagicPower;
-            CM.Attack = cardObj.Attack;
-            CM.Defence = cardObj.Defence;
-            CM.Curse = cardObj.Curse;
-            CM.Medicated = cardObj.Medicated;
-            CM.AD_Cards = cardObj.AttackDefence;
-            CM.Cash_cards = cardObj.cashCards;
-            CM.Reshuffle_cards = cardObj.Rehuffle;
-            CM.gameObject.GetComponent<Image>().sprite = cardObj.cardSprite;
-            CM.centerImg.sprite = cardObj.centerImg;
+            CM[Index].Power.text = cardObj.MagicPowerRequired.ToString();
+            CM[Index].cardName.text = cardObj.Card_Name;
+            CM[Index].Discription.text = cardObj.disription;
+            CM[Index].Magic_power = cardObj.MagicPowerRequired;
+            CM[Index].CurseEffect = Random.Range(cardObj.CurseEffect_min, cardObj.CurseEffect_max);
+            CM[Index].EnemyDamage = Random.Range(cardObj.Attack_min, cardObj.Attack_max);
+            CM[Index].BlockedDamage = Random.Range(cardObj.Defense_min, cardObj.Defense_max);
+            CM[Index].Medication = Random.Range(cardObj.PlayerHeal_min, cardObj.PlayerHeal_max);
+            CM[Index].ReducePlayerHelth = cardObj.ReducePlayerHealth;
+            CM[Index].IncreesPlayerHelth = cardObj.IncreesPlayerHealth;
+            CM[Index].IncreesedMagicPower = cardObj.IncreesedMagicPower;
+            CM[Index].Attack = cardObj.Attack;
+            CM[Index].Defence = cardObj.Defence;
+            CM[Index].Curse = cardObj.Curse;
+            CM[Index].Medicated = cardObj.Medicated;
+            CM[Index].AD_Cards = cardObj.AttackDefence;
+            CM[Index].Cash_cards = cardObj.cashCards;
+            CM[Index].Reshuffle_cards = cardObj.Rehuffle;
+            CM[Index].gameObject.GetComponent<Image>().sprite = cardObj.cardSprite;
+            CM[Index].centerImg.sprite = cardObj.centerImg;
+            CM[Index].CardIndex = cardObj.CardIndex;
 
-            if (cardObj.Attack) { CM.Rarity.text = "Attack"; }
-            else if (cardObj.Defence) { CM.Rarity.text = "Defense"; }
-            else if (cardObj.Curse) { CM.Rarity.text = "Curse"; }
-            else if (cardObj.Medicated) { CM.Rarity.text = "Medicated"; }
-            else if (cardObj.AttackDefence) { CM.Rarity.text = "AttackDefence"; }
-            else if (cardObj.cashCards) { CM.Rarity.text = "Cash"; }
-            else if (cardObj.Rehuffle) { CM.Rarity.text = "Rehuffle"; }
+            if (cardObj.Attack) { CM[Index].Rarity.text = "Attack"; }
+            else if (cardObj.Defence) { CM[Index].Rarity.text = "Defense"; }
+            else if (cardObj.Curse) { CM[Index].Rarity.text = "Curse"; }
+            else if (cardObj.Medicated) { CM[Index].Rarity.text = "Medicated"; }
+            else if (cardObj.AttackDefence) { CM[Index].Rarity.text = "AttackDefence"; }
+            else if (cardObj.cashCards) { CM[Index].Rarity.text = "Cash"; }
+            else if (cardObj.Rehuffle) { CM[Index].Rarity.text = "Rehuffle"; }
         }
         else
         {
@@ -65,9 +70,9 @@ public class RewardManager : MonoBehaviour
 
         }
     }
-    public void Claim()
+    public void Claim(int a)
     {
-        CardManagement.CardData.AttackCards[cardObj.CardIndex].canShow = true; 
-        CardManagement.CardData.AttackCards[cardObj.CardIndex].looted = true;
+        CardManagement.CardData.AttackCards[CM[a].CardIndex].canShow = true; 
+        CardManagement.CardData.AttackCards[CM[a].CardIndex].looted = true;
     }
 }

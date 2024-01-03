@@ -76,6 +76,8 @@ namespace demo {
         {
             if (GameManager.Instance.activeEnemy.EnemyHealth > 0)
             {
+                container.playerCount -= CardM.Magic_power;
+
                 if (CardM.cardName.text == "Mouse")
                 {
                     if (GameManager.Instance.RatCard == 0)
@@ -123,7 +125,6 @@ namespace demo {
 
                 GameManager.Instance.activeEnemy.EnemyHealth -= CardM.EnemyDamage;
                 GameManager.Instance.activeEnemy.HealthTxt.text = GameManager.Instance.activeEnemy.EnemyHealth.ToString() + "/50";
-                container.playerCount -= CardM.Magic_power;
                 container.PlayerCount.text = container.playerCount.ToString();
                 if (GameManager.Instance.activeEnemy.EnemyHealth <= 0)
                 {
@@ -258,6 +259,10 @@ namespace demo {
             GameManager.Instance.PlayerHealth += CardM.Medication;
             if (GameManager.Instance.PlayerHealth > 20)
                 GameManager.Instance.PlayerHealth = 20;
+
+            container.playerCount -= CardM.Magic_power;
+            container.PlayerCount.text = container.playerCount.ToString();
+
             GameManager.Instance.PlayerHelthTxt.text = GameManager.Instance.PlayerHealth.ToString() + "/20";
         }
         public void LevelComplete()
