@@ -125,6 +125,9 @@ namespace demo {
 
                 GameManager.Instance.activeEnemy.EnemyHealth -= CardM.EnemyDamage;
                 GameManager.Instance.activeEnemy.HealthTxt.text = GameManager.Instance.activeEnemy.EnemyHealth.ToString() + "/50";
+                float health = (float)(GameManager.Instance.activeEnemy.EnemyHealth * 2) / 100;
+                GameManager.Instance.activeEnemy.HealthBar.fillAmount = (float)(health);
+                Debug.Log("Health is : " + health);
                 container.PlayerCount.text = container.playerCount.ToString();
                 if (GameManager.Instance.activeEnemy.EnemyHealth <= 0)
                 {
@@ -195,6 +198,9 @@ namespace demo {
                     GameManager.Instance.activeEnemy.EnemyHealth -= CardM.EnemyDamage;
                 }
                 GameManager.Instance.activeEnemy.HealthTxt.text = GameManager.Instance.activeEnemy.EnemyHealth.ToString() + "/50";
+                float health = (float)(GameManager.Instance.activeEnemy.EnemyHealth * 2) / 100;
+                GameManager.Instance.activeEnemy.HealthBar.fillAmount = (float)(health);
+                Debug.Log("Health is : " + health);
 
 
                 if (GameManager.Instance.activeEnemy.EnemyHealth <= 0)
@@ -228,6 +234,9 @@ namespace demo {
 
                 GameManager.Instance.activeEnemy.EnemyHealth -= CardM.EnemyDamage;
                 GameManager.Instance.activeEnemy.HealthTxt.text = GameManager.Instance.activeEnemy.EnemyHealth.ToString() +"/50";
+                float health = (float)(GameManager.Instance.activeEnemy.EnemyHealth * 2) / 100;
+                GameManager.Instance.activeEnemy.HealthBar.fillAmount = (float)(health);
+                Debug.Log("Health is : " + health);
 
 
                 if (GameManager.Instance.activeEnemy.EnemyHealth <= 0)

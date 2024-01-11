@@ -543,8 +543,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f5ae505f1fc8274eab61d7ee8d5a1d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventoryCardManager: {fileID: 11400000, guid: bb6a68ec9ed21114b80daeca45188b14,
-    type: 2}
   enemyAnimator: {fileID: 4248051514802774105}
   EnemyHealth: 50
   HealthTxt: {fileID: 4248051513933180138}
@@ -552,6 +550,7 @@ MonoBehaviour:
   DPTxt: {fileID: 7211133301474475693}
   Effect: {fileID: 4955453156620236111, guid: 3383fffde3dfe1041b875cc8411d5b9d, type: 3}
   endTurn: {fileID: 4248051513723732079}
+  HealthBar: {fileID: 4248051513739773878}
 --- !u!1 &4248051513723732077
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,7 +754,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.617
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0

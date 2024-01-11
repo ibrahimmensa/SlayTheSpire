@@ -13,6 +13,8 @@ public class Enemies_Interactions : MonoBehaviour
     public Text DPTxt;
     public Image Effect;
     public Button endTurn;
+
+    public Image HealthBar;
     public void EndTurn()
     {
         GameManager.Instance.EndTurn();
