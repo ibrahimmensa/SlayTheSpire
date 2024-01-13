@@ -836,8 +836,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -826.8619, y: -419.30002}
-  m_SizeDelta: {x: 162.0602, y: 143.9731}
+  m_AnchoredPosition: {x: -726, y: -354}
+  m_SizeDelta: {x: 224, y: 199}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5419838873614281218
 CanvasRenderer:
@@ -867,7 +867,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 077e3fb31d7edb94582a5b278ca25423, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d6ea85fb2a1d3464b895919a8122bc93, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1001,6 +1001,7 @@ MonoBehaviour:
   DPTxt: {fileID: 1571801819273245217}
   Effect: {fileID: 4653996684033950935, guid: 2927df750430f164f9bac15d5fa75bb7, type: 3}
   endTurn: {fileID: 5419838873828609251}
+  BG: {fileID: 21300000, guid: 142ffef2d8792314e904c9075f52a743, type: 3}
   HealthBar: {fileID: 5419838873611864890}
 --- !u!1 &5419838873828609249
 GameObject:

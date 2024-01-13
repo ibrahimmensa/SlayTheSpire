@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
     {
         activeEnemy = Instantiate(enemies.All_Enemies[CM.LoadLevel], transform);
         num = Random.Range(0, Sounds.Background_Music.Length);
-        BG.sprite = Sounds.BGs[num];
+        BG.sprite = activeEnemy.BG;
         SoundManager.bGM.clip = Sounds.Background_Music[num];
         SoundManager.bGM.Play();
         RatCard = 0;
