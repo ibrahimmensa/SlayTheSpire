@@ -16,13 +16,18 @@ public class Enemies_Interactions : MonoBehaviour
     public Sprite BG;
 
     public Image HealthBar;
+    public int dpText;
+    private void OnEnable()
+    {
+        dpText = 0;
+    }
+    void Update()
+    {
+        DPTxt.text = dpText.ToString();
+    }
     public void EndTurn()
     {
         GameManager.Instance.EndTurn();
-    }
-    private void Update()
-    {
-        //DPTxt.text = InventoryCardManager.DP_Details.Count.ToString();
     }
     public void OpenDiscard()
     {

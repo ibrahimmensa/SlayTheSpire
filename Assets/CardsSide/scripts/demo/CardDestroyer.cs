@@ -65,6 +65,7 @@ namespace demo {
                     Medicated(CardM);
                 }
                 container.DestroyCard(evt.card);
+                GameManager.Instance.activeEnemy.dpText++;
             }
             else
             {
