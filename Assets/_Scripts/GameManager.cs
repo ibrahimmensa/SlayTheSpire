@@ -139,6 +139,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
             DefanceIndicator.SetActive(false);
         }
         TotalCoins.text = PlayerPrefs.GetInt("Coins", 0).ToString();
+        if(PlayerHealth < 0) {  PlayerHealth = 0; }
     }
     IEnumerator PlayerTurn()
     {
@@ -202,6 +203,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
     {
         CardContainerRef.GetComponent<CardContainer>().shake.enabled = true;
         PlayerHealth -= 3;
+        if (PlayerHealth < 0) { PlayerHealth = 0; }
         PlayerHelthTxt.text = PlayerHealth.ToString() + "/20";
         if (PlayerHealth <= 0)
         {

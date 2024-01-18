@@ -74,5 +74,6 @@ public class RewardManager : MonoBehaviour
     {
         CardManagement.CardData.AttackCards[CM[a].CardIndex].canShow = true; 
         CardManagement.CardData.AttackCards[CM[a].CardIndex].looted = true;
+        PlayerPrefs.SetInt(CardManagement.CardData.AttackCards[CM[a].CardIndex].name, 1);
     }
 }

@@ -12,6 +12,7 @@ public class MenuManager : MonoBehaviour
 {
     [Header("Screptable Object Refrances")]
     public CharactersManagment PM;
+    public Cards ToLoadCards;
 
     [Space()]
     [Header("Screens Refrances")]
@@ -26,6 +27,23 @@ public class MenuManager : MonoBehaviour
         {
             PlayerPrefs.DeleteAll();
             PlayerPrefs.SetInt("start", 1);
+            Debug.Log("FT");
+        }
+        else
+        {
+            PM.LoadLevel = PlayerPrefs.GetInt("Levels");
+            foreach (CardsData obj in ToLoadCards.AttackCards) 
+            {
+                if(!obj.canShow)
+                {
+                    if(PlayerPrefs.HasKey(obj.name))
+                    {
+                        obj.canShow = true;
+                        obj.looted = true;
+                        Debug.Log(obj.name + " card looted updated");
+                    }
+                }
+            }
         }
     }
 

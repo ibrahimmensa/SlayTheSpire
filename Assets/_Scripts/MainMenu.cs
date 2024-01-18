@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public enum Screens
 {
@@ -10,6 +11,7 @@ public enum Screens
 public class MainMenu : MonoBehaviour
 {
     public Image BG;
+    public MenuManager MM;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +46,15 @@ public class MainMenu : MonoBehaviour
     }
     public void Play()
     {
-        Destroy(BG);
+        MM.SwitchScreen(Screns.CHARACTER);
+        //Destroy(BG);
+        //if (PlayerPrefs.HasKey("Levels"))
+        //{
+        //    SceneManager.LoadScene(1);
+        //}
+        //else
+        //{
+        //    MM.SwitchScreen(Screns.CHARACTER);
+        //}
     }
 }
