@@ -1006,6 +1006,7 @@ MonoBehaviour:
   dpText: 0
   hasGun: 0
   waitTime: 0.25
+  damage: 6
 --- !u!1 &5419838873828609249
 GameObject:
   m_ObjectHideFlags: 0

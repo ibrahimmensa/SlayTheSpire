@@ -211,7 +211,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
     }
     public void ApplyDanageToPlayer()
     {
-        PlayerHealth -= 3;
+        PlayerHealth -= activeEnemy.damage;
         if (PlayerHealth < 0) { PlayerHealth = 0; }
         PlayerHelthTxt.text = PlayerHealth.ToString() + "/20";
         if (PlayerHealth <= 0)

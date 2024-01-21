@@ -31,4 +31,12 @@ public class AnimatorS : MonoBehaviour
         }
         GameManager.Instance.activeEnemy.enemyAnimator.SetBool("Attack", false);
     }
+
+    //------------------minigame 2----------------------
+
+    public void Turnoff()
+    {
+        gameObject.SetActive(false);
+        GetComponentInParent<ShootGameManager>().enabled = true;
+    }
 }

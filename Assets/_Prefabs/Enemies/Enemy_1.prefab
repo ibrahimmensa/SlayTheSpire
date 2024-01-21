@@ -554,6 +554,8 @@ MonoBehaviour:
   HealthBar: {fileID: 4248051513739773878}
   dpText: 0
   hasGun: 1
+  waitTime: 0
+  damage: 3
 --- !u!1 &4248051513723732077
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,6 +19,7 @@ public class Enemies_Interactions : MonoBehaviour
     public int dpText;
     public bool hasGun;
     public float waitTime;
+    public int damage;
     private void OnEnable()
     {
         dpText = 0;
