@@ -6548,6 +6548,7 @@ MonoBehaviour:
   CharacterSelection: {fileID: 120616891}
   MapManagement: {fileID: 1782053596}
   bgm: {fileID: 2124708492}
+  vp: {fileID: 1431869309}
 --- !u!114 &597687844
 MonoBehaviour:
   m_ObjectHideFlags: 0

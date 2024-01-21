@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
 
 public enum Screns
 {
@@ -20,6 +21,7 @@ public class MenuManager : MonoBehaviour
     public CharacterSelection CharacterSelection;
     public MapManagement MapManagement;
     public AudioSource bgm;
+    public VideoPlayer vp;
 
     private void OnEnable()
     {

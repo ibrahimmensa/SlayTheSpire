@@ -66,7 +66,7 @@ namespace demo {
                 }
                 container.DestroyCard(evt.card);
                 GameManager.Instance.activeEnemy.dpText++;
-                SoundManager.playSound(Sounds.AttackSounds[Random.Range(0, 2)]);
+                if(PlayerPrefs.GetFloat("effect", 1) > 0) { SoundManager.playSound(Sounds.AttackSounds[Random.Range(0, 2)]); }
             }
             else
             {
@@ -278,7 +278,9 @@ namespace demo {
         }
         public void LevelComplete()
         {
-            CM.LoadLevel++;
+            if(CM.LoadLevel >= 23) { CM.LoadLevel =0; }
+            else { CM.LoadLevel++; }
+            
             GameManager.Instance.CurseIndicator.SetActive(false);
             GameManager.Instance.DefanceIndicator.SetActive(false);
             GameManager.Instance.activeEnemy.gameObject.SetActive(false);

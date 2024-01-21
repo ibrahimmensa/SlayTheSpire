@@ -56,12 +56,12 @@ public class InventoryManager : MonoBehaviour
             CM.centerImg.sprite = cardObj.centerImg;
 
             if (cardObj.Attack) { CM.Rarity.text = "Attack"; }
-            else if (cardObj.Defence) { CM.Rarity.text = "Defense"; }
+            else if (cardObj.Defence) { CM.Rarity.text = "Defence"; }
             else if (cardObj.Curse) { CM.Rarity.text = "Curse"; }
             else if (cardObj.Medicated) { CM.Rarity.text = "Medicated"; }
             else if (cardObj.AttackDefence) { CM.Rarity.text = "AttackDefence"; }
             else if (cardObj.cashCards) { CM.Rarity.text = "Cash"; }
-            else if (cardObj.Rehuffle) { CM.Rarity.text = "Rehuffle"; }
+            else if (cardObj.Rehuffle) { CM.Rarity.text = "Reshuffle"; }
         }
         populated = true;
     }

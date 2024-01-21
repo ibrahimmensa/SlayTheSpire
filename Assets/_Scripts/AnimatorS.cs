@@ -24,7 +24,11 @@ public class AnimatorS : MonoBehaviour
 
         Instantiate(GameManager.Instance.enemies.All_Enemies[GameManager.Instance.CM.LoadLevel].Effect, transform);
         GameManager.Instance.CardContainerRef.GetComponent<CardContainer>().shake.enabled = true;
-        GameManager.Instance.SoundManager.playSound(GameManager.Instance.Sounds.AttackSounds[Random.Range(0, 2)]);
+        GameManager.Instance.SoundManager.playSound(GameManager.Instance.Sounds.AttackSounds[Random.Range(0, 2)]); 
+        if (GameManager.Instance.cardsManagement.DefanceActivated)
+        {
+            GameManager.Instance.IfDefanse();
+        }
         GameManager.Instance.activeEnemy.enemyAnimator.SetBool("Attack", false);
     }
 }

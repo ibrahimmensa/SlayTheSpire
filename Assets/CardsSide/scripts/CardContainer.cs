@@ -192,7 +192,7 @@ public class CardContainer : MonoBehaviour
         else if (cardObj.Medicated) { CM.Rarity.text = "Medicated"; }
         else if (cardObj.AttackDefence) { CM.Rarity.text = "AttackDefence"; }
         else if (cardObj.cashCards) { CM.Rarity.text = "Cash"; }
-        else if (cardObj.Rehuffle) { CM.Rarity.text = "Rehuffle"; }
+        else if (cardObj.Rehuffle) { CM.Rarity.text = "Reshuffle"; }
     }
     public void CardsArrange()
     {

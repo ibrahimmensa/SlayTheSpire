@@ -102,6 +102,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
     // Start is called before the first frame update
     void Start()
     {
+        SoundManager.GameSounds.volume = PlayerPrefs.GetFloat("sound", 1);
         activeEnemy.TurnTxt.text = "Player Turn";
     }
     bool turnStarted;
@@ -169,7 +170,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         if (cardsManagement.DefanceActivated)
         {
             cardsManagement.defanceValue--;
-            IfDefanse();
+            //Invoke(nameof(IfDefanse),activeEnemy.waitTime);
         }
         else
         {

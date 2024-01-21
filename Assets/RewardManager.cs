@@ -62,7 +62,7 @@ public class RewardManager : MonoBehaviour
             else if (cardObj.Medicated) { CM[Index].Rarity.text = "Medicated"; }
             else if (cardObj.AttackDefence) { CM[Index].Rarity.text = "AttackDefence"; }
             else if (cardObj.cashCards) { CM[Index].Rarity.text = "Cash"; }
-            else if (cardObj.Rehuffle) { CM[Index].Rarity.text = "Rehuffle"; }
+            else if (cardObj.Rehuffle) { CM[Index].Rarity.text = "Reshuffle"; }
         }
         else
         {
