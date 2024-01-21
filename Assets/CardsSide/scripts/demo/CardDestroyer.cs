@@ -22,8 +22,7 @@ namespace demo {
             //InventoryCardManager.lootedCards.Add(CardM.gameObject);
             if (container.playerCount >= CardM.Magic_power  )
             {
-                SoundManager.playSound(Sounds.AttackSounds[Random.Range(0, 2)]);
-                container.shake.enabled = true;
+                //container.shake.enabled = true;
                 if (CardM.Attack)
                 {
                     Attack(CardM);
@@ -39,6 +38,7 @@ namespace demo {
                     else
                     {
                         container.DefanseError.SetActive(true);
+                        return;
                     }
                 }
                 else if(CardM.Curse)
@@ -66,6 +66,7 @@ namespace demo {
                 }
                 container.DestroyCard(evt.card);
                 GameManager.Instance.activeEnemy.dpText++;
+                SoundManager.playSound(Sounds.AttackSounds[Random.Range(0, 2)]);
             }
             else
             {

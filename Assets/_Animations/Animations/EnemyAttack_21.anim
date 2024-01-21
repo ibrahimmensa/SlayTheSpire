@@ -21,26 +21,18 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 21300000, guid: f74cf5a867a92a84c83d05eb598b4c87, type: 3}
-    - time: 0.083333336
-      value: {fileID: 21300000, guid: b57192fd54b1ba94c9b0d30b5d5042a1, type: 3}
     - time: 0.16666667
-      value: {fileID: 21300000, guid: b01e7fe1b9d6ec24b939e48d1d5782ac, type: 3}
-    - time: 0.25
-      value: {fileID: 21300000, guid: d131def1e0962c741a9db5a2ca1abe96, type: 3}
+      value: {fileID: 21300000, guid: b57192fd54b1ba94c9b0d30b5d5042a1, type: 3}
     - time: 0.33333334
-      value: {fileID: 21300000, guid: b1ec4c2b853686f48bd503edf36f4b54, type: 3}
-    - time: 0.41666666
-      value: {fileID: 21300000, guid: d0107063bf0de0b4796feac65f229c34, type: 3}
+      value: {fileID: 21300000, guid: b01e7fe1b9d6ec24b939e48d1d5782ac, type: 3}
     - time: 0.5
-      value: {fileID: 21300000, guid: 4fa487cd0b0c6004cbb47bc68081e7e4, type: 3}
-    - time: 0.5833333
-      value: {fileID: 21300000, guid: 0f6cc27bb0307ea4fa59590d59a1aa0c, type: 3}
+      value: {fileID: 21300000, guid: d131def1e0962c741a9db5a2ca1abe96, type: 3}
     - time: 0.6666667
-      value: {fileID: 21300000, guid: 64c5fa46bf243c0468deabd91495bb10, type: 3}
-    - time: 0.75
-      value: {fileID: 21300000, guid: 2343b58200cddd245bab7e426995bd2a, type: 3}
-    - time: 0.9166667
-      value: {fileID: 21300000, guid: 2343b58200cddd245bab7e426995bd2a, type: 3}
+      value: {fileID: 21300000, guid: b1ec4c2b853686f48bd503edf36f4b54, type: 3}
+    - time: 0.8333333
+      value: {fileID: 21300000, guid: d0107063bf0de0b4796feac65f229c34, type: 3}
+    - time: 1.1666666
+      value: {fileID: 21300000, guid: 4fa487cd0b0c6004cbb47bc68081e7e4, type: 3}
     attribute: m_Sprite
     path: 
     classID: 114
@@ -67,16 +59,12 @@ AnimationClip:
     - {fileID: 21300000, guid: b1ec4c2b853686f48bd503edf36f4b54, type: 3}
     - {fileID: 21300000, guid: d0107063bf0de0b4796feac65f229c34, type: 3}
     - {fileID: 21300000, guid: 4fa487cd0b0c6004cbb47bc68081e7e4, type: 3}
-    - {fileID: 21300000, guid: 0f6cc27bb0307ea4fa59590d59a1aa0c, type: 3}
-    - {fileID: 21300000, guid: 64c5fa46bf243c0468deabd91495bb10, type: 3}
-    - {fileID: 21300000, guid: 2343b58200cddd245bab7e426995bd2a, type: 3}
-    - {fileID: 21300000, guid: 2343b58200cddd245bab7e426995bd2a, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.93333334
+    m_StopTime: 1.1833333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -95,4 +83,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 1.1333333
+    functionName: PlayVFX
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

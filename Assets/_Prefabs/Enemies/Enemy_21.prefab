@@ -285,7 +285,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: -50}
+  m_AnchoredPosition: {x: 0, y: 45}
   m_SizeDelta: {x: 580, y: 525}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &5419838872749681879
@@ -1004,6 +1004,8 @@ MonoBehaviour:
   BG: {fileID: 21300000, guid: 1fbc5e24af8c10545a33e9f1bed96588, type: 3}
   HealthBar: {fileID: 5419838873611864890}
   dpText: 0
+  hasGun: 0
+  waitTime: 1
 --- !u!1 &5419838873828609249
 GameObject:
   m_ObjectHideFlags: 0

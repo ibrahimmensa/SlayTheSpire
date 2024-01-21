@@ -19,4 +19,12 @@ public class AnimatorS : MonoBehaviour
     {
         GetComponent<Animator>().enabled = false;
     }
+    public void PlayVFX()
+    {
+
+        Instantiate(GameManager.Instance.enemies.All_Enemies[GameManager.Instance.CM.LoadLevel].Effect, transform);
+        GameManager.Instance.CardContainerRef.GetComponent<CardContainer>().shake.enabled = true;
+        GameManager.Instance.SoundManager.playSound(GameManager.Instance.Sounds.AttackSounds[Random.Range(0, 2)]);
+        GameManager.Instance.activeEnemy.enemyAnimator.SetBool("Attack", false);
+    }
 }

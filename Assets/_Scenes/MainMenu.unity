@@ -1822,7 +1822,7 @@ GameObject:
   - component: {fileID: 224742898}
   - component: {fileID: 224742897}
   m_Layer: 5
-  m_Name: Turns
+  m_Name: Sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4583,7 +4583,7 @@ GameObject:
   - component: {fileID: 452153072}
   - component: {fileID: 452153071}
   m_Layer: 5
-  m_Name: Turns (1)
+  m_Name: effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6547,6 +6547,7 @@ MonoBehaviour:
   MainMenu: {fileID: 950546389}
   CharacterSelection: {fileID: 120616891}
   MapManagement: {fileID: 1782053596}
+  bgm: {fileID: 2124708492}
 --- !u!114 &597687844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8507,7 +8508,7 @@ GameObject:
   - component: {fileID: 865330685}
   - component: {fileID: 865330684}
   m_Layer: 5
-  m_Name: Turns (2)
+  m_Name: bg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12819,6 +12820,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1351059323}
+        m_TargetAssemblyTypeName: Settings, Assembly-CSharp
+        m_MethodName: backBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1346421508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12912,7 +12925,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sounds: {fileID: 11400000, guid: 7958a0f29274c054ab52ce8556eafd24, type: 2}
-  bGM_Volume: {fileID: 840665247}
+  soundVolume: {fileID: 840665247}
+  effectVolume: {fileID: 1708733807}
+  musicVolume: {fileID: 172151213}
+  bGM_Volume: {fileID: 1468006285}
   bGM: {fileID: 2124708492}
 --- !u!114 &1351059324
 MonoBehaviour:
@@ -17578,7 +17594,7 @@ GameObject:
   - component: {fileID: 1853118945}
   - component: {fileID: 1853118944}
   m_Layer: 5
-  m_Name: SRUN
+  m_Name: music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

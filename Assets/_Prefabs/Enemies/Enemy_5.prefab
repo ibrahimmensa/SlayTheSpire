@@ -1004,6 +1004,8 @@ MonoBehaviour:
   BG: {fileID: 21300000, guid: 983daf7e9c49f3640a724eedb7defa14, type: 3}
   HealthBar: {fileID: 5419838873611864890}
   dpText: 0
+  hasGun: 1
+  waitTime: 0.5
 --- !u!1 &5419838873828609249
 GameObject:
   m_ObjectHideFlags: 0

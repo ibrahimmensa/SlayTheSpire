@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -139,7 +140,11 @@ public class GameManager : MonoBehaviour, IDataPersistence
             DefanceIndicator.SetActive(false);
         }
         TotalCoins.text = PlayerPrefs.GetInt("Coins", 0).ToString();
-        if(PlayerHealth < 0) {  PlayerHealth = 0; }
+        if(PlayerHealth < 0) 
+        {
+            PlayerHealth = 0;
+            PlayerHelthTxt.text = PlayerHealth.ToString() + "/20";
+        }
     }
     IEnumerator PlayerTurn()
     {
@@ -153,7 +158,14 @@ public class GameManager : MonoBehaviour, IDataPersistence
         activeEnemy.TurnTxt.text = "Enemy turn";
         yield return new WaitForSeconds(2.0f);
         activeEnemy.enemyAnimator.SetBool("Attack", true);
-        yield return new WaitForSeconds(2.0f);
+        if (activeEnemy.hasGun)
+        {
+            yield return new WaitForSeconds(1.5f);
+        }
+        else
+        {
+            yield return new WaitForSeconds(0.5f);
+        }
         if (cardsManagement.DefanceActivated)
         {
             cardsManagement.defanceValue--;
@@ -161,14 +173,11 @@ public class GameManager : MonoBehaviour, IDataPersistence
         }
         else
         {
-            ApplyDanageToPlayer();
+            Invoke(nameof(ApplyDanageToPlayer),activeEnemy.waitTime);
         }
 
-
-        Instantiate(enemies.All_Enemies[CM.LoadLevel].Effect,transform);
-        SoundManager.playSound(Sounds.AttackSounds[Random.Range(0, 2)]);
-        yield return new WaitForSeconds(0.2f);
-        activeEnemy.enemyAnimator.SetBool("Attack", false);
+        //Instantiate(enemies.All_Enemies[CM.LoadLevel].Effect,transform);
+        //yield return new WaitForSeconds(0.2f);
         CardContainerRef.SetActive(true);
         PlayerCount.SetActive(true);
         CardContainerRef.GetComponent<CardContainer>().PlayerCount.text = CardContainerRef.GetComponent<CardContainer>().playerCount.ToString();
@@ -201,7 +210,6 @@ public class GameManager : MonoBehaviour, IDataPersistence
     }
     public void ApplyDanageToPlayer()
     {
-        CardContainerRef.GetComponent<CardContainer>().shake.enabled = true;
         PlayerHealth -= 3;
         if (PlayerHealth < 0) { PlayerHealth = 0; }
         PlayerHelthTxt.text = PlayerHealth.ToString() + "/20";
@@ -235,7 +243,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
     public void Home()
     {
         SceneManager.LoadScene(0);
-        Debug.Log("btn pressed");
+        UnityEngine.Debug.Log("btn pressed");
     }
     public void discardBack()
     {

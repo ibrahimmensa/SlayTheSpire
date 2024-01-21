@@ -23,19 +23,19 @@ AnimationClip:
       value: {fileID: 21300000, guid: 37b14ebb9f38e154d9de00338801ca6b, type: 3}
     - time: 0.083333336
       value: {fileID: 21300000, guid: b7c300f4f926aa341ad640a20d1324f7, type: 3}
-    - time: 0.16666667
+    - time: 0.2
       value: {fileID: 21300000, guid: 5eed433d20a0c914c8a820e8f39eca92, type: 3}
-    - time: 0.25
+    - time: 0.3
       value: {fileID: 21300000, guid: 3dd73b9c852732c409d210a57d4a40b8, type: 3}
-    - time: 0.33333334
-      value: {fileID: 21300000, guid: 989013a5976ba2343b6f34ff9ee2ed67, type: 3}
     - time: 0.41666666
+      value: {fileID: 21300000, guid: 989013a5976ba2343b6f34ff9ee2ed67, type: 3}
+    - time: 0.53333336
       value: {fileID: 21300000, guid: 1745b8dbd03dd1f499e7a86ae4904be1, type: 3}
-    - time: 0.5
+    - time: 0.6666667
       value: {fileID: 21300000, guid: 71c71541c48059a459609a592ee31b2c, type: 3}
-    - time: 0.5833333
+    - time: 0.78333336
       value: {fileID: 21300000, guid: 32dbf03fb553abf4884cd2bc8f19512a, type: 3}
-    - time: 0.75
+    - time: 1
       value: {fileID: 21300000, guid: 32dbf03fb553abf4884cd2bc8f19512a, type: 3}
     attribute: m_Sprite
     path: 
@@ -70,7 +70,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.76666665
+    m_StopTime: 1.05
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -89,4 +89,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 1.05
+    functionName: PlayVFX
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

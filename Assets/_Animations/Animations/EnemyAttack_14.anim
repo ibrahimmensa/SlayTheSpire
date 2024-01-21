@@ -41,9 +41,9 @@ AnimationClip:
       value: {fileID: 21300000, guid: 02b3792812d4add4bb8c04439a70d9ed, type: 3}
     - time: 0.8333333
       value: {fileID: 21300000, guid: 44d9476f8deff4546bc1101492917c6f, type: 3}
-    - time: 0.93333334
+    - time: 0.9166667
       value: {fileID: 21300000, guid: 017bc071e2b4a394e9636707cb4e900f, type: 3}
-    - time: 1.0833334
+    - time: 1
       value: {fileID: 21300000, guid: 017bc071e2b4a394e9636707cb4e900f, type: 3}
     attribute: m_Sprite
     path: 
@@ -82,7 +82,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.1
+    m_StopTime: 1.05
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -101,4 +101,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 1.05
+    functionName: PlayVFX
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

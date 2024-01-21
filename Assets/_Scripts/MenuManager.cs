@@ -19,6 +19,13 @@ public class MenuManager : MonoBehaviour
     public MainMenu MainMenu;
     public CharacterSelection CharacterSelection;
     public MapManagement MapManagement;
+    public AudioSource bgm;
+
+    private void OnEnable()
+    {
+        bgm.volume = PlayerPrefs.GetFloat("bg", 1);
+    }
+
     // Start is called before the first frame update
     void Start()
     {

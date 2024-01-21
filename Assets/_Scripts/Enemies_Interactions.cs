@@ -17,6 +17,8 @@ public class Enemies_Interactions : MonoBehaviour
 
     public Image HealthBar;
     public int dpText;
+    public bool hasGun;
+    public float waitTime;
     private void OnEnable()
     {
         dpText = 0;
