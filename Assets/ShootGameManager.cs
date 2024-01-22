@@ -64,7 +64,7 @@ public class ShootGameManager : MonoBehaviour
                 }
                 else
                 {
-                    failed.SetActive(true);
+                   failed.SetActive(true);
                     CancelInvoke(nameof(ObjectSpawn));
                 }
                 running = false;
@@ -86,9 +86,10 @@ public class ShootGameManager : MonoBehaviour
 
     void ObjectSpawn()
     {
-        enemy = Instantiate(enemies[Random.Range(0,4)],transform.GetChild(0).transform);
+        enemy = Instantiate(enemies[Random.Range(0,enemies.Length)],transform.GetChild(0).transform);
         enemy.GetComponent<MiniGameEnemy>().ShootGameManager = this;
-        enemy.transform.position = spawnlocations[Random.Range(0, 4)].position;
+        enemy.transform.position = spawnlocations[Random.Range(0, spawnlocations.Length)].position;
+        enemy.transform.SetSiblingIndex(1);
     }
     //--------------------------------------------------------------------------------------------------------------------------------
     public void ChangePlayerHealth(int health)
