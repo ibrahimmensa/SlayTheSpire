@@ -539,7 +539,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -568,12 +568,19 @@ MonoBehaviour:
   Magic_power: 0
   CurseEffect: 0
   CardIndex: 0
+  IncreesedMagicPower: 0
   EnemyDamage: 0
   BlockedDamage: 0
+  ReducePlayerHelth: 0
+  IncreesPlayerHelth: 0
+  Medication: 0
   Attack: 0
   Defence: 0
   Curse: 0
   Medicated: 0
+  AD_Cards: 0
+  Cash_cards: 0
+  Reshuffle_cards: 0
   cardSprite: {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
   centerImg: {fileID: 1874367872427933155}
 --- !u!114 &3912011480442577877

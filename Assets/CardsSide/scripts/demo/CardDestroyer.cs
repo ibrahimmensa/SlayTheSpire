@@ -25,7 +25,16 @@ namespace demo {
                 //container.shake.enabled = true;
                 if (CardM.Attack)
                 {
+                    if(GameManager.Instance.enemydefenceActivated)
+                    {
+                        GameManager.Instance.blocked.SetActive(true);
+                        container.playerCount -= CardM.Magic_power;
+                        container.PlayerCount.text = container.playerCount.ToString();
+                        GameManager.Instance.enemydefenceActivated = false;
+                        return;
+                    }
                     Attack(CardM);
+                    GameManager.Instance.LogMsg("Player Attack: ", CardM.EnemyDamage,Color.black);
                     Debug.Log("Attack: " + CardM.EnemyDamage);
                 }
                 else if(CardM.Defence)
@@ -33,6 +42,7 @@ namespace demo {
                     if(!GameManager.Instance.blockDefanceCards)
                     {
                         Defense(CardM);
+                        GameManager.Instance.LogMsg("Player Defence: ", CardM.BlockedDamage, Color.black);
                         Debug.Log("Defance: " + CardM.BlockedDamage);
                     }
                     else
@@ -49,16 +59,21 @@ namespace demo {
                 else if(CardM.AD_Cards)
                 {
                     AD_cards(CardM);
+                    GameManager.Instance.LogMsg("Player Attack: ", CardM.EnemyDamage, Color.black);
+                    GameManager.Instance.LogMsg("Player defence: ", CardM.BlockedDamage, Color.black);
                     Debug.Log("Attack: " + CardM.EnemyDamage+""+ "Defance: " + CardM.BlockedDamage);
                 }
                 else if(CardM.Cash_cards)
                 {
                     Cash_cards(CardM);
+                    GameManager.Instance.LogMsg("Player Attack: ", CardM.EnemyDamage, Color.black);
+                    GameManager.Instance.LogMsg("Player defence: ", CardM.BlockedDamage, Color.black);
                     Debug.Log("Attack: " + CardM.EnemyDamage + "" + "Defance: " + CardM.ReducePlayerHelth + "" + "MP: " + CardM.IncreesedMagicPower);
                 }
                 else if (CardM.Reshuffle_cards)
                 {
                     StartCoroutine(Resguffle_Handscards(CardM));
+                    GameManager.Instance.LogMsg("Player reshuffle: ", 1, Color.black);
                 }
                 else if (CardM.Medicated)
                 {
@@ -74,6 +89,67 @@ namespace demo {
             }
             
         }
+
+        //forenemy
+
+        public void enemyattack(CardsData CardM)
+        {
+            //container.shake.enabled = true;
+            if (CardM.Attack)
+            {
+                AttackPlayer(CardM);
+            }
+            else if (CardM.Defence)
+            {
+                if (GameManager.Instance.enemydefenceActivated)
+                {
+                    GameManager.Instance.LogMsg("EnemyDefence: ",1, Color.red);
+                    return;
+                }
+                else
+                {
+                    GameManager.Instance.LogMsg("EnemyDefence: ", 1, Color.red);
+                    GameManager.Instance.enemydefenceActivated = true;
+                }
+            }
+          
+            else if (CardM.Medicated)
+            {
+                MedicatedPlayer(CardM);
+            }
+            GameManager.Instance.activeEnemy.dpText++;
+
+        }
+        public void AttackPlayer(CardsData CardM)
+        {
+            int attackValue = Random.Range(CardM.Attack_max, CardM.Attack_min);
+            Debug.Log("Attack: " + attackValue);
+            GameManager.Instance.PlayerHealth -= attackValue;
+            GameManager.Instance.ApplyDanageToPlayer();
+            GameManager.Instance.LogMsg("EnemyAttack: ", attackValue, Color.red);
+        }
+        public void DefencePlayer(CardsData CardM)
+        {
+            int DefenceValue = Random.Range(CardM.Defense_max, CardM.Defense_max);
+            Debug.Log("defence: " + DefenceValue);
+            GameManager.Instance.PlayerHealth -= DefenceValue;
+            GameManager.Instance.ApplyDanageToPlayer();
+        }
+        public void MedicatedPlayer(CardsData CardM)
+        {
+            int HealValue = Random.Range(CardM.PlayerHeal_min, CardM.PlayerHeal_min);
+            GameManager.Instance.LogMsg("EnemyHeal: ", HealValue, Color.red);
+            Debug.Log("heal: " + HealValue);
+            GameManager.Instance.activeEnemy.EnemyHealth += HealValue;
+            if (GameManager.Instance.activeEnemy.EnemyHealth > 50)
+                GameManager.Instance.activeEnemy.EnemyHealth = 50;
+            GameManager.Instance.activeEnemy.HealthTxt.text = GameManager.Instance.activeEnemy.EnemyHealth.ToString() + "/50";
+            GameManager.Instance.ApplyDanageToPlayer();
+        }
+
+
+
+        // for player
         public void Attack(CardManager CardM)
         {
             if (GameManager.Instance.activeEnemy.EnemyHealth > 0)
@@ -267,6 +343,7 @@ namespace demo {
         }
         public void Medicated(CardManager CardM)
         {
+            GameManager.Instance.LogMsg("Player Medication: ", CardM.Medication, Color.green);
             GameManager.Instance.PlayerHealth += CardM.Medication;
             if (GameManager.Instance.PlayerHealth > 20)
                 GameManager.Instance.PlayerHealth = 20;
@@ -293,7 +370,9 @@ namespace demo {
         }
         public void Effects()
         {
-            Instantiate(ScreenAnimations.Animations[Random.Range(0, ScreenAnimations.Animations.Length)], GameManager.Instance.gameObject.transform);
+            Instantiate(ScreenAnimations.Effects[Random.Range(0, ScreenAnimations.Effects.Length)], GameManager.Instance.gameObject.transform);
+            //Instantiate(GameManager.Instance.enemies.All_Enemies[GameManager.Instance.CM.LoadLevel].Effect, transform);
         }
+        
     }
 }

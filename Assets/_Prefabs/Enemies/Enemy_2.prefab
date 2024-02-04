@@ -338,6 +338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dcae2f10946e4a49be21cdac6595620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CD: {fileID: 0}
 --- !u!95 &5419838872749681877
 Animator:
   serializedVersion: 3
@@ -1038,6 +1039,97 @@ MonoBehaviour:
   hasGun: 1
   waitTime: 0
   damage: 3
+  EnemyCards:
+  - name: Banana
+    canShow: 1
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Banana
+    CardIndex: 0
+    Card_Type: Common
+    disription: Damage 2 points of enemy
+    MagicPowerRequired: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 2
+    Attack_max: 2
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
+    centerImg: {fileID: 21300000, guid: 85e88b02834b5c04f837063d097c3ccb, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Cheese
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 0
+    Curse: 0
+    Medicated: 1
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Cheese
+    CardIndex: 7
+    Card_Type: Rare
+    disription: Gain 4 points of health
+    MagicPowerRequired: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 4
+    PlayerHeal_max: 4
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Chef hat
+    canShow: 1
+    looted: 0
+    Attack: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Chef hat
+    CardIndex: 10
+    Card_Type: Common
+    disription: Block 3-5 attacks of enemy
+    MagicPowerRequired: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 3
+    Defense_max: 5
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
+    centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
+    displayed: 0
+    rodentGroup: 0
 --- !u!1 &5419838873828609249
 GameObject:
   m_ObjectHideFlags: 0

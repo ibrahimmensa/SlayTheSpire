@@ -183,7 +183,7 @@ public class CardContainer : MonoBehaviour
         CM.AD_Cards = cardObj.AttackDefence;
         CM.Cash_cards = cardObj.cashCards;
         CM.Reshuffle_cards = cardObj.Rehuffle;
-        CM.gameObject.GetComponent<Image>().sprite = cardObj.cardSprite;
+       // CM.gameObject.GetComponent<Image>().sprite = cardObj.cardSprite;
         CM.centerImg.sprite = cardObj.centerImg;
 
         if (cardObj.Attack) {CM.Rarity.text = "Attack";}

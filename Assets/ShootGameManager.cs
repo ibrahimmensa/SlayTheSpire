@@ -34,6 +34,7 @@ public class ShootGameManager : MonoBehaviour
 
     [SerializeField]
     GameObject failed;
+    public Scrollbar Slider;
 
     bool running;
 
@@ -44,7 +45,8 @@ public class ShootGameManager : MonoBehaviour
         speed = 0.5f;
         currentTime = totalTime;
         running = true;
-        InvokeRepeating(nameof(ObjectSpawn), 0.5f, 3);
+        // InvokeRepeating(nameof(ObjectSpawn), 0.5f, 3);
+        ObjectSpawn();
     }
 
     void Update()
@@ -84,12 +86,12 @@ public class ShootGameManager : MonoBehaviour
         }
     }
 
-    void ObjectSpawn()
+    public void ObjectSpawn()
     {
         enemy = Instantiate(enemies[Random.Range(0,enemies.Length)],transform.GetChild(0).transform);
         enemy.GetComponent<MiniGameEnemy>().ShootGameManager = this;
         enemy.transform.position = spawnlocations[Random.Range(0, spawnlocations.Length)].position;
-        enemy.transform.SetSiblingIndex(1);
+        enemy.transform.SetSiblingIndex(2);
     }
     //--------------------------------------------------------------------------------------------------------------------------------
     public void ChangePlayerHealth(int health)

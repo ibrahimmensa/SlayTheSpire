@@ -17,16 +17,25 @@ public class MiniGameEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        health.fillAmount -= Time.deltaTime * ShootGameManager.speed;
-        if(health.fillAmount <= 0 )
-        {
-            Missed();
-        }
+        //health.fillAmount -= Time.deltaTime * ShootGameManager.speed;
+        //if(health.fillAmount <= 0 )
+        //{
+        //    Missed();
+        //}
     }
     public void shoot()
     {
-        ShootGameManager.TotalShoots(1);
-        Destroy(gameObject);
+        if(ShootGameManager.Slider.value > 0.5)
+        {
+            ShootGameManager.TotalShoots(1);
+            Destroy(gameObject);
+        }
+        else
+        {
+            ShootGameManager.ChangePlayerHealth(1);
+            Destroy(gameObject);
+        }
+        ShootGameManager.ObjectSpawn();
     }
     public void Missed()
     {

@@ -1,3 +1,4 @@
+using demo;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,6 +23,9 @@ public class GameManager : MonoBehaviour, IDataPersistence
     [Header("Save Data")]
     public DataPersistenceManager DataPersistenceManager;
 
+    public bool enemydefenceActivated;
+    public GameObject LogTxt;
+    public Transform LogParent;
 
     public int RatCard;
    // public bool redParrotActivated;
@@ -158,6 +162,10 @@ public class GameManager : MonoBehaviour, IDataPersistence
         PlayerCount.SetActive(false);
         activeEnemy.TurnTxt.text = "Enemy turn";
         yield return new WaitForSeconds(2.0f);
+
+        CardsData EC = activeEnemy.EnemyCards[Random.Range(0,activeEnemy.EnemyCards.Length)];
+        CardDestory.GetComponent<CardDestroyer>().enemyattack(EC);
+        //select card of enemy
         activeEnemy.enemyAnimator.SetBool("Attack", true);
         if (activeEnemy.hasGun)
         {
@@ -211,7 +219,6 @@ public class GameManager : MonoBehaviour, IDataPersistence
     }
     public void ApplyDanageToPlayer()
     {
-        PlayerHealth -= activeEnemy.damage;
         if (PlayerHealth < 0) { PlayerHealth = 0; }
         PlayerHelthTxt.text = PlayerHealth.ToString() + "/20";
         if (PlayerHealth <= 0)
@@ -275,5 +282,13 @@ public class GameManager : MonoBehaviour, IDataPersistence
     public void SaveData(ref GameData data)
     {
         //data.deathCount = CM.TotalDeaths;
+    }
+    public void LogMsg(string txt, int value,Color color)
+    {
+        GameObject Txtobj = Instantiate(LogTxt,LogParent);
+        Txtobj.GetComponent<Text>().color = color;
+        Txtobj.GetComponent<Text>().text = txt + value;
+        Txtobj.SetActive(true);
+        Txtobj.transform.SetSiblingIndex(0);
     }
 }

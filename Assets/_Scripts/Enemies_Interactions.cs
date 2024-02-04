@@ -20,6 +20,8 @@ public class Enemies_Interactions : MonoBehaviour
     public bool hasGun;
     public float waitTime;
     public int damage;
+
+    public CardsData [] EnemyCards;
     private void OnEnable()
     {
         dpText = 0;
