@@ -156,71 +156,183 @@ namespace demo {
             {
                 container.playerCount -= CardM.Magic_power;
 
-                if (CardM.cardName.text == "Mouse")
+                switch(CardM.cardName.text)
                 {
-                    if (GameManager.Instance.RatCard == 0)
-                    {
-                        GameManager.Instance.RatCard++;
-                    }
-                    else
-                    {
-                        CardsManager.twoMouseCardsUsed = true;
-                    }
-                }
-                else if (CardM.cardName.text == "Red Parrot")
-                {
-                   // GameManager.Instance.redParrotActivated = true;
-                    CardM.EnemyDamage *= 2;
-                }
-                else if (CardM.cardName.text == "Cleaver")
-                {
-                    GameManager.Instance.blockDefanceCards = true;
-                }
-                else if (CardM.cardName.text == "Dual lil shooters")
-                {
-                    GameManager.Instance.dualShoter = true;
-                    CardM.EnemyDamage *= 2;
-                }
-                else if (CardM.cardName.text == "Gold Shotgun")
-                {
-                    GameManager.Instance.PlayerHealth -= CardM.ReducePlayerHelth;
-                    GameManager.Instance.PlayerHelthTxt.text = GameManager.Instance.PlayerHealth.ToString() + "/20";
-                }
-                else if (CardM.cardName.text == "Gold Scorpian")
-                {
-                    CardM.Magic_power += CardM.IncreesedMagicPower;
-                    GameManager.Instance.PlayerHealth -= CardM.ReducePlayerHelth;
-                    GameManager.Instance.PlayerHelthTxt.text = GameManager.Instance.PlayerHealth.ToString() + "/20";
-                    Debug.Log("Gold Scrorpian played !!");
-                }
-                else if (CardM.cardName.text == "Silver Scrorpian")
-                {
-                    CardM.Magic_power = CardM.Magic_power + CardM.IncreesedMagicPower;
-                    GameManager.Instance.PlayerHealth -= CardM.ReducePlayerHelth;
-                    GameManager.Instance.PlayerHelthTxt.text = GameManager.Instance.PlayerHealth.ToString() + "/20";
-                    Debug.Log("Silver Scrorpian played !!");
-                }
+                    case "Mouse":
+                        if (GameManager.Instance.RatCard == 0)
+                        {
+                            GameManager.Instance.RatCard++;
+                        }
+                        else
+                        {
+                            CardsManager.twoMouseCardsUsed = true;
+                        }
+                        break;
 
-                GameManager.Instance.activeEnemy.EnemyHealth -= CardM.EnemyDamage;
-                GameManager.Instance.activeEnemy.HealthTxt.text = GameManager.Instance.activeEnemy.EnemyHealth.ToString() + "/50";
-                float health = (float)(GameManager.Instance.activeEnemy.EnemyHealth * 2) / 100;
-                GameManager.Instance.activeEnemy.HealthBar.fillAmount = (float)(health);
-                Debug.Log("Health is : " + health);
-                container.PlayerCount.text = container.playerCount.ToString();
-                if (GameManager.Instance.activeEnemy.EnemyHealth <= 0)
-                {
-                    LevelComplete();
+                    case "Red Parrot":
+                        CardM.EnemyDamage *= 2;
+                        break;
+
+                    case "Cleaver":
+                        GameManager.Instance.blockDefanceCards = true;
+                        break;
+
+                    case "Dual lil shooters":
+                        GameManager.Instance.dualShoter = true;
+                        break;
+
+                    case "Gold Shotgun":
+                        break;
+
+                    case "Gold Scorpian":
+                        CardM.Magic_power += CardM.IncreesedMagicPower;
+                        BackAttackOnPlayer(CardM.ReducePlayerHelth);
+                        GameManager.Instance.PlayerHelthTxt.text = GameManager.Instance.PlayerHealth.ToString() + "/20";
+                        break;
+
+                    case "Silver Scrorpian":
+                        CardM.Magic_power = CardM.Magic_power + CardM.IncreesedMagicPower;
+                        BackAttackOnPlayer(CardM.ReducePlayerHelth);
+                        break;
+                    //new cards
+                    case "Rusty Revolver":
+                        break;
+                    case "Swift Strike":
+                        break;
+                    case "Battered Blade":
+                        break;
+                    case "Ricochet Bullet":
+                        break;
+                    case "Deadeye Shot":
+                        break;
+                    case "Bandit Ambush":
+                        CardM.EnemyDamage *= 2;
+                        break;
+                    case "Explosive Arrow":
+                        CardM.EnemyDamage *= 2;
+                        break;
+                    case "Sniper Shot":
+                        CardM.EnemyDamage *= 2;
+                        break;
+                    case "Dual Pistols":
+                        CardM.EnemyDamage *= 2;
+                        break;
+                    case "Deadly Precision":
+                        CardM.EnemyDamage *= 2;
+                        break;
+                    case "Explosive Barrage":
+                        CardM.EnemyDamage *= 2;
+                        break;
+                    case "Precision Strike":
+                        CardM.EnemyDamage *= 2;
+                        break;
+                    case "Judgment Day":
+                        CardM.EnemyDamage *= 2;
+                        break;
+                    case "Lightning Strike":
+                        CardM.EnemyDamage *= 2;
+                        break;
+                    case "Final Showdown":
+                        CardM.EnemyDamage *= 2;
+                        break;
+                    case "Quickdraw":
+                        CardM.EnemyDamage *= 2;
+                        break;
+                    case "Double Tap":
+                        CardM.EnemyDamage *= 2;
+                        break;
+                    case "Precision Puncture":
+                        CardM.EnemyDamage *= 2;
+                        break;
+                    case "Swift Slice":
+                        CardM.EnemyDamage *= 2;
+                        break;
+                    case "Dual Volley":
+                        CardM.EnemyDamage *= 2;
+                        break;
+                    case "Crippling Strike":
+                        CardM.EnemyDamage *= 2;
+                        break;
+                    case "Dust Devil":
+                        CardM.EnemyDamage *= 2;
+                        break;
+                    case "Split Shot":
+                        CardM.EnemyDamage *= 2;
+                        break;
+                    case "Dead Eye Shot":
+                        CardM.EnemyDamage *= 2;
+                        break;
+                    //case "Swift Slice":
+                    //    CardM.EnemyDamage *= 2;
+                    //    break;
+                    case "Crippling Blow":
+                        CardM.EnemyDamage *= 2;
+                        break;
+                    case "Ghost Pepper Shot":
+                        CardM.EnemyDamage *= 2;
+                        break;
+                    case "Eagle Eye Shot":
+                        CardM.EnemyDamage *= 2;
+                        break;
+
                 }
-                else
-                {
-                    Effects();
-                }
+                AttackOnEnemy(CardM.EnemyDamage);
+                ValuesUpdate();
+                #region
+                //if (CardM.cardName.text == "Mouse")
+                //{
+                //    if (GameManager.Instance.RatCard == 0)
+                //    {
+                //        GameManager.Instance.RatCard++;
+                //    }
+                //    else
+                //    {
+                //        CardsManager.twoMouseCardsUsed = true;
+                //    }
+                //}
+                //else if (CardM.cardName.text == "Red Parrot")
+                //{
+                //   // GameManager.Instance.redParrotActivated = true;
+                //    CardM.EnemyDamage *= 2;
+                //}
+                //else if (CardM.cardName.text == "Cleaver")
+                //{
+                //    GameManager.Instance.blockDefanceCards = true;
+                //}
+                //else if (CardM.cardName.text == "Dual lil shooters")
+                //{
+                //    GameManager.Instance.dualShoter = true;
+                //    CardM.EnemyDamage *= 2;
+                //}
+                //else if (CardM.cardName.text == "Gold Shotgun")
+                //{
+                //    GameManager.Instance.PlayerHealth -= CardM.ReducePlayerHelth;
+                //    GameManager.Instance.PlayerHelthTxt.text = GameManager.Instance.PlayerHealth.ToString() + "/20";
+                //}
+                //else if (CardM.cardName.text == "Gold Scorpian")
+                //{
+                //    CardM.Magic_power += CardM.IncreesedMagicPower;
+                //    GameManager.Instance.PlayerHealth -= CardM.ReducePlayerHelth;
+                //    GameManager.Instance.PlayerHelthTxt.text = GameManager.Instance.PlayerHealth.ToString() + "/20";
+                //    Debug.Log("Gold Scrorpian played !!");
+                //}
+                //else if (CardM.cardName.text == "Silver Scrorpian")
+                //{
+                //    CardM.Magic_power = CardM.Magic_power + CardM.IncreesedMagicPower;
+                //    GameManager.Instance.PlayerHealth -= CardM.ReducePlayerHelth;
+                //    GameManager.Instance.PlayerHelthTxt.text = GameManager.Instance.PlayerHealth.ToString() + "/20";
+                //    Debug.Log("Silver Scrorpian played !!");
+                //}
+                #endregion
+
             }
         }
+       
         public void Defense(CardManager CardM)
         {
             if (GameManager.Instance.activeEnemy.EnemyHealth > 0)
             {
+                container.playerCount -= CardM.Magic_power;
                 if(GameManager.Instance.dualShoter)
                 {
                     CardM.BlockedDamage *= 2;
@@ -230,10 +342,13 @@ namespace demo {
                     container.CardManagement.DefanceActivated = true;
                     container.CardManagement.defanceValue = (int)CardM.BlockedDamage;
                 }
-                container.playerCount -= CardM.Magic_power;
                 container.PlayerCount.text = container.playerCount.ToString();
             }
         }
+        //void DefencePlayer(int )
+        //{
+
+        //}
         public void Curse(CardManager CardM)
         {
             if (GameManager.Instance.activeEnemy.EnemyHealth > 0)
@@ -250,6 +365,7 @@ namespace demo {
         {
             if (GameManager.Instance.activeEnemy.EnemyHealth > 0)
             {
+                container.playerCount -= CardM.Magic_power;
                 if (GameManager.Instance.dualShoter)
                 {
                     CardM.BlockedDamage *= 2;
@@ -259,9 +375,6 @@ namespace demo {
                     container.CardManagement.DefanceActivated = true;
                     container.CardManagement.defanceValue = (int)CardM.BlockedDamage;
                 }
-                container.playerCount -= CardM.Magic_power;
-                container.PlayerCount.text = container.playerCount.ToString();
-
 
                 if (container.CardManagement.CurseActivated)
                 {
@@ -269,29 +382,12 @@ namespace demo {
                 }
                 else
                 {
-                    if (GameManager.Instance.dualShoter)
-                    {
-                        CardM.EnemyDamage *= 2;
-                    }
-                    GameManager.Instance.activeEnemy.EnemyHealth -= CardM.EnemyDamage;
+                    AttackOnEnemy(CardM.EnemyDamage);
                 }
-                GameManager.Instance.activeEnemy.HealthTxt.text = GameManager.Instance.activeEnemy.EnemyHealth.ToString() + "/50";
-                float health = (float)(GameManager.Instance.activeEnemy.EnemyHealth * 2) / 100;
-                GameManager.Instance.activeEnemy.HealthBar.fillAmount = (float)(health);
-                Debug.Log("Health is : " + health);
-
-
-                if (GameManager.Instance.activeEnemy.EnemyHealth <= 0)
-                {
-                    LevelComplete();
-                }
-                else
-                {
-                    Effects();
-                }
+                ValuesUpdate();
             }
         }
-
+       
         public void Cash_cards(CardManager CardM)
         {
             if (GameManager.Instance.activeEnemy.EnemyHealth > 0)
@@ -307,24 +403,7 @@ namespace demo {
                 }
 
                 container.playerCount -= CardM.Magic_power;
-                container.PlayerCount.text = container.playerCount.ToString();
-
-
-                GameManager.Instance.activeEnemy.EnemyHealth -= CardM.EnemyDamage;
-                GameManager.Instance.activeEnemy.HealthTxt.text = GameManager.Instance.activeEnemy.EnemyHealth.ToString() +"/50";
-                float health = (float)(GameManager.Instance.activeEnemy.EnemyHealth * 2) / 100;
-                GameManager.Instance.activeEnemy.HealthBar.fillAmount = (float)(health);
-                Debug.Log("Health is : " + health);
-
-
-                if (GameManager.Instance.activeEnemy.EnemyHealth <= 0)
-                {
-                    LevelComplete();
-                }
-                else
-                {
-                    Effects();
-                }
+                ValuesUpdate();
             }
         }
         IEnumerator Resguffle_Handscards(CardManager CardM)
@@ -344,14 +423,57 @@ namespace demo {
         public void Medicated(CardManager CardM)
         {
             GameManager.Instance.LogMsg("Player Medication: ", CardM.Medication, Color.green);
-            GameManager.Instance.PlayerHealth += CardM.Medication;
+            HealPlayer(CardM.Medication);
+            container.playerCount -= CardM.Magic_power;
+            container.PlayerCount.text = container.playerCount.ToString();
+        }
+
+
+
+        //common cards funtionalities
+
+        void AttackOnEnemy(int AttackValue)
+        {
+            if (GameManager.Instance.dualShoter)
+            {
+                AttackValue *= 2;
+            }
+            GameManager.Instance.activeEnemy.EnemyHealth -= AttackValue;
+        }
+        void BackAttackOnPlayer(int AttackValue)
+        {
+            GameManager.Instance.PlayerHealth -= AttackValue;
+            GameManager.Instance.PlayerHelthTxt.text = GameManager.Instance.PlayerHealth.ToString() + "/20";
+        }
+        void HealPlayer(int Healpoints)
+        {
+            GameManager.Instance.PlayerHealth += Healpoints;
             if (GameManager.Instance.PlayerHealth > 20)
                 GameManager.Instance.PlayerHealth = 20;
 
-            container.playerCount -= CardM.Magic_power;
-            container.PlayerCount.text = container.playerCount.ToString();
-
             GameManager.Instance.PlayerHelthTxt.text = GameManager.Instance.PlayerHealth.ToString() + "/20";
+        }
+        void HealEnemy(int HealPoints)
+        {
+            GameManager.Instance.activeEnemy.EnemyHealth += HealPoints;
+            float health = (float)(GameManager.Instance.activeEnemy.EnemyHealth * 2) / 100;
+            GameManager.Instance.activeEnemy.HealthBar.fillAmount = (float)(health);
+        }
+
+        void ValuesUpdate()
+        {
+            GameManager.Instance.activeEnemy.HealthTxt.text = GameManager.Instance.activeEnemy.EnemyHealth.ToString() + "/50";
+            float health = (float)(GameManager.Instance.activeEnemy.EnemyHealth * 2) / 100;
+            GameManager.Instance.activeEnemy.HealthBar.fillAmount = (float)(health);
+            container.PlayerCount.text = container.playerCount.ToString();
+            if (GameManager.Instance.activeEnemy.EnemyHealth <= 0)
+            {
+                LevelComplete();
+            }
+            else
+            {
+                Effects();
+            }
         }
         public void LevelComplete()
         {

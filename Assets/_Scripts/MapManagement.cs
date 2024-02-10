@@ -12,11 +12,11 @@ public class MapManagement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //for(int i=0;i< PlayerPrefs.GetInt("Levels", 1);i++)
-        //{
-        //    Levels[i].GetComponent<Button>().interactable = true;
-        //}
-        loadMap();
+        for (int i = 0; i < PlayerPrefs.GetInt("Levels", 1); i++)
+        {
+            Levels[i].GetComponent<Button>().interactable = true;
+        }
+        // loadMap();
     }
 
     // Update is called once per frame
