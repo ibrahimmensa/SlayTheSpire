@@ -206,61 +206,42 @@ namespace demo {
                     case "Deadeye Shot":
                         break;
                     case "Bandit Ambush":
-                        CardM.EnemyDamage *= 2;
                         break;
                     case "Explosive Arrow":
-                        CardM.EnemyDamage *= 2;
                         break;
                     case "Sniper Shot":
-                        CardM.EnemyDamage *= 2;
                         break;
                     case "Dual Pistols":
-                        CardM.EnemyDamage *= 2;
                         break;
                     case "Deadly Precision":
-                        CardM.EnemyDamage *= 2;
                         break;
                     case "Explosive Barrage":
-                        CardM.EnemyDamage *= 2;
                         break;
                     case "Precision Strike":
-                        CardM.EnemyDamage *= 2;
                         break;
                     case "Judgment Day":
-                        CardM.EnemyDamage *= 2;
                         break;
                     case "Lightning Strike":
-                        CardM.EnemyDamage *= 2;
                         break;
                     case "Final Showdown":
-                        CardM.EnemyDamage *= 2;
                         break;
                     case "Quickdraw":
-                        CardM.EnemyDamage *= 2;
                         break;
                     case "Double Tap":
-                        CardM.EnemyDamage *= 2;
                         break;
                     case "Precision Puncture":
-                        CardM.EnemyDamage *= 2;
                         break;
                     case "Swift Slice":
-                        CardM.EnemyDamage *= 2;
                         break;
                     case "Dual Volley":
-                        CardM.EnemyDamage *= 2;
                         break;
                     case "Crippling Strike":
-                        CardM.EnemyDamage *= 2;
                         break;
                     case "Dust Devil":
-                        CardM.EnemyDamage *= 2;
                         break;
                     case "Split Shot":
-                        CardM.EnemyDamage *= 2;
                         break;
                     case "Dead Eye Shot":
-                        CardM.EnemyDamage *= 2;
                         break;
                     //case "Swift Slice":
                     //    CardM.EnemyDamage *= 2;

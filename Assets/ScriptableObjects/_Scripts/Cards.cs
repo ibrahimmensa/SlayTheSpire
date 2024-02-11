@@ -34,46 +34,59 @@ public class CardsData
     [Header("Card Powers")]
     [Space()]
     public int MagicPowerRequired;
-    [Range(0, 10)]
+
+    public bool stun;
+    public bool temporaryEvasion;
+    public bool addCardsInHand;
 
     [Header("Curse")]
     [Space()]
+    [Range(0, 10)]
     public int CurseEffect_min;
     [Range(0, 10)]
     public int CurseEffect_max;
-    [Range(0, 10)]
 
     [Header("Attack")]
     [Space()]
+    [Range(0, 10)]
     public int Attack_min;
     [Range(0, 10)]
     public int Attack_max;
-    [Range(0, 10)]
+    
 
     [Header("Defense")]
     [Space()]
+    [Range(0, 10)]
     public int Defense_min;
     [Range(0, 10)]
     public int Defense_max;
-    [Range(0, 10)]
 
     [Header("PlayerHeal")]
     [Space()]
+    [Range(0, 3)]
     public int PlayerHeal_min;
     [Range(0, 10)]
     public int PlayerHeal_max;
-    [Range(0, 3)]
 
     [Header("MagicPower")]
     [Space()]
-    public int IncreesedMagicPower;
     [Range(0, 10)]
+    public int IncreesedMagicPower;
 
     [Header("PlayerHealth")]
     [Space()]
+    [Range(0, 10)]
     public int ReducePlayerHealth;
     [Range(0, 10)]
     public int IncreesPlayerHealth;
+
+
+    [Header("PlayerHealth")]
+    [Space()]
+    [Range(0, 10)]
+    public int GainArmor;
+    [Range(0, 10)]
+    public int ReduceArmor;
 
     [Header("Card Sprites")]
     [Space()]

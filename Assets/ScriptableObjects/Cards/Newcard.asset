@@ -28,6 +28,9 @@ MonoBehaviour:
     Card_Type: Common
     disription: Damage 2 points of enemy
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 2
@@ -39,6 +42,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
     centerImg: {fileID: 21300000, guid: 85e88b02834b5c04f837063d097c3ccb, type: 3}
     displayed: 0
@@ -58,6 +63,9 @@ MonoBehaviour:
     Card_Type: Common
     disription: Damage 3-5 points of enemy
     MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 3
@@ -69,6 +77,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 19927db9a9e68a94b8ead4edd2a3a6e2, type: 3}
     centerImg: {fileID: 21300000, guid: 20ff2bd4447e96e4a89bd10245869fe4, type: 3}
     displayed: 0
@@ -88,6 +98,9 @@ MonoBehaviour:
     Card_Type: Common
     disription: Block 1-3 attacks of enemy
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 0
@@ -99,6 +112,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 7b27e5d920f90ed4c88d3e949429b16f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -118,6 +133,9 @@ MonoBehaviour:
     Card_Type: Common
     disription: Damage 1 and Block 2 attack
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 1
@@ -129,6 +147,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
     displayed: 0
@@ -148,6 +168,9 @@ MonoBehaviour:
     Card_Type: UnCommon
     disription: Damage 2-4 points of enemy
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 2
@@ -159,6 +182,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 19927db9a9e68a94b8ead4edd2a3a6e2, type: 3}
     centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
     displayed: 0
@@ -178,6 +203,9 @@ MonoBehaviour:
     Card_Type: UnCommon
     disription: Block 4-7 attacks of enemy
     MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 0
@@ -189,6 +217,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 7b27e5d920f90ed4c88d3e949429b16f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -208,6 +238,9 @@ MonoBehaviour:
     Card_Type: UnCommon
     disription: Damage 1-2 points of enemy
     MagicPowerRequired: 0
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 1
@@ -219,6 +252,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
     centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
     displayed: 0
@@ -238,6 +273,9 @@ MonoBehaviour:
     Card_Type: Rare
     disription: Gain 4 points of health
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 0
@@ -249,6 +287,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -268,6 +308,9 @@ MonoBehaviour:
     Card_Type: Common
     disription: Damage 2 - 3 and Block 1 attack
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 2
@@ -279,6 +322,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
     centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
     displayed: 0
@@ -298,6 +343,9 @@ MonoBehaviour:
     Card_Type: Uncommon
     disription: Block 5 attacks of enemy
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 0
@@ -309,6 +357,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 7b27e5d920f90ed4c88d3e949429b16f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -328,6 +378,9 @@ MonoBehaviour:
     Card_Type: Common
     disription: Block 3-5 attacks of enemy
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 0
@@ -339,6 +392,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
     centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
     displayed: 0
@@ -358,6 +413,9 @@ MonoBehaviour:
     Card_Type: Rare
     disription: Damage 8 -10  points of enemy
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 4
@@ -369,6 +427,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
     centerImg: {fileID: 21300000, guid: 20ff2bd4447e96e4a89bd10245869fe4, type: 3}
     displayed: 0
@@ -388,6 +448,9 @@ MonoBehaviour:
     Card_Type: Common
     disription: Block defance cards for the next turn
     MagicPowerRequired: 3
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 8
@@ -399,6 +462,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
     centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
     displayed: 0
@@ -418,6 +483,9 @@ MonoBehaviour:
     Card_Type: common
     disription: Block 2-4 attacks of enemy
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 0
@@ -429,6 +497,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: 20ff2bd4447e96e4a89bd10245869fe4, type: 3}
     displayed: 0
@@ -448,6 +518,9 @@ MonoBehaviour:
     Card_Type: Common
     disription: Damage 2-4 points of enemy
     MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 2
@@ -459,6 +532,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
     centerImg: {fileID: 21300000, guid: 85e88b02834b5c04f837063d097c3ccb, type: 3}
     displayed: 0
@@ -478,6 +553,9 @@ MonoBehaviour:
     Card_Type: Common
     disription: Gain 0-2 points of health
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 0
@@ -489,6 +567,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -508,6 +588,9 @@ MonoBehaviour:
     Card_Type: Rare
     disription: Gain 2-4 points of health
     MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 0
@@ -519,6 +602,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -538,6 +623,9 @@ MonoBehaviour:
     Card_Type: Legendary
     disription: Gain 3-5 points of health
     MagicPowerRequired: 3
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 0
@@ -549,6 +637,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -568,6 +658,9 @@ MonoBehaviour:
     Card_Type: Common
     disription: Gain 2-4 points of health
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 0
@@ -579,6 +672,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -598,6 +693,9 @@ MonoBehaviour:
     Card_Type: Common
     disription: Gain 2-3 points of health
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 0
@@ -609,6 +707,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -628,6 +728,9 @@ MonoBehaviour:
     Card_Type: UnCommon
     disription: Damage 2-4 points of enemy
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 2
@@ -639,6 +742,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
     centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
     displayed: 0
@@ -658,6 +763,9 @@ MonoBehaviour:
     Card_Type: UnCommon
     disription: Reshuffle the cards in your hand
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 0
@@ -669,6 +777,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -688,6 +798,9 @@ MonoBehaviour:
     Card_Type: Legendary Card
     disription: Reshuffle all the cards you have
     MagicPowerRequired: 3
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 0
@@ -699,6 +812,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -718,6 +833,9 @@ MonoBehaviour:
     Card_Type: Rare
     disription: Reshuffle all the cards you have
     MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 0
@@ -729,6 +847,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -748,6 +868,9 @@ MonoBehaviour:
     Card_Type: 'Epic '
     disription: Reshuffle all the cards you have
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 0
@@ -759,6 +882,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -778,6 +903,9 @@ MonoBehaviour:
     Card_Type: Rare
     disription: 25% more reward in Gold
     MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 0
@@ -789,6 +917,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -808,6 +938,9 @@ MonoBehaviour:
     Card_Type: Rare
     disription: Reduce 20% of health to give you 1 Magic Power
     MagicPowerRequired: 0
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 4
@@ -819,6 +952,8 @@ MonoBehaviour:
     IncreesedMagicPower: 1
     ReducePlayerHealth: 4
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -838,6 +973,9 @@ MonoBehaviour:
     Card_Type: UnCommon
     disription: Reduce health by 20% and give strength of 2 points
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 3
@@ -849,6 +987,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -868,6 +1008,9 @@ MonoBehaviour:
     Card_Type: Common
     disription: Does 20% damage to you and Danage 10 points to enemy
     MagicPowerRequired: 3
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 10
@@ -879,6 +1022,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 4
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -898,6 +1043,9 @@ MonoBehaviour:
     Card_Type: Rare
     disription: Damage 8-10 point of enemy and Vlunerability Enemy by 20%
     MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 8
@@ -909,6 +1057,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -928,6 +1078,9 @@ MonoBehaviour:
     Card_Type: '-'
     disription: Damage 4-6 point of enemy
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 4
@@ -939,6 +1092,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -958,6 +1113,9 @@ MonoBehaviour:
     Card_Type: '-'
     disription: Damage 3-5 point of enemy
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 3
@@ -969,6 +1127,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -988,6 +1148,9 @@ MonoBehaviour:
     Card_Type: '-'
     disription: Damage 3-5 point of enemy
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 3
@@ -999,6 +1162,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -1018,6 +1183,9 @@ MonoBehaviour:
     Card_Type: '-'
     disription: Damage 8-10 point of enemy
     MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 8
@@ -1029,6 +1197,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -1048,6 +1218,9 @@ MonoBehaviour:
     Card_Type: '-'
     disription: Damage 8-10 point of enemy
     MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 8
@@ -1059,6 +1232,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -1078,6 +1253,9 @@ MonoBehaviour:
     Card_Type: Common
     disription: Block 3 to 5 attacks of enemy
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 0
@@ -1089,6 +1267,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -1108,6 +1288,9 @@ MonoBehaviour:
     Card_Type: '-'
     disription: Block 3 to 5 attacks of enemy
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 0
@@ -1119,6 +1302,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -1138,6 +1323,9 @@ MonoBehaviour:
     Card_Type: '-'
     disription: Block 3 to 5 attacks of enemy
     MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 0
@@ -1149,6 +1337,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -1168,6 +1358,9 @@ MonoBehaviour:
     Card_Type: '-'
     disription: Block 3 to 5 attacks of enemy
     MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 0
@@ -1179,6 +1372,8 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
@@ -1198,6 +1393,9 @@ MonoBehaviour:
     Card_Type: Rare
     disription: 50% less accuracy to both player and Enemy for one turn
     MagicPowerRequired: 0
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
     CurseEffect_min: 0
     CurseEffect_max: 0
     Attack_min: 0
@@ -1209,6 +1407,1443 @@ MonoBehaviour:
     IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Rusty Revolver
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Rusty Revolver
+    CardIndex: 40
+    Card_Type: Common
+    disription: Deal 2 damage to the target opponent
+    MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 2
+    Attack_max: 2
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Swift Strike
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Swift Strike
+    CardIndex: 41
+    Card_Type: Common
+    disription: Damage 2 power and gain 1 temporary evasion.
+    MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 1
+    Attack_max: 1
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Battered Blade
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Battered Blade
+    CardIndex: 42
+    Card_Type: Common
+    disription: Damage 2 power and on next attack 2 bonus damage
+    MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 2
+    Attack_max: 2
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Ricochet Bullet
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Ricochet Bullet
+    CardIndex: 43
+    Card_Type: Common
+    disription: Damage 2 power of Enemy
+    MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 2
+    Attack_max: 2
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Deadeye Shot
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Deadeye Shot
+    CardIndex: 44
+    Card_Type: Common
+    disription: Damage 3 power of Enemy
+    MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 3
+    Attack_max: 3
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Bandit Ambush
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Bandit Ambush
+    CardIndex: 45
+    Card_Type: Common
+    disription: Damage 2 power and if already stunned 4 bonus damage
+    MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 2
+    Attack_max: 2
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Explosive Arrow
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Explosive Arrow
+    CardIndex: 46
+    Card_Type: Common
+    disription: Damage 4 power of Enemy
+    MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 4
+    Attack_max: 4
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Dual Pistols
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Dual Pistols
+    CardIndex: 47
+    Card_Type: Common
+    disription: Damage 3 power of Enemy
+    MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 3
+    Attack_max: 3
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Sniper Shot
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Sniper Shot
+    CardIndex: 48
+    Card_Type: Common
+    disription: Damage 4 power of Enemy
+    MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 4
+    Attack_max: 4
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Deadly Precision
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Deadly Precision
+    CardIndex: 49
+    Card_Type: Common
+    disription: Damage 6 power of Enemy
+    MagicPowerRequired: 3
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 6
+    Attack_max: 6
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Explosive Barrage
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Explosive Barrage
+    CardIndex: 50
+    Card_Type: Common
+    disription: Damage 5 power of Enemy
+    MagicPowerRequired: 3
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 5
+    Attack_max: 5
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Precision Strike
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Explosive Barrage
+    CardIndex: 51
+    Card_Type: Common
+    disription: Damage 7 power of Enemy
+    MagicPowerRequired: 3
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 7
+    Attack_max: 7
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Judgment Day
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Judgment Day
+    CardIndex: 52
+    Card_Type: Common
+    disription: Damage 8 power of Enemy
+    MagicPowerRequired: 3
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 8
+    Attack_max: 8
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Lightning Strike
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Lightning Strike
+    CardIndex: 53
+    Card_Type: Common
+    disription: Damage 10 power of Enemy
+    MagicPowerRequired: 3
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 10
+    Attack_max: 10
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Final Showdown
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Final Showdown
+    CardIndex: 54
+    Card_Type: Common
+    disription: Damage 12 power of Enemy
+    MagicPowerRequired: 3
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 10
+    Attack_max: 10
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Quickdraw
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Quickdraw
+    CardIndex: 55
+    Card_Type: Common
+    disription: Damage 2 power of Enemy
+    MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 2
+    Attack_max: 2
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Double Tap
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Double Tap
+    CardIndex: 56
+    Card_Type: Common
+    disription: Damage 1 power of Enemy
+    MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 1
+    Attack_max: 1
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Precision Puncture
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Precision Puncture
+    CardIndex: 57
+    Card_Type: Common
+    disription: Damage 3 power of Enemy
+    MagicPowerRequired: 3
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 3
+    Attack_max: 3
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: 'Swift Slice '
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: 'Swift Slice '
+    CardIndex: 58
+    Card_Type: Common
+    disription: Damage 2 power of Enemy
+    MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 2
+    Attack_max: 2
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: 'Dual Volley '
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: 'Dual Volley '
+    CardIndex: 60
+    Card_Type: Common
+    disription: Damage 2 power of Enemy
+    MagicPowerRequired: 3
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 2
+    Attack_max: 2
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Crippling Strike
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Crippling Strike
+    CardIndex: 61
+    Card_Type: Common
+    disription: Damage 3 power of Enemy
+    MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 3
+    Attack_max: 3
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Dust Devil
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Dust Devil
+    CardIndex: 62
+    Card_Type: Common
+    disription: Damage 2 power of Enemy
+    MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 2
+    Attack_max: 2
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Split Shot
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Split Shot
+    CardIndex: 63
+    Card_Type: Common
+    disription: Damage 2 power of Enemy twice
+    MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 4
+    Attack_max: 4
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Dead Eye Shot
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Dead Eye Shot
+    CardIndex: 64
+    Card_Type: Common
+    disription: Damage 10 power of Enemy twice
+    MagicPowerRequired: 3
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 10
+    Attack_max: 10
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Crippling Blow
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Crippling Blow
+    CardIndex: 65
+    Card_Type: Common
+    disription: Damage 2-10 power of Enemy twice
+    MagicPowerRequired: 3
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 2
+    Attack_max: 10
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Ghost Pepper Shot
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Ghost Pepper Shot
+    CardIndex: 66
+    Card_Type: Common
+    disription: Damage 5-8 power of Enemy twice
+    MagicPowerRequired: 3
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 5
+    Attack_max: 8
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Eagle Eye Shot
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Eagle Eye Shot
+    CardIndex: 67
+    Card_Type: Common
+    disription: Damage 10power of Enemy twice
+    MagicPowerRequired: 3
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 10
+    Attack_max: 10
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Tumbleweed Tactic
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Tumbleweed Tactic
+    CardIndex: 68
+    Card_Type: Common
+    disription: block next incoming attack from enemy
+    MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 1
+    Defense_max: 1
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Sturdy Shield
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Sturdy Shield
+    CardIndex: 69
+    Card_Type: Common
+    disription: Gain 2 armor for 1 turn
+    MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 1
+    Defense_max: 1
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Guardian Angel
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Guardian Angel
+    CardIndex: 70
+    Card_Type: Common
+    disription: Block an incoming attack and heal yourself for 1 health
+    MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 1
+    Defense_max: 1
+    PlayerHeal_min: 1
+    PlayerHeal_max: 1
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Ironclad Defense
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Ironclad Defense
+    CardIndex: 71
+    Card_Type: Common
+    disription: Gain 2 armor for 2 turns
+    MagicPowerRequired: 1
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 1
+    Defense_max: 1
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Shield Bash
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Shield Bash
+    CardIndex: 72
+    Card_Type: Common
+    disription: Block 1 attack and stun the enemy for 1 turn
+    MagicPowerRequired: 1
+    stun: 1
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 1
+    Defense_max: 1
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Swift Dodge
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Swift Dodge
+    CardIndex: 73
+    Card_Type: Common
+    disription: Block 1 attack of enemy draw 1 additional card same turn
+    MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 1
+    Defense_max: 1
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Parry Counter
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Parry Counter
+    CardIndex: 74
+    Card_Type: Common
+    disription: Block 1 attack and counter with a melee strike for 3 damage
+    MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 1
+    Defense_max: 1
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Guardian's Shield
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Guardian's Shield
+    CardIndex: 75
+    Card_Type: Common
+    disription: 'Gain 3 armor and reflect 1 damage back to the enemy '
+    MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 1
+    Defense_max: 1
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Reinforced Tactics
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Reinforced Tactics
+    CardIndex: 76
+    Card_Type: Common
+    disription: Gain 4 armor for 2 turns and draw 1 additional card same turn
+    MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Shield of Valor
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Shield of Valor
+    CardIndex: 77
+    Card_Type: Common
+    disription: Gain 4 armor and reduce opponent armor by 1
+    MagicPowerRequired: 2
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: 'Wall of Shields  '
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: 'Wall of Shields  '
+    CardIndex: 78
+    Card_Type: Common
+    disription: Gain 3 armor and Block 1 attack
+    MagicPowerRequired: 3
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 1
+    Defense_max: 1
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Indomitable Defense
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Indomitable Defense
+    CardIndex: 78
+    Card_Type: Rare
+    disription: Gain 6 armor for 1 turns and draw 1 additional card for next turn
+    MagicPowerRequired: 3
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 1
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Eternal Guardian
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Eternal Guardian
+    CardIndex: 79
+    Card_Type: Rare
+    disription: Gain 8 armor and negate the next 3 attacks
+    MagicPowerRequired: 3
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 3
+    Defense_max: 3
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+    displayed: 0
+    rodentGroup: 0
+  - name: Titan's Shield
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 1
+    Curse: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    Card_Name: Titan's Shield
+    CardIndex: 79
+    Card_Type: Rare
+    disription: Gain 10 armor and  reduce opponent armor by 4
+    MagicPowerRequired: 3
+    stun: 0
+    temporaryEvasion: 0
+    addCardsInHand: 0
+    CurseEffect_min: 0
+    CurseEffect_max: 0
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    IncreesedMagicPower: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceArmor: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
     displayed: 0
