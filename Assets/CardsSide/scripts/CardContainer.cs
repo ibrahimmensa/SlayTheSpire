@@ -169,10 +169,17 @@ public class CardContainer : MonoBehaviour
         CM.cardName.text = cardObj.Card_Name;
         CM.Discription.text = cardObj.disription;
         CM.Magic_power = cardObj.MagicPowerRequired;
+
+
         CM.CurseEffect = Random.Range(cardObj.CurseEffect_min, cardObj.CurseEffect_max);
         CM.EnemyDamage = Random.Range(cardObj.Attack_min, cardObj.Attack_max);
         CM.BlockedDamage = Random.Range(cardObj.Defense_min, cardObj.Defense_max);
         CM.Medication = Random.Range(cardObj.PlayerHeal_min, cardObj.PlayerHeal_max);
+
+        CM.gainArmor = cardObj.GainArmor;
+        CM.reduceArmor = cardObj.ReduceArmor;
+        CM.checkNextMove = cardObj.checkMoveDamage;
+
         CM.ReducePlayerHelth = cardObj.ReducePlayerHealth;
         CM.IncreesPlayerHelth = cardObj.IncreesPlayerHealth;
         CM.IncreesedMagicPower = cardObj.IncreesedMagicPower;

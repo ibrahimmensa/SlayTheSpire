@@ -14,8 +14,12 @@ namespace demo {
         public Cards toSaveCards;
         public CharactersManagment CM;
         public CardsManagement CardsManager;
+
+        //bool for check next moves
+        bool nextMove;
         private void OnEnable()
         {
+
         }
         public void OnCardDestroyed(CardPlayed evt) {
             var CardM = evt.card.GetComponent<CardManager>();
@@ -127,6 +131,11 @@ namespace demo {
             GameManager.Instance.PlayerHealth -= attackValue;
             GameManager.Instance.ApplyDanageToPlayer();
             GameManager.Instance.LogMsg("EnemyAttack: ", attackValue, Color.red);
+            if (nextMove)
+            {
+                AttackOnEnemy(CardM.checkMoveDamage);
+                ValuesUpdate();
+            }
         }
         public void DefencePlayer(CardsData CardM)
         {
@@ -196,16 +205,22 @@ namespace demo {
                         break;
                     //new cards
                     case "Rusty Revolver":
+                        //
                         break;
                     case "Swift Strike":
                         break;
                     case "Battered Blade":
+                        nextMove = true;
                         break;
                     case "Ricochet Bullet":
                         break;
                     case "Deadeye Shot":
                         break;
                     case "Bandit Ambush":
+                        if(GameManager.Instance.activeEnemy.stunned)
+                        {
+                            CardM.EnemyDamage = 6;
+                        }
                         break;
                     case "Explosive Arrow":
                         break;
@@ -224,6 +239,7 @@ namespace demo {
                     case "Lightning Strike":
                         break;
                     case "Final Showdown":
+                        CardM.EnemyDamage = 12;
                         break;
                     case "Quickdraw":
                         break;

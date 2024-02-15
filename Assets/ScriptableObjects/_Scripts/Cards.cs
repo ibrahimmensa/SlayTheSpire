@@ -24,6 +24,7 @@ public class CardsData
     public bool AttackDefence;
     public bool Rehuffle;
     public bool cashCards;
+    public bool supportCards;
     [Header("Card Details")]
     [Space()]
     public string Card_Name;
@@ -63,7 +64,7 @@ public class CardsData
 
     [Header("PlayerHeal")]
     [Space()]
-    [Range(0, 3)]
+    [Range(0, 10)]
     public int PlayerHeal_min;
     [Range(0, 10)]
     public int PlayerHeal_max;
@@ -81,12 +82,17 @@ public class CardsData
     public int IncreesPlayerHealth;
 
 
-    [Header("PlayerHealth")]
+    [Header("Armors")]
     [Space()]
     [Range(0, 10)]
     public int GainArmor;
     [Range(0, 10)]
     public int ReduceArmor;
+
+
+    [Header("CheckMOveDamage")]
+    [Space()]
+    public int checkMoveDamage;
 
     [Header("Card Sprites")]
     [Space()]
