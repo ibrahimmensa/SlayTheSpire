@@ -8,7 +8,7 @@ public class AnimationController : MonoBehaviour
     public Animator[] cards;
     public Button[] cardBtn;
 
-    public bool aAz, jAck;
+    public bool aAz, jAck,parot;
 
     public bool onclick;
     // Start is called before the first frame update

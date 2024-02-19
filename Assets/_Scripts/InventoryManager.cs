@@ -38,7 +38,7 @@ public class InventoryManager : MonoBehaviour
             CM.cardName.text = cardObj.Card_Name;
             CM.Discription.text = cardObj.disription;
             CM.Magic_power = cardObj.MagicPowerRequired;
-            CM.CurseEffect = Random.Range(cardObj.CurseEffect_min, cardObj.CurseEffect_max);
+           // CM.CurseEffect = Random.Range(cardObj.CurseEffect_min, cardObj.CurseEffect_max);
             CM.EnemyDamage = Random.Range(cardObj.Attack_min, cardObj.Attack_max);
             CM.BlockedDamage = Random.Range(cardObj.Defense_min, cardObj.Defense_max);
             CM.Medication = Random.Range(cardObj.PlayerHeal_min, cardObj.PlayerHeal_max);
@@ -47,7 +47,7 @@ public class InventoryManager : MonoBehaviour
             CM.IncreesedMagicPower = cardObj.IncreesedMagicPower;
             CM.Attack = cardObj.Attack;
             CM.Defence = cardObj.Defence;
-            CM.Curse = cardObj.Curse;
+           // CM.Curse = cardObj.Curse;
             CM.Medicated = cardObj.Medicated;
             CM.AD_Cards = cardObj.AttackDefence;
             CM.Cash_cards = cardObj.cashCards;
@@ -57,7 +57,7 @@ public class InventoryManager : MonoBehaviour
 
             if (cardObj.Attack) { CM.Rarity.text = "Attack"; }
             else if (cardObj.Defence) { CM.Rarity.text = "Defence"; }
-            else if (cardObj.Curse) { CM.Rarity.text = "Curse"; }
+           // else if (cardObj.Curse) { CM.Rarity.text = "Curse"; }
             else if (cardObj.Medicated) { CM.Rarity.text = "Medicated"; }
             else if (cardObj.AttackDefence) { CM.Rarity.text = "AttackDefence"; }
             else if (cardObj.cashCards) { CM.Rarity.text = "Cash"; }

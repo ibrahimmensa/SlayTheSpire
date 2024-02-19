@@ -25,6 +25,11 @@ public class MenuManager : MonoBehaviour
 
     private void OnEnable()
     {
+        if(PlayerPrefs.GetInt("Start",0) == 0)
+        {
+            PlayerPrefs.DeleteAll();
+            PlayerPrefs.SetInt("Start", 1);
+        }
         bgm.volume = PlayerPrefs.GetFloat("bg", 1);
     }
 

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class MiniCard : MonoBehaviour
 {
-    public bool aAz, jAck, empty;
+    public bool aAz, jAck, parot;
     public MiniGameManager miniGameManager;
     public AnimationController animController;
     public Button CardBtn;
@@ -44,6 +44,19 @@ public class MiniCard : MonoBehaviour
             else if(animController.jAck)
             {
                 if (card.jAck)
+                {
+                    Invoke(nameof(LevelCompleted), 0.3f);
+                    MiniGame.winCounts++;
+                }
+                else
+                {
+                    Invoke(nameof(LevelFailed), 0.3f);
+                    MiniGame.loseCounts++;
+                }
+            }
+            else if (animController.parot)
+            {
+                if (card.parot)
                 {
                     Invoke(nameof(LevelCompleted), 0.3f);
                     MiniGame.winCounts++;

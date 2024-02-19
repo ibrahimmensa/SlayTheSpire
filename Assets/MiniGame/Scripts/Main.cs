@@ -29,7 +29,7 @@ public class Main : MonoBehaviour
         if (MiniGame.totalTurns < 1)
             return;
 
-        gameAnimatons[AnimationNames[0]].speed += 0.5f;
+      //  gameAnimatons[AnimationNames[0]].speed += 0.5f;
 
     }
 }

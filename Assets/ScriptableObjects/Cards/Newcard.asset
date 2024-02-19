@@ -18,4031 +18,4953 @@ MonoBehaviour:
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Banana
     CardIndex: 0
     Card_Type: Common
     disription: Damage 2 points of enemy
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 2
     Attack_max: 2
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
     centerImg: {fileID: 21300000, guid: 85e88b02834b5c04f837063d097c3ccb, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Baby boy
     canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Baby boy
     CardIndex: 1
     Card_Type: Common
     disription: Damage 3-5 points of enemy
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 3
     Attack_max: 5
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 19927db9a9e68a94b8ead4edd2a3a6e2, type: 3}
     centerImg: {fileID: 21300000, guid: 20ff2bd4447e96e4a89bd10245869fe4, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Brown hat
     canShow: 1
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Brown hat
     CardIndex: 2
     Card_Type: Common
     disription: Block 1-3 attacks of enemy
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 1
     Defense_max: 3
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 7b27e5d920f90ed4c88d3e949429b16f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Antlers hat
     canShow: 1
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 1
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Antlers hat
     CardIndex: 3
     Card_Type: Common
     disription: Damage 1 and Block 2 attack
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 1
     Attack_max: 1
     Defense_min: 2
     Defense_max: 2
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Knife
     canShow: 0
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Knife
     CardIndex: 4
     Card_Type: UnCommon
     disription: Damage 2-4 points of enemy
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 2
     Attack_max: 4
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 19927db9a9e68a94b8ead4edd2a3a6e2, type: 3}
     centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Brown Wool Coat
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Brown Wool Coat
     CardIndex: 5
     Card_Type: UnCommon
     disription: Block 4-7 attacks of enemy
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 4
     Defense_max: 7
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 7b27e5d920f90ed4c88d3e949429b16f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Mouse
     canShow: 0
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 1
     Card_Name: Mouse
     CardIndex: 6
     Card_Type: UnCommon
     disription: Damage 1-2 points of enemy
     MagicPowerRequired: 0
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 1
     Attack_max: 2
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
     centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
-    displayed: 0
-    rodentGroup: 1
   - name: Cheese
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Cheese
     CardIndex: 7
     Card_Type: Rare
     disription: Gain 4 points of health
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 4
     PlayerHeal_max: 4
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Brown buffalo hat
     canShow: 1
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 1
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Brown buffalo hat
     CardIndex: 8
     Card_Type: Common
     disription: Damage 2 - 3 and Block 1 attack
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 2
     Attack_max: 3
     Defense_min: 1
     Defense_max: 1
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
     centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Cactus Hat
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Cactus Hat
     CardIndex: 9
     Card_Type: Uncommon
     disription: Block 5 attacks of enemy
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 5
     Defense_max: 5
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 7b27e5d920f90ed4c88d3e949429b16f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Chef hat
     canShow: 1
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Chef hat
     CardIndex: 10
     Card_Type: Common
     disription: Block 3-5 attacks of enemy
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 3
     Defense_max: 5
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
     centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Red Parrot
     canShow: 0
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Red Parrot
     CardIndex: 11
     Card_Type: Rare
     disription: Damage 8 -10  points of enemy
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 4
     Attack_max: 6
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 35c4cc8ebdfbf36468a9cf69f8b6c704, type: 3}
     centerImg: {fileID: 21300000, guid: 20ff2bd4447e96e4a89bd10245869fe4, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Cleaver
     canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Cleaver
     CardIndex: 12
     Card_Type: Common
     disription: Block defance cards for the next turn
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 8
     Attack_max: 10
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
     centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Blue poncho
     canShow: 1
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 1
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Blue poncho
     CardIndex: 13
     Card_Type: common
     disription: Block 2-4 attacks of enemy
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 2
     Defense_max: 4
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: 20ff2bd4447e96e4a89bd10245869fe4, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Dual lil shooters
     canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Dual lil shooters
     CardIndex: 14
     Card_Type: Common
     disription: Damage 2-4 points of enemy
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 2
     Attack_max: 4
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
     centerImg: {fileID: 21300000, guid: 85e88b02834b5c04f837063d097c3ccb, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Apple
     canShow: 1
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Apple
     CardIndex: 15
     Card_Type: Common
     disription: Gain 0-2 points of health
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 2
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Stake
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Stake
     CardIndex: 16
     Card_Type: Rare
     disription: Gain 2-4 points of health
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 2
     PlayerHeal_max: 4
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Sloppy Stake
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Sloppy Stake
     CardIndex: 17
     Card_Type: Legendary
     disription: Gain 3-5 points of health
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 3
     PlayerHeal_max: 5
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Turkey leg
     canShow: 1
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Turkey leg
     CardIndex: 18
     Card_Type: Common
     disription: Gain 2-4 points of health
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 2
     PlayerHeal_max: 4
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Harm
     canShow: 1
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Harm
     CardIndex: 19
     Card_Type: Common
     disription: Gain 2-3 points of health
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 2
     PlayerHeal_max: 3
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Bone
     canShow: 0
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 1
     Card_Name: Bone
     CardIndex: 20
     Card_Type: UnCommon
     disription: Damage 2-4 points of enemy
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 2
     Attack_max: 4
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: af83064ee5ca629479a52d406feef807, type: 3}
     centerImg: {fileID: 21300000, guid: e93f9616f0849ad4586b08e56a91aa3f, type: 3}
-    displayed: 0
-    rodentGroup: 1
   - name: Royal Flush Clubs
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 1
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Royal Flush Clubs
     CardIndex: 21
     Card_Type: UnCommon
     disription: Reshuffle the cards in your hand
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Royal Flush spades
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 1
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Royal Flush spades
     CardIndex: 22
     Card_Type: Legendary Card
     disription: Reshuffle all the cards you have
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Royal Flush Diamond
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 1
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Royal Flush Diamond
     CardIndex: 23
     Card_Type: Rare
     disription: Reshuffle all the cards you have
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Royal Flush Hearts
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 1
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Royal Flush Hearts
     CardIndex: 24
     Card_Type: 'Epic '
     disription: Reshuffle all the cards you have
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Cash card
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 1
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Cash card
     CardIndex: 25
     Card_Type: Rare
     disription: 25% more reward in Gold
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Gold Scorpian
     canShow: 0
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Gold Scorpian
     CardIndex: 26
     Card_Type: Rare
     disription: Reduce 20% of health to give you 1 Magic Power
     MagicPowerRequired: 0
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 4
     Attack_max: 6
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 1
     ReducePlayerHealth: 4
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 1
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Silver Scrorpian
     canShow: 0
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Silver Scrorpian
     CardIndex: 27
     Card_Type: UnCommon
     disription: Reduce health by 20% and give strength of 2 points
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 3
     Attack_max: 5
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 2
     PlayerHeal_max: 2
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Gold Shotgun
     canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Gold Shotgun
     CardIndex: 28
     Card_Type: Common
     disription: Does 20% damage to you and Danage 10 points to enemy
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 10
     Attack_max: 10
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 4
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Gold Rifle
     canShow: 0
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Gold Rifle
     CardIndex: 29
     Card_Type: Rare
     disription: Damage 8-10 point of enemy and Vlunerability Enemy by 20%
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 8
     Attack_max: 10
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Pistol
     canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Pistol
     CardIndex: 30
     Card_Type: '-'
     disription: Damage 4-6 point of enemy
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 4
     Attack_max: 6
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Six Shooter
     canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Six Shooter
     CardIndex: 31
     Card_Type: '-'
     disription: Damage 3-5 point of enemy
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 3
     Attack_max: 5
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Gold Six Shooter
     canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Gold Six Shooter
     CardIndex: 32
     Card_Type: '-'
     disription: Damage 3-5 point of enemy
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 3
     Attack_max: 5
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Sawn Off
     canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Sawn Off
     CardIndex: 33
     Card_Type: '-'
     disription: Damage 8-10 point of enemy
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 8
     Attack_max: 10
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Gold Sawn Off
     canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Gold Sawn Off
     CardIndex: 34
     Card_Type: '-'
     disription: Damage 8-10 point of enemy
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 8
     Attack_max: 10
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: ' Sparkle Boots'
     canShow: 1
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: ' Sparkle Boots'
     CardIndex: 35
     Card_Type: Common
     disription: Block 3 to 5 attacks of enemy
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 3
     Defense_max: 5
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: 'Skull Boots '
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: 'Skull Boots '
     CardIndex: 36
     Card_Type: '-'
     disription: Block 3 to 5 attacks of enemy
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 3
     Defense_max: 5
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: 'Heart Boots '
     canShow: 1
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: 'Heart Boots '
     CardIndex: 37
     Card_Type: '-'
     disription: Block 3 to 5 attacks of enemy
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 3
     Defense_max: 5
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Diamond Boots
     canShow: 1
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Diamond Boots
     CardIndex: 38
     Card_Type: '-'
     disription: Block 3 to 5 attacks of enemy
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 3
     Defense_max: 5
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Cigar
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Cigar
     CardIndex: 39
     Card_Type: Rare
     disription: 50% less accuracy to both player and Enemy for one turn
     MagicPowerRequired: 0
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Rusty Revolver
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Rusty Revolver
     CardIndex: 40
     Card_Type: Common
     disription: Deal 2 damage to the target opponent
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 2
     Attack_max: 2
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Swift Strike
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 1
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Swift Strike
     CardIndex: 41
     Card_Type: Common
     disription: Damage 2 power and gain 1 temporary evasion.
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 1
     Attack_max: 1
     Defense_min: 1
     Defense_max: 1
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Battered Blade
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Battered Blade
     CardIndex: 42
     Card_Type: Common
     disription: Damage 2 power and on next attack 2 bonus damage
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 2
     Attack_max: 2
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
-    checkMoveDamage: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
+    checkMoveDamage: 2
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Ricochet Bullet
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Ricochet Bullet
     CardIndex: 43
     Card_Type: Common
-    disription: Damage 2 power of Enemy
+    disription: Damage 2 power of Enemy,1 damage to a random enemy
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 2
     Attack_max: 2
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 1
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Deadeye Shot
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Deadeye Shot
     CardIndex: 44
     Card_Type: Common
     disription: Damage 3 power of Enemy
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 3
     Attack_max: 3
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Bandit Ambush
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Bandit Ambush
     CardIndex: 45
     Card_Type: Common
     disription: Damage 2 power and if stunned 4 bonus damage
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 2
     Attack_max: 2
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Explosive Arrow
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Explosive Arrow
     CardIndex: 46
     Card_Type: Common
     disription: Damage 4 power of Enemy
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 4
     Attack_max: 4
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Dual Pistols
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Dual Pistols
     CardIndex: 47
     Card_Type: Common
     disription: Damage 3 power of Enemy
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 3
     Attack_max: 3
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 2
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Sniper Shot
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Sniper Shot
     CardIndex: 48
     Card_Type: Common
     disription: Damage 4 power of Enemy
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 4
     Attack_max: 4
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Deadly Precision
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Deadly Precision
     CardIndex: 49
     Card_Type: Common
     disription: Damage 6 power of Enemy
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 6
     Attack_max: 6
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Explosive Barrage
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Explosive Barrage
     CardIndex: 50
     Card_Type: Common
     disription: Damage 5 power of Enemy
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 5
     Attack_max: 5
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Precision Strike
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Explosive Barrage
     CardIndex: 51
     Card_Type: Common
     disription: Damage 7 power of Enemy
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 7
     Attack_max: 7
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Judgment Day
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Judgment Day
     CardIndex: 52
     Card_Type: Common
     disription: Damage 8 power of Enemy
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 8
     Attack_max: 8
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Lightning Strike
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Lightning Strike
     CardIndex: 53
     Card_Type: Common
     disription: Damage 10 power of Enemy
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 10
     Attack_max: 10
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Final Showdown
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Final Showdown
     CardIndex: 54
     Card_Type: Common
     disription: Damage 12 power of Enemy
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 10
     Attack_max: 10
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Quickdraw
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Quickdraw
     CardIndex: 55
     Card_Type: Common
     disription: Damage 2 power of Enemy
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 2
     Attack_max: 2
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Double Tap
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Double Tap
     CardIndex: 56
     Card_Type: Common
     disription: Damage 1 power of Enemy
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 1
     Attack_max: 1
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 1
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Precision Puncture
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Precision Puncture
     CardIndex: 57
     Card_Type: Common
     disription: Damage 3 power of Enemy
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 3
     Attack_max: 3
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: 'Swift Slice '
-    canShow: 0
+    canShow: 1
     looted: 0
-    Attack: 1
+    Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 0
-    AttackDefence: 0
+    AttackDefence: 1
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: 'Swift Slice '
     CardIndex: 58
     Card_Type: Common
     disription: Damage 2 power of Enemy
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 2
     Attack_max: 2
-    Defense_min: 0
-    Defense_max: 0
+    Defense_min: 1
+    Defense_max: 1
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 1
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: 'Dual Volley '
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: 'Dual Volley '
     CardIndex: 60
     Card_Type: Common
     disription: Damage 2 power of Enemy
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 2
     Attack_max: 2
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Crippling Strike
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Crippling Strike
     CardIndex: 61
     Card_Type: Common
     disription: Damage 3 power of Enemy
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 3
     Attack_max: 3
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Dust Devil
-    canShow: 0
+    canShow: 1
     looted: 0
-    Attack: 1
+    Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 0
-    AttackDefence: 0
+    AttackDefence: 1
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Dust Devil
     CardIndex: 62
     Card_Type: Common
     disription: Damage 2 power of Enemy
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 2
     Attack_max: 2
     Defense_min: 0
-    Defense_max: 0
+    Defense_max: 1
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Split Shot
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Split Shot
     CardIndex: 63
     Card_Type: Common
     disription: Damage 2 power of Enemy twice
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 4
     Attack_max: 4
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Dead Eye Shot
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Dead Eye Shot
     CardIndex: 64
     Card_Type: Common
     disription: Damage 10 power of Enemy twice
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 10
     Attack_max: 10
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Crippling Blow
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Crippling Blow
     CardIndex: 65
     Card_Type: Common
     disription: Damage 2-10 power of Enemy twice
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 2
     Attack_max: 10
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Ghost Pepper Shot
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Ghost Pepper Shot
     CardIndex: 66
     Card_Type: Common
     disription: Damage 5-8 power of Enemy twice
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 5
     Attack_max: 8
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Eagle Eye Shot
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 1
     Defence: 0
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Eagle Eye Shot
     CardIndex: 67
     Card_Type: Common
     disription: Damage 10power of Enemy twice
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 10
     Attack_max: 10
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Tumbleweed Tactic
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Tumbleweed Tactic
     CardIndex: 68
     Card_Type: Common
-    disription: block next incoming attack from enemy
+    disription: block 1 attack from enemy
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 1
     Defense_max: 1
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Sturdy Shield
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Sturdy Shield
     CardIndex: 69
     Card_Type: Common
     disription: Gain 2 armor for 1 turn
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 1
     Defense_max: 1
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
-    GainArmor: 0
-    ReduceArmor: 0
+    GainArmor: 2
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Guardian Angel
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Guardian Angel
     CardIndex: 70
     Card_Type: Common
     disription: Block an incoming attack and heal yourself for 1 health
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 1
     Defense_max: 1
     PlayerHeal_min: 1
     PlayerHeal_max: 1
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Ironclad Defense
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Ironclad Defense
     CardIndex: 71
     Card_Type: Common
     disription: Gain 2 armor for 2 turns
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
-    Defense_min: 1
-    Defense_max: 1
+    Defense_min: 2
+    Defense_max: 2
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
-    GainArmor: 0
-    ReduceArmor: 0
+    GainArmor: 2
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Shield Bash
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 1
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Shield Bash
     CardIndex: 72
     Card_Type: Common
     disription: Block 1 attack and stun the enemy for 1 turn
     MagicPowerRequired: 1
-    stun: 1
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 1
     Defense_max: 1
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Swift Dodge
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Swift Dodge
     CardIndex: 73
     Card_Type: Common
     disription: Block 1 attack of enemy draw 1 additional card same turn
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 1
     Defense_max: 1
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Parry Counter
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
-    Defence: 1
-    Curse: 0
+    Defence: 0
     Medicated: 0
-    AttackDefence: 0
+    AttackDefence: 1
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Parry Counter
     CardIndex: 74
     Card_Type: Common
     disription: Block 1 attack and counter with a melee strike for 3 damage
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
-    Attack_min: 0
-    Attack_max: 0
+    Attack_min: 3
+    Attack_max: 3
     Defense_min: 1
     Defense_max: 1
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Guardian's Shield
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Guardian's Shield
     CardIndex: 75
     Card_Type: Common
     disription: 'Gain 3 armor and reflect 1 damage back to the enemy '
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 1
     Defense_max: 1
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
-    GainArmor: 0
-    ReduceArmor: 0
+    GainArmor: 3
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Reinforced Tactics
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Reinforced Tactics
     CardIndex: 76
     Card_Type: Common
     disription: Gain 4 armor for 2 turns and draw 1 additional card same turn
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 1
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
-    GainArmor: 0
-    ReduceArmor: 0
+    GainArmor: 4
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Shield of Valor
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Shield of Valor
     CardIndex: 77
     Card_Type: Common
     disription: Gain 4 armor and reduce opponent armor by 1
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
-    GainArmor: 0
-    ReduceArmor: 0
+    GainArmor: 4
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: 'Wall of Shields  '
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: 'Wall of Shields  '
     CardIndex: 78
     Card_Type: Common
     disription: Gain 3 armor and Block 1 attack
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 1
     Defense_max: 1
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
-    GainArmor: 0
-    ReduceArmor: 0
+    GainArmor: 3
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Indomitable Defense
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 1
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Indomitable Defense
     CardIndex: 79
     Card_Type: Rare
     disription: Gain 6 armor for 1 turns and draw 1 additional card for next turn
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 1
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
-    GainArmor: 0
-    ReduceArmor: 0
+    GainArmor: 6
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Eternal Guardian
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Eternal Guardian
     CardIndex: 80
     Card_Type: Rare
     disription: Gain 8 armor and negate the next 3 attacks
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 3
     Defense_max: 3
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
-    GainArmor: 0
-    ReduceArmor: 0
+    GainArmor: 8
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Titan's Shield
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Titan's Shield
     CardIndex: 81
     Card_Type: Rare
     disription: Gain 10 armor and  reduce opponent armor by 4
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
-    GainArmor: 0
-    ReduceArmor: 0
-    checkMoveDamage: 0
-    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
-    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
-  - name: Last Stand
-    canShow: 0
-    looted: 0
-    Attack: 0
-    Defence: 1
-    Curse: 0
-    Medicated: 0
-    AttackDefence: 0
-    Rehuffle: 0
-    cashCards: 0
-    supportCards: 0
-    Card_Name: Last Stand
-    CardIndex: 82
-    Card_Type: Rare
-    disription: Gain 12 armor and become immune to all damage for 1 turn.
-    MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
-    Attack_min: 0
-    Attack_max: 0
-    Defense_min: 0
-    Defense_max: 0
-    PlayerHeal_min: 0
-    PlayerHeal_max: 0
+    GainArmor: 10
+    ReduceEnemyArmor: 4
+    Evasions: 0
+    Strength: 0
     IncreesedMagicPower: 0
-    ReducePlayerHealth: 0
-    IncreesPlayerHealth: 0
-    GainArmor: 0
-    ReduceArmor: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Shadow Dodge
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Shadow Dodge
     CardIndex: 83
     Card_Type: Common
     disription: Block 1 attack from enemy
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 1
     Defense_max: 1
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Ironclad Barrier
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Ironclad Barrier
     CardIndex: 84
     Card_Type: Common
     disription: Gain 2 armor for 1 turn
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
-  - name: Guardian's Embrace
-    canShow: 0
+  - name: Last Stand
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
+    Card_Name: Last Stand
+    CardIndex: 82
+    Card_Type: Rare
+    disription: Gain 12 armor and become immune to all damage for 1 turn.
+    MagicPowerRequired: 3
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 12
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
+    checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+  - name: Guardian's Embrace
+    canShow: 1
+    looted: 0
+    Attack: 0
+    Defence: 1
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Guardian's Embrace
     CardIndex: 85
     Card_Type: Common
     disription: Block 1 attack and heal yourself for 1 health
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 1
     Defense_max: 1
     PlayerHeal_min: 1
     PlayerHeal_max: 1
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Outlaw's Evasion
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Outlaw's Evasion
     CardIndex: 86
     Card_Type: Common
     disription: Block 1 attack and disarm the enemy
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 1
     Defense_max: 1
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Guardian's Shield
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Guardian's Shield
     CardIndex: 87
     Card_Type: Common
     disription: Gain 3 armor for 1 turn
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 3
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Tactical Edge
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Tactical Edge
     CardIndex: 87
     Card_Type: Common
     disription: Block 1 attack and gain 2 evasion
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
-    Defense_min: 1
-    Defense_max: 1
+    Defense_min: 3
+    Defense_max: 3
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 2
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Sip of Whiskey
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Sip of Whiskey
     CardIndex: 88
     Card_Type: Common
     disription: ' Heal yourself for 2 health'
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 2
     PlayerHeal_max: 2
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Herbal Brew
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Herbal Brew
     CardIndex: 89
     Card_Type: Common
     disription: Heal yourself for 3 health add 1 strength
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 3
     PlayerHeal_max: 3
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 1
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Healing Salve
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Healing Salve
     CardIndex: 90
     Card_Type: Common
     disription: Heal yourself for 3 health per turn  for 2 turns
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 3
     PlayerHeal_max: 3
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Lifesaver Potion
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Lifesaver Potion
     CardIndex: 91
     Card_Type: Common
     disription: Restore 4 health to yourself.
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 4
     PlayerHeal_max: 4
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Healing Surge
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Healing Surge
     CardIndex: 92
     Card_Type: Common
-    disription: Restore 4 health to yourself.
+    disription: Restore 4 health to yourself and give 2 strength
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 4
     PlayerHeal_max: 4
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Healing Spring
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Healing Spring
     CardIndex: 92
     Card_Type: Common
     disription: Restore 5 health to yourself and remove all debuffs
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 5
     PlayerHeal_max: 5
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Cocktail
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Cocktail
     CardIndex: 93
     Card_Type: Common
     disription: Restore 6 health to yourself and remove all debuffs
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 6
     PlayerHeal_max: 6
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Prairie Poultice
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Prairie Poultice
     CardIndex: 94
     Card_Type: Common
     disription: Heal yourself for 2 health
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 2
     PlayerHeal_max: 2
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Whiskey Whispers
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Whiskey Whispers
     CardIndex: 95
     Card_Type: Common
     disription: ' Heal yourself for 3 health also add 1 armor on next turn'
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 3
     PlayerHeal_max: 3
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 1
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Prairie Potion
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Prairie Potion
     CardIndex: 96
     Card_Type: Common
     disription: ' Heal yourself for 4 health. also add 1 evasion on next turn'
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 4
     PlayerHeal_max: 4
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Herbal Remedy
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Herbal Remedy
     CardIndex: 97
     Card_Type: Common
-    disription: ' Heal yourself for 4 health. also add 1 evasion on next turn'
+    disription: Steal 5 health from enemy
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
-    Attack_min: 0
-    Attack_max: 0
+    Attack_min: 5
+    Attack_max: 5
     Defense_min: 0
     Defense_max: 0
-    PlayerHeal_min: 4
-    PlayerHeal_max: 4
-    IncreesedMagicPower: 0
+    PlayerHeal_min: 5
+    PlayerHeal_max: 5
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Marshal's Shield
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Marshal's Shield
     CardIndex: 98
     Card_Type: Common
     disription: Heal on the amount of damage from the enemy
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Sage Salve
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Sage Salve
     CardIndex: 99
     Card_Type: Common
     disription: Heal yourself for 2-10 health
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 2
     PlayerHeal_max: 10
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Coyote's Cure
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Coyote's Cure
     CardIndex: 100
     Card_Type: Common
     disription: Drain 2 health from the enemy for 2 turns
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Herbal Tonic
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Herbal Tonic
     CardIndex: 101
     Card_Type: Common
     disription: 0% to 50% chance for healing yourself
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 5
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Rattlesnake Remedy
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Rattlesnake Remedy
     CardIndex: 102
     Card_Type: Common
     disription: 50% chance between 5 health gain or 5 self damage
     MagicPowerRequired: 0
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
-    PlayerHeal_max: 0
-    IncreesedMagicPower: 0
+    PlayerHeal_max: 5
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Desert Oasis Draught
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 0
-    Curse: 0
     Medicated: 1
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Desert Oasis Draught
     CardIndex: 103
     Card_Type: Common
     disription: Heal yourself 3 health in 2 turns
     MagicPowerRequired: 3
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
-    PlayerHeal_min: 0
-    PlayerHeal_max: 0
-    IncreesedMagicPower: 0
+    PlayerHeal_min: 3
+    PlayerHeal_max: 3
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Ironclad Shelter
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Ironclad Shelter
     CardIndex: 104
     Card_Type: Common
     disription: Gain 2 armor 25% chance to reflect enemy attack
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 2
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Guardian's Embrace
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Guardian's Embrace
     CardIndex: 105
     Card_Type: Common
     disription: '50% chance to Block attack heal for 1 health. '
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 1
     PlayerHeal_min: 1
     PlayerHeal_max: 1
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Tactical Retreat
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Tactical Retreat
     CardIndex: 106
     Card_Type: Common
     disription: ' block 1 attack and gain 2 armor'
     MagicPowerRequired: 2
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 1
     Defense_max: 1
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 2
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
-    displayed: 0
-    rodentGroup: 0
   - name: Sundown Sidestep
     canShow: 0
     looted: 0
     Attack: 0
     Defence: 1
-    Curse: 0
     Medicated: 0
     AttackDefence: 0
     Rehuffle: 0
     cashCards: 0
     supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
     Card_Name: Sundown Sidestep
     CardIndex: 107
     Card_Type: Common
     disription: 25% chance to Dodge next attack
     MagicPowerRequired: 1
-    stun: 0
-    temporaryEvasion: 0
-    addCardsInHand: 0
-    CurseEffect_min: 0
-    CurseEffect_max: 0
     Attack_min: 0
     Attack_max: 0
     Defense_min: 0
     Defense_max: 0
     PlayerHeal_min: 0
     PlayerHeal_max: 0
-    IncreesedMagicPower: 0
     ReducePlayerHealth: 0
     IncreesPlayerHealth: 0
     GainArmor: 0
-    ReduceArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
     checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+  - name: Tactical Insight
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    supportCards: 1
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
     displayed: 0
     rodentGroup: 0
+    Card_Name: Tactical Insight
+    CardIndex: 108
+    Card_Type: Common
+    disription: Peek at the top 2 cards of your deck
+    MagicPowerRequired: 1
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
+    checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+  - name: Supply Cache
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    supportCards: 1
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
+    Card_Name: Supply Cache
+    CardIndex: 109
+    Card_Type: Common
+    disription: Gain 20% extra resources or currency
+    MagicPowerRequired: 2
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
+    checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+  - name: Inspiring Banner
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    supportCards: 1
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
+    Card_Name: Inspiring Banner
+    CardIndex: 109
+    Card_Type: Common
+    disription: Boost your morale, granting +2 to all stats for 2 turns. (next move
+      value +2)
+    MagicPowerRequired: 3
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
+    checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+  - name: Cunning Strategy
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    supportCards: 1
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
+    Card_Name: Cunning Strategy
+    CardIndex: 110
+    Card_Type: Common
+    disription: ' Peek at the 1 random card of enemy'
+    MagicPowerRequired: 3
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
+    checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+  - name: Strategic Vision
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    supportCards: 1
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
+    Card_Name: Strategic Vision
+    CardIndex: 111
+    Card_Type: Common
+    disription: Peek at the top 3 cards of your deck
+    MagicPowerRequired: 0
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
+    checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+  - name: Master Tactician
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    supportCards: 1
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
+    Card_Name: Master Tactician
+    CardIndex: 112
+    Card_Type: Common
+    disription: Peek at the top 4 cards of your deck and pick 1 card from it
+    MagicPowerRequired: 1
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
+    checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+  - name: Divine Intervention
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    supportCards: 1
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
+    Card_Name: Divine Intervention
+    CardIndex: 113
+    Card_Type: Common
+    disription: The target opponent misses his next 2 turns and draw 3 additional
+      cards
+    MagicPowerRequired: 4
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
+    checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+  - name: Tactical Mastery
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 1
+    cashCards: 0
+    supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
+    Card_Name: Tactical Mastery
+    CardIndex: 114
+    Card_Type: Common
+    disription: Get 5 new cards from the deck
+    MagicPowerRequired: 0
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
+    checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+  - name: Tactical Advantage
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    supportCards: 1
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
+    Card_Name: Tactical Advantage
+    CardIndex: 114
+    Card_Type: Common
+    disription: Draw 1 additional card from your deck
+    MagicPowerRequired: 1
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
+    checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+  - name: Maverick Maneuver
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 1
+    cashCards: 0
+    supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
+    Card_Name: Maverick Maneuver
+    CardIndex: 115
+    Card_Type: Common
+    disription: Reshuffle all cards from deck and discard pile
+    MagicPowerRequired: 1
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
+    checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+  - name: Supply Satchel
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    supportCards: 1
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
+    Card_Name: Supply Satchel
+    CardIndex: 116
+    Card_Type: Common
+    disription: Gain 1 magic power
+    MagicPowerRequired: 0
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 1
+    checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+  - name: Frontier Fortune
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    supportCards: 1
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
+    Card_Name: Frontier Fortune
+    CardIndex: 117
+    Card_Type: Common
+    disription: Gain 2 magic power
+    MagicPowerRequired: 0
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 2
+    checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+  - name: Wild West Windfall
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    supportCards: 1
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
+    Card_Name: Wild West Windfall
+    CardIndex: 118
+    Card_Type: Common
+    disription: Scarifice 1 card to gain x2 the stats of next card
+    MagicPowerRequired: 1
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
+    checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+  - name: Tumbleweed Trap
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    supportCards: 1
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
+    Card_Name: Tumbleweed Trap
+    CardIndex: 119
+    Card_Type: Common
+    disription: Stunning the target opponent for 1 turn
+    MagicPowerRequired: 1
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
+    checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+  - name: Stampede Strike
+    canShow: 0
+    looted: 0
+    Attack: 1
+    Defence: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    supportCards: 0
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
+    Card_Name: Stampede Strike
+    CardIndex: 120
+    Card_Type: Common
+    disription: Stunning the target opponent for 1 turn and dealing 2 damage
+    MagicPowerRequired: 1
+    Attack_min: 2
+    Attack_max: 2
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
+    checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+  - name: Dusty Duress
+    canShow: 1
+    looted: 0
+    Attack: 0
+    Defence: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    supportCards: 1
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
+    Card_Name: Dusty Duress
+    CardIndex: 121
+    Card_Type: Common
+    disription: 50% chance for next card to have x2 stats
+    MagicPowerRequired: 1
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
+    checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+  - name: Trailblazer's Triumph
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    supportCards: 1
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
+    Card_Name: Trailblazer's Triumph
+    CardIndex: 122
+    Card_Type: Common
+    disription: 10% chance increase of droping portion in the loot
+    MagicPowerRequired: 2
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
+    checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
+  - name: Lasso Lockdown
+    canShow: 0
+    looted: 0
+    Attack: 0
+    Defence: 0
+    Medicated: 0
+    AttackDefence: 0
+    Rehuffle: 0
+    cashCards: 0
+    supportCards: 1
+    stun: 0
+    addCardsNow: 0
+    addCardsInNextTurn: 0
+    displayed: 0
+    rodentGroup: 0
+    Card_Name: 'Lasso Lockdown '
+    CardIndex: 123
+    Card_Type: Common
+    disription: 20% chance increase of droping portion in the loot
+    MagicPowerRequired: 3
+    Attack_min: 0
+    Attack_max: 0
+    Defense_min: 0
+    Defense_max: 0
+    PlayerHeal_min: 0
+    PlayerHeal_max: 0
+    ReducePlayerHealth: 0
+    IncreesPlayerHealth: 0
+    GainArmor: 0
+    ReduceEnemyArmor: 0
+    Evasions: 0
+    Strength: 0
+    IncreesedMagicPower: 0
+    checkMoveDamage: 0
+    randomEnemyAttack: 0
+    DamageOnNextTurn: 0
+    DefenceOnNextTurn: 0
+    cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
+    centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}

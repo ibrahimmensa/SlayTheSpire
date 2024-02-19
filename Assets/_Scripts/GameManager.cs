@@ -69,6 +69,14 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
     public int deathCount;
 
+    // armors count
+    public int armors;
+    public Text Armors;
+    public int strength;
+    public int temEvasion;
+    public int evasion;
+    public Text Evasions;
+
     public static GameManager Instance
     {
         get { return _instance; }
@@ -144,12 +152,15 @@ public class GameManager : MonoBehaviour, IDataPersistence
         {
             DefanceIndicator.SetActive(false);
         }
-        TotalCoins.text = PlayerPrefs.GetInt("Coins", 0).ToString();
         if(PlayerHealth < 0) 
         {
             PlayerHealth = 0;
             PlayerHelthTxt.text = PlayerHealth.ToString() + "/20";
         }
+
+        TotalCoins.text = PlayerPrefs.GetInt("Coins", 0).ToString();
+        Armors.text = "Armors :" + armors;
+        //Evasions.text = "My Evasions :" + evasion;
     }
     IEnumerator PlayerTurn()
     {
@@ -162,28 +173,47 @@ public class GameManager : MonoBehaviour, IDataPersistence
         PlayerCount.SetActive(false);
         activeEnemy.TurnTxt.text = "Enemy turn";
         yield return new WaitForSeconds(2.0f);
-
-        CardsData EC = activeEnemy.EnemyCards[Random.Range(0,activeEnemy.EnemyCards.Length)];
-        CardDestory.GetComponent<CardDestroyer>().enemyattack(EC);
-        //select card of enemy
-        activeEnemy.enemyAnimator.SetBool("Attack", true);
-        if (activeEnemy.hasGun)
+        if(!activeEnemy.enemyAnimator)
         {
-            yield return new WaitForSeconds(1.5f);
+            activeEnemy.enemyAnimator.enabled = true;
         }
         else
         {
-            yield return new WaitForSeconds(0.5f);
+            CardsData EC = activeEnemy.EnemyCards[Random.Range(0, activeEnemy.EnemyCards.Length)];
+            CardDestory.GetComponent<CardDestroyer>().enemyattack(EC);
+            //select card of enemy
+            activeEnemy.enemyAnimator.SetBool("Attack", true);
+            if (activeEnemy.hasGun)
+            {
+                yield return new WaitForSeconds(1.5f);
+            }
+            else
+            {
+                yield return new WaitForSeconds(0.5f);
+            }
+            if (cardsManagement.DefanceActivated)
+            {
+                cardsManagement.defanceValue--;
+                if (armors > 0)
+                    armors--;
+                if(evasion > 0)
+                    evasion--;
+                //Invoke(nameof(IfDefanse),activeEnemy.waitTime);
+            }
+            else if(armors > 0)
+            {
+                armors--;
+            }
+            else if (evasion > 0)
+            {
+                evasion--;
+            }
+            else
+            {
+                Invoke(nameof(ApplyDanageToPlayer), activeEnemy.waitTime);
+            }
         }
-        if (cardsManagement.DefanceActivated)
-        {
-            cardsManagement.defanceValue--;
-            //Invoke(nameof(IfDefanse),activeEnemy.waitTime);
-        }
-        else
-        {
-            Invoke(nameof(ApplyDanageToPlayer),activeEnemy.waitTime);
-        }
+        
 
         //Instantiate(enemies.All_Enemies[CM.LoadLevel].Effect,transform);
         //yield return new WaitForSeconds(0.2f);

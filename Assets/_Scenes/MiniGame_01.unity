@@ -375,6 +375,7 @@ MonoBehaviour:
   - {fileID: 1215245180}
   aAz: 0
   jAck: 1
+  parot: 0
   onclick: 0
 --- !u!95 &25986407
 Animator:
@@ -799,8 +800,9 @@ MonoBehaviour:
   - {fileID: 759375527}
   - {fileID: 29166285}
   - {fileID: 590046880}
-  aAz: 1
+  aAz: 0
   jAck: 0
+  parot: 1
   onclick: 0
 --- !u!95 &128081498
 Animator:
@@ -896,7 +898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aAz: 1
   jAck: 0
-  empty: 0
+  parot: 0
   miniGameManager: {fileID: 1521519626}
   animController: {fileID: 1241745902}
   CardBtn: {fileID: 529047277}
@@ -992,7 +994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aAz: 0
   jAck: 1
-  empty: 0
+  parot: 0
   miniGameManager: {fileID: 1521519626}
   animController: {fileID: 370211566}
   CardBtn: {fileID: 778805127}
@@ -1133,7 +1135,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1778cc64ba4337b44a366f4b9411833f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6b5fb253667e5444eae747c3abfbabaa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1739,7 +1741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aAz: 1
   jAck: 0
-  empty: 0
+  parot: 0
   miniGameManager: {fileID: 1521519626}
   animController: {fileID: 1274394879}
   CardBtn: {fileID: 676024}
@@ -2579,6 +2581,7 @@ MonoBehaviour:
   - {fileID: 778805127}
   aAz: 1
   jAck: 0
+  parot: 0
   onclick: 0
 --- !u!95 &370211567
 Animator:
@@ -2746,7 +2749,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aAz: 0
   jAck: 0
-  empty: 1
+  parot: 1
   miniGameManager: {fileID: 1521519626}
   animController: {fileID: 370211566}
   CardBtn: {fileID: 923506776}
@@ -3103,7 +3106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aAz: 0
   jAck: 1
-  empty: 0
+  parot: 0
   miniGameManager: {fileID: 1521519626}
   animController: {fileID: 1241745902}
   CardBtn: {fileID: 1349576605}
@@ -3391,7 +3394,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1778cc64ba4337b44a366f4b9411833f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6b5fb253667e5444eae747c3abfbabaa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3763,7 +3766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aAz: 0
   jAck: 0
-  empty: 1
+  parot: 1
   miniGameManager: {fileID: 1521519626}
   animController: {fileID: 2127098864}
   CardBtn: {fileID: 1641043132}
@@ -4051,7 +4054,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3a5509404ac333f4c9f62eed88710d13, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6b5fb253667e5444eae747c3abfbabaa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4848,7 +4851,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3a5509404ac333f4c9f62eed88710d13, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6b5fb253667e5444eae747c3abfbabaa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5582,7 +5585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aAz: 0
   jAck: 1
-  empty: 0
+  parot: 0
   miniGameManager: {fileID: 1521519626}
   animController: {fileID: 128081497}
   CardBtn: {fileID: 590046880}
@@ -6008,7 +6011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aAz: 1
   jAck: 0
-  empty: 0
+  parot: 0
   miniGameManager: {fileID: 1521519626}
   animController: {fileID: 1893106262}
   CardBtn: {fileID: 97434395}
@@ -6104,7 +6107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aAz: 1
   jAck: 0
-  empty: 0
+  parot: 0
   miniGameManager: {fileID: 1521519626}
   animController: {fileID: 370211566}
   CardBtn: {fileID: 635002288}
@@ -6598,7 +6601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aAz: 0
   jAck: 1
-  empty: 0
+  parot: 0
   miniGameManager: {fileID: 1521519626}
   animController: {fileID: 1274394879}
   CardBtn: {fileID: 2138121773}
@@ -6750,7 +6753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aAz: 0
   jAck: 1
-  empty: 0
+  parot: 0
   miniGameManager: {fileID: 1521519626}
   animController: {fileID: 1893106262}
   CardBtn: {fileID: 209492981}
@@ -7038,7 +7041,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3a5509404ac333f4c9f62eed88710d13, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6b5fb253667e5444eae747c3abfbabaa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7109,7 +7112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aAz: 0
   jAck: 0
-  empty: 1
+  parot: 1
   miniGameManager: {fileID: 1521519626}
   animController: {fileID: 25986406}
   CardBtn: {fileID: 1494273732}
@@ -7332,6 +7335,7 @@ MonoBehaviour:
   - {fileID: 1349576605}
   aAz: 0
   jAck: 1
+  parot: 0
   onclick: 0
 --- !u!95 &1241745903
 Animator:
@@ -7623,6 +7627,7 @@ MonoBehaviour:
   - {fileID: 2138121773}
   aAz: 1
   jAck: 0
+  parot: 0
   onclick: 0
 --- !u!95 &1274394880
 Animator:
@@ -7718,7 +7723,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aAz: 0
   jAck: 1
-  empty: 0
+  parot: 0
   miniGameManager: {fileID: 1521519626}
   animController: {fileID: 25986406}
   CardBtn: {fileID: 1215245180}
@@ -7861,7 +7866,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aAz: 1
   jAck: 0
-  empty: 0
+  parot: 0
   miniGameManager: {fileID: 1521519626}
   animController: {fileID: 25986406}
   CardBtn: {fileID: 960407386}
@@ -7942,7 +7947,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3a5509404ac333f4c9f62eed88710d13, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6b5fb253667e5444eae747c3abfbabaa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8013,7 +8018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aAz: 0
   jAck: 0
-  empty: 1
+  parot: 1
   miniGameManager: {fileID: 1521519626}
   animController: {fileID: 1241745902}
   CardBtn: {fileID: 1503019641}
@@ -8599,6 +8604,7 @@ MonoBehaviour:
   cardBtn: []
   aAz: 0
   jAck: 0
+  parot: 0
   onclick: 0
 --- !u!95 &1416310713
 Animator:
@@ -8676,7 +8682,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3a5509404ac333f4c9f62eed88710d13, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6b5fb253667e5444eae747c3abfbabaa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8826,7 +8832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aAz: 0
   jAck: 0
-  empty: 1
+  parot: 1
   miniGameManager: {fileID: 1521519626}
   animController: {fileID: 1274394879}
   CardBtn: {fileID: 1550902799}
@@ -8907,7 +8913,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3a5509404ac333f4c9f62eed88710d13, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6b5fb253667e5444eae747c3abfbabaa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9140,7 +9146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aAz: 0
   jAck: 0
-  empty: 1
+  parot: 1
   miniGameManager: {fileID: 1521519626}
   animController: {fileID: 1893106262}
   CardBtn: {fileID: 1828441138}
@@ -10357,7 +10363,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3a5509404ac333f4c9f62eed88710d13, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6b5fb253667e5444eae747c3abfbabaa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10507,7 +10513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aAz: 1
   jAck: 0
-  empty: 0
+  parot: 0
   miniGameManager: {fileID: 1521519626}
   animController: {fileID: 2127098864}
   CardBtn: {fileID: 609963396}
@@ -10663,7 +10669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aAz: 1
   jAck: 0
-  empty: 0
+  parot: 0
   miniGameManager: {fileID: 1521519626}
   animController: {fileID: 128081497}
   CardBtn: {fileID: 29166285}
@@ -11092,7 +11098,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aAz: 0
   jAck: 1
-  empty: 0
+  parot: 0
   miniGameManager: {fileID: 1521519626}
   animController: {fileID: 2127098864}
   CardBtn: {fileID: 1802183391}
@@ -11376,7 +11382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aAz: 0
   jAck: 0
-  empty: 1
+  parot: 1
   miniGameManager: {fileID: 1521519626}
   animController: {fileID: 128081497}
   CardBtn: {fileID: 759375527}
@@ -11514,8 +11520,9 @@ MonoBehaviour:
   - {fileID: 1828441138}
   - {fileID: 97434395}
   - {fileID: 209492981}
-  aAz: 1
+  aAz: 0
   jAck: 0
+  parot: 1
   onclick: 0
 --- !u!95 &1893106263
 Animator:
@@ -12038,6 +12045,7 @@ MonoBehaviour:
   - {fileID: 1802183391}
   aAz: 0
   jAck: 1
+  parot: 0
   onclick: 0
 --- !u!95 &2127098865
 Animator:

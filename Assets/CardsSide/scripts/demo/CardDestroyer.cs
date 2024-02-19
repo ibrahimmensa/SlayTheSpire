@@ -1,5 +1,6 @@
 using events;
 using System.Collections;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -16,7 +17,9 @@ namespace demo {
         public CardsManagement CardsManager;
 
         //bool for check next moves
-        bool nextMove;
+        bool nextMove, NextTurnDamage,NextTurnDefence,twoTimesValuse;
+        //int for turns counts
+        int turn;
         private void OnEnable()
         {
 
@@ -29,25 +32,27 @@ namespace demo {
                 //container.shake.enabled = true;
                 if (CardM.Attack)
                 {
-                    if(GameManager.Instance.enemydefenceActivated)
+                    if (GameManager.Instance.enemydefenceActivated || GameManager.Instance.activeEnemy.EnemyArmors > 0)
                     {
                         GameManager.Instance.blocked.SetActive(true);
                         container.playerCount -= CardM.Magic_power;
                         container.PlayerCount.text = container.playerCount.ToString();
                         GameManager.Instance.enemydefenceActivated = false;
+                        if (GameManager.Instance.activeEnemy.EnemyArmors > 0)
+                            GameManager.Instance.activeEnemy.EnemyArmors--;
                         return;
                     }
                     Attack(CardM);
-                    GameManager.Instance.LogMsg("Player Attack: ", CardM.EnemyDamage,Color.black);
-                    Debug.Log("Attack: " + CardM.EnemyDamage);
+                    GameManager.Instance.LogMsg("Player Attack: ", CardM.EnemyDamage, Color.black);
+                    UnityEngine.Debug.Log("Attack: " + CardM.EnemyDamage);
                 }
-                else if(CardM.Defence)
+                else if (CardM.Defence)
                 {
-                    if(!GameManager.Instance.blockDefanceCards)
+                    if (!GameManager.Instance.blockDefanceCards)
                     {
                         Defense(CardM);
                         GameManager.Instance.LogMsg("Player Defence: ", CardM.BlockedDamage, Color.black);
-                        Debug.Log("Defance: " + CardM.BlockedDamage);
+                        UnityEngine.Debug.Log("Defance: " + CardM.BlockedDamage);
                     }
                     else
                     {
@@ -55,24 +60,24 @@ namespace demo {
                         return;
                     }
                 }
-                else if(CardM.Curse)
-                {
-                    Curse(CardM);
-                    Debug.Log("Curse: " + CardM.CurseEffect);
-                }
-                else if(CardM.AD_Cards)
+                //else if(CardM.Curse)
+                //{
+                //    Curse(CardM);
+                //    UnityEngine.Debug.Log("Curse: " + CardM.CurseEffect);
+                //}
+                else if (CardM.AD_Cards)
                 {
                     AD_cards(CardM);
                     GameManager.Instance.LogMsg("Player Attack: ", CardM.EnemyDamage, Color.black);
                     GameManager.Instance.LogMsg("Player defence: ", CardM.BlockedDamage, Color.black);
-                    Debug.Log("Attack: " + CardM.EnemyDamage+""+ "Defance: " + CardM.BlockedDamage);
+                    UnityEngine.Debug.Log("Attack: " + CardM.EnemyDamage + "" + "Defance: " + CardM.BlockedDamage);
                 }
-                else if(CardM.Cash_cards)
+                else if (CardM.Cash_cards)
                 {
                     Cash_cards(CardM);
                     GameManager.Instance.LogMsg("Player Attack: ", CardM.EnemyDamage, Color.black);
                     GameManager.Instance.LogMsg("Player defence: ", CardM.BlockedDamage, Color.black);
-                    Debug.Log("Attack: " + CardM.EnemyDamage + "" + "Defance: " + CardM.ReducePlayerHelth + "" + "MP: " + CardM.IncreesedMagicPower);
+                    UnityEngine.Debug.Log("Attack: " + CardM.EnemyDamage + "" + "Defance: " + CardM.ReducePlayerHelth + "" + "MP: " + CardM.IncreesedMagicPower);
                 }
                 else if (CardM.Reshuffle_cards)
                 {
@@ -83,7 +88,11 @@ namespace demo {
                 {
                     Medicated(CardM);
                 }
-                container.DestroyCard(evt.card);
+                else if (CardM.Support)
+                {
+                    Medicated(CardM);
+                }
+                    container.DestroyCard(evt.card);
                 GameManager.Instance.activeEnemy.dpText++;
                 if(PlayerPrefs.GetFloat("effect", 1) > 0) { SoundManager.playSound(Sounds.AttackSounds[Random.Range(0, 2)]); }
             }
@@ -124,10 +133,10 @@ namespace demo {
             GameManager.Instance.activeEnemy.dpText++;
 
         }
-        public void AttackPlayer(CardsData CardM)
+        void AttackPlayer(CardsData CardM)
         {
             int attackValue = Random.Range(CardM.Attack_max, CardM.Attack_min);
-            Debug.Log("Attack: " + attackValue);
+            UnityEngine.Debug.Log("Attack: " + attackValue);
             GameManager.Instance.PlayerHealth -= attackValue;
             GameManager.Instance.ApplyDanageToPlayer();
             GameManager.Instance.LogMsg("EnemyAttack: ", attackValue, Color.red);
@@ -135,20 +144,21 @@ namespace demo {
             {
                 AttackOnEnemy(CardM.checkMoveDamage);
                 ValuesUpdate();
+                nextMove = false;
             }
         }
-        public void DefencePlayer(CardsData CardM)
+       void DefencePlayer(CardsData CardM)
         {
             int DefenceValue = Random.Range(CardM.Defense_max, CardM.Defense_max);
-            Debug.Log("defence: " + DefenceValue);
+            UnityEngine.Debug.Log("defence: " + DefenceValue);
             GameManager.Instance.PlayerHealth -= DefenceValue;
             GameManager.Instance.ApplyDanageToPlayer();
         }
-        public void MedicatedPlayer(CardsData CardM)
+        void MedicatedPlayer(CardsData CardM)
         {
             int HealValue = Random.Range(CardM.PlayerHeal_min, CardM.PlayerHeal_min);
             GameManager.Instance.LogMsg("EnemyHeal: ", HealValue, Color.red);
-            Debug.Log("heal: " + HealValue);
+            UnityEngine.Debug.Log("heal: " + HealValue);
             GameManager.Instance.activeEnemy.EnemyHealth += HealValue;
             if (GameManager.Instance.activeEnemy.EnemyHealth > 50)
                 GameManager.Instance.activeEnemy.EnemyHealth = 50;
@@ -159,7 +169,7 @@ namespace demo {
 
 
         // for player
-        public void Attack(CardManager CardM)
+        void Attack(CardManager CardM)
         {
             if (GameManager.Instance.activeEnemy.EnemyHealth > 0)
             {
@@ -204,50 +214,32 @@ namespace demo {
                         BackAttackOnPlayer(CardM.ReducePlayerHelth);
                         break;
                     //new cards
-                    case "Rusty Revolver":
-                        //
-                        break;
                     case "Swift Strike":
+                        GameManager.Instance.temEvasion++;  
                         break;
                     case "Battered Blade":
                         nextMove = true;
                         break;
-                    case "Ricochet Bullet":
-                        break;
-                    case "Deadeye Shot":
-                        break;
+                    //case "Ricochet Bullet":
+                    //    break;
                     case "Bandit Ambush":
                         if(GameManager.Instance.activeEnemy.stunned)
                         {
                             CardM.EnemyDamage = 6;
                         }
                         break;
-                    case "Explosive Arrow":
-                        break;
-                    case "Sniper Shot":
-                        break;
                     case "Dual Pistols":
                         break;
-                    case "Deadly Precision":
-                        break;
                     case "Explosive Barrage":
-                        break;
-                    case "Precision Strike":
-                        break;
-                    case "Judgment Day":
-                        break;
-                    case "Lightning Strike":
                         break;
                     case "Final Showdown":
                         CardM.EnemyDamage = 12;
                         break;
-                    case "Quickdraw":
-                        break;
                     case "Double Tap":
-                        break;
-                    case "Precision Puncture":
+                        NextTurnDamage = true;
                         break;
                     case "Swift Slice":
+                        GameManager.Instance.temEvasion++;
                         break;
                     case "Dual Volley":
                         break;
@@ -259,9 +251,6 @@ namespace demo {
                         break;
                     case "Dead Eye Shot":
                         break;
-                    //case "Swift Slice":
-                    //    CardM.EnemyDamage *= 2;
-                    //    break;
                     case "Crippling Blow":
                         CardM.EnemyDamage *= 2;
                         break;
@@ -273,7 +262,27 @@ namespace demo {
                         break;
 
                 }
-                AttackOnEnemy(CardM.EnemyDamage);
+                if (container.playerCount < 3)
+                {
+                    if (!NextTurnDamage)
+                    {
+                        AttackOnEnemy(CardM.EnemyDamage);
+                    }
+                    else
+                    {
+                        int damage;
+                        if (CardM.DamageOnNextTurn > 0)
+                        {
+                            damage = CardM.EnemyDamage + CardM.DamageOnNextTurn;
+                            AttackOnEnemy(damage);
+                        }
+                        NextTurnDamage = false;
+                    }
+                }
+                else
+                {
+                    AttackOnEnemy(CardM.EnemyDamage);
+                }
                 ValuesUpdate();
                 #region
                 //if (CardM.cardName.text == "Mouse")
@@ -325,10 +334,26 @@ namespace demo {
             }
         }
        
-        public void Defense(CardManager CardM)
+        void Defense(CardManager CardM)
         {
             if (GameManager.Instance.activeEnemy.EnemyHealth > 0)
             {
+                if(CardM.gainArmor > 0) { GameManager.Instance.armors += CardM.gainArmor; }
+
+                if(CardM.Medication > 0) { Medicated(CardM); }
+
+                if(CardM.AddCardsNow) { AditionalCardInHand(); }
+
+                if (CardM.AddCardsInNextTurn) { CardsManager.twoMouseCardsUsed = true; }
+
+                if(CardM.reduceEnemyArmor > 0) { GameManager.Instance.activeEnemy.EnemyArmors -= CardM.reduceEnemyArmor; }
+
+                if (CardM.stun) { GameManager.Instance.activeEnemy.enemyAnimator.enabled = false; }
+                if(CardM.name == "Swift Dodge" || CardM.name == "Reinforced Tactics")
+                {
+                    container.CardManagement.twoMouseCardsUsed = true;
+                    StartCoroutine(Resguffle_Handscards(CardM));
+                }
                 container.playerCount -= CardM.Magic_power;
                 if(GameManager.Instance.dualShoter)
                 {
@@ -337,7 +362,23 @@ namespace demo {
                 if(container.CardManagement.defanceValue == 0)
                 {
                     container.CardManagement.DefanceActivated = true;
-                    container.CardManagement.defanceValue = (int)CardM.BlockedDamage;
+                    if(container.playerCount < 3)
+                    {
+                        if (NextTurnDefence)
+                        {
+                            int totalDefence = CardM.BlockedDamage += CardM.DefenceOnNextTurn;
+                            container.CardManagement.defanceValue = totalDefence;
+                            NextTurnDefence = false;
+                        }
+                        else
+                        {
+                            container.CardManagement.defanceValue = (int)CardM.BlockedDamage;
+                        }
+                    }
+                    else
+                    {
+                        container.CardManagement.defanceValue = (int)CardM.BlockedDamage;
+                    }
                 }
                 container.PlayerCount.text = container.playerCount.ToString();
             }
@@ -345,20 +386,20 @@ namespace demo {
         //void DefencePlayer(int )
         //{
 
+        ////}
+        //public void Curse(CardManager CardM)
+        //{
+        //    if (GameManager.Instance.activeEnemy.EnemyHealth > 0)
+        //    {
+        //        UnityEngine.Debug.Log("curse value: " + CardM.CurseEffect);
+        //        container.CardManagement.CurseActivated = true;
+        //        container.CardManagement.Cursevalue = CardM.CurseEffect;
+        //        GameManager.Instance.CurseIndicator.SetActive(true);
+        //        container.playerCount -= CardM.Magic_power;
+        //        container.PlayerCount.text = container.playerCount.ToString();
+        //    }
         //}
-        public void Curse(CardManager CardM)
-        {
-            if (GameManager.Instance.activeEnemy.EnemyHealth > 0)
-            {
-                Debug.Log("curse value: " + CardM.CurseEffect);
-                container.CardManagement.CurseActivated = true;
-                container.CardManagement.Cursevalue = CardM.CurseEffect;
-                GameManager.Instance.CurseIndicator.SetActive(true);
-                container.playerCount -= CardM.Magic_power;
-                container.PlayerCount.text = container.playerCount.ToString();
-            }
-        }
-        public void AD_cards(CardManager CardM)
+        void AD_cards(CardManager CardM)
         {
             if (GameManager.Instance.activeEnemy.EnemyHealth > 0)
             {
@@ -369,8 +410,24 @@ namespace demo {
                 }
                 if (container.CardManagement.defanceValue == 0)
                 {
-                    container.CardManagement.DefanceActivated = true;
-                    container.CardManagement.defanceValue = (int)CardM.BlockedDamage;
+                    container.CardManagement.DefanceActivated = true; 
+                    if (container.playerCount < 3)
+                    {
+                        if (NextTurnDefence)
+                        {
+                            int totalDefence = CardM.BlockedDamage += CardM.DefenceOnNextTurn;
+                            container.CardManagement.defanceValue = totalDefence;
+                            NextTurnDefence = false;
+                        }
+                        else
+                        {
+                            container.CardManagement.defanceValue = (int)CardM.BlockedDamage;
+                        }
+                    }
+                    else
+                    {
+                        container.CardManagement.defanceValue = (int)CardM.BlockedDamage;
+                    }
                 }
 
                 if (container.CardManagement.CurseActivated)
@@ -385,7 +442,7 @@ namespace demo {
             }
         }
        
-        public void Cash_cards(CardManager CardM)
+        void Cash_cards(CardManager CardM)
         {
             if (GameManager.Instance.activeEnemy.EnemyHealth > 0)
             {
@@ -417,7 +474,7 @@ namespace demo {
                 GameManager.Instance.BtnOn();
             }
         }
-        public void Medicated(CardManager CardM)
+        void Medicated(CardManager CardM)
         {
             GameManager.Instance.LogMsg("Player Medication: ", CardM.Medication, Color.green);
             HealPlayer(CardM.Medication);
@@ -425,6 +482,15 @@ namespace demo {
             container.PlayerCount.text = container.playerCount.ToString();
         }
 
+        void Support(CardManager CardM)
+        {
+            switch(CardM.name)
+            {
+                case "Dusty Duress":
+                    twoTimesValuse = true;
+                    break;
+            }
+        }
 
 
         //common cards funtionalities
@@ -435,6 +501,7 @@ namespace demo {
             {
                 AttackValue *= 2;
             }
+           
             GameManager.Instance.activeEnemy.EnemyHealth -= AttackValue;
         }
         void BackAttackOnPlayer(int AttackValue)
@@ -456,6 +523,10 @@ namespace demo {
             float health = (float)(GameManager.Instance.activeEnemy.EnemyHealth * 2) / 100;
             GameManager.Instance.activeEnemy.HealthBar.fillAmount = (float)(health);
         }
+        void AditionalCardInHand()
+        {
+            container.AddAditionalCard();
+        }
 
         void ValuesUpdate()
         {
@@ -472,7 +543,7 @@ namespace demo {
                 Effects();
             }
         }
-        public void LevelComplete()
+        void LevelComplete()
         {
             if(CM.LoadLevel >= 23) { CM.LoadLevel =0; }
             else { CM.LoadLevel++; }
@@ -487,7 +558,7 @@ namespace demo {
             }
             container.gameObject.SetActive(false);
         }
-        public void Effects()
+        void Effects()
         {
             Instantiate(ScreenAnimations.Effects[Random.Range(0, ScreenAnimations.Effects.Length)], GameManager.Instance.gameObject.transform);
             //Instantiate(GameManager.Instance.enemies.All_Enemies[GameManager.Instance.CM.LoadLevel].Effect, transform);

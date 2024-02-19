@@ -14,8 +14,8 @@ public class CardManager : MonoBehaviour
 
     [Header("Card Data")]
     public int Magic_power, CurseEffect, CardIndex, IncreesedMagicPower;
-    public int EnemyDamage, BlockedDamage,ReducePlayerHelth, IncreesPlayerHelth , Medication,gainArmor,reduceArmor,checkNextMove;
-    public bool Attack, Defence, Curse,Medicated,AD_Cards,Cash_cards,Reshuffle_cards;
+    public int EnemyDamage, BlockedDamage,ReducePlayerHelth, IncreesPlayerHelth , Medication,gainArmor,reduceEnemyArmor,checkNextMove,RandomEnemyAttack, DamageOnNextTurn, DefenceOnNextTurn;
+    public bool Attack, Defence, Curse,Medicated,AD_Cards,Cash_cards,Reshuffle_cards,Support,stun,AddCardsNow,AddCardsInNextTurn;
 
 
     [Header("Card Data")]

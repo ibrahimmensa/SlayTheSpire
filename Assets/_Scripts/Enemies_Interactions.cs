@@ -8,6 +8,7 @@ public class Enemies_Interactions : MonoBehaviour
    // public InventoryCardManager InventoryCardManager;
     public Animator enemyAnimator;
     public int EnemyHealth;
+    public int EnemyArmors;
     public Text HealthTxt;
     public Text TurnTxt;
     public Text DPTxt;
@@ -30,6 +31,8 @@ public class Enemies_Interactions : MonoBehaviour
     void Update()
     {
         DPTxt.text = dpText.ToString();
+        if (EnemyArmors < 0)
+            EnemyArmors = 0;
     }
     public void EndTurn()
     {

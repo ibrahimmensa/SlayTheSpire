@@ -38,7 +38,7 @@ public class RewardManager : MonoBehaviour
             CM[Index].cardName.text = cardObj.Card_Name;
             CM[Index].Discription.text = cardObj.disription;
             CM[Index].Magic_power = cardObj.MagicPowerRequired;
-            CM[Index].CurseEffect = Random.Range(cardObj.CurseEffect_min, cardObj.CurseEffect_max);
+           // CM[Index].CurseEffect = Random.Range(cardObj.CurseEffect_min, cardObj.CurseEffect_max);
             CM[Index].EnemyDamage = Random.Range(cardObj.Attack_min, cardObj.Attack_max);
             CM[Index].BlockedDamage = Random.Range(cardObj.Defense_min, cardObj.Defense_max);
             CM[Index].Medication = Random.Range(cardObj.PlayerHeal_min, cardObj.PlayerHeal_max);
@@ -47,7 +47,7 @@ public class RewardManager : MonoBehaviour
             CM[Index].IncreesedMagicPower = cardObj.IncreesedMagicPower;
             CM[Index].Attack = cardObj.Attack;
             CM[Index].Defence = cardObj.Defence;
-            CM[Index].Curse = cardObj.Curse;
+            //CM[Index].Curse = cardObj.Curse;
             CM[Index].Medicated = cardObj.Medicated;
             CM[Index].AD_Cards = cardObj.AttackDefence;
             CM[Index].Cash_cards = cardObj.cashCards;
@@ -58,7 +58,7 @@ public class RewardManager : MonoBehaviour
 
             if (cardObj.Attack) { CM[Index].Rarity.text = "Attack"; }
             else if (cardObj.Defence) { CM[Index].Rarity.text = "Defense"; }
-            else if (cardObj.Curse) { CM[Index].Rarity.text = "Curse"; }
+           // else if (cardObj.Curse) { CM[Index].Rarity.text = "Curse"; }
             else if (cardObj.Medicated) { CM[Index].Rarity.text = "Medicated"; }
             else if (cardObj.AttackDefence) { CM[Index].Rarity.text = "AttackDefence"; }
             else if (cardObj.cashCards) { CM[Index].Rarity.text = "Cash"; }
