@@ -6,13 +6,15 @@ public enum Panals
 {
     MAIN,
     END,
-    COMPLETED
+    COMPLETED,
+    NEXTLEVEL
 }
 public class MiniGameManager : MonoBehaviour
 {
     public Main Main;
     public End End;
     public Completed completed;
+    public NextLevel NextLevel;
     public Panals Panals;
     public GameObject Fader;
     // Start is called before the first frame update
@@ -46,6 +48,11 @@ public class MiniGameManager : MonoBehaviour
                     completed.gameObject.SetActive(true);
                     break;
                 }
+            case Panals.NEXTLEVEL:
+                {
+                    NextLevel.gameObject.SetActive(true);
+                    break;
+                }
         }
         
     }
@@ -54,5 +61,6 @@ public class MiniGameManager : MonoBehaviour
         Main.gameObject.SetActive(false);
         End.gameObject.SetActive(false);
         completed.gameObject.SetActive(false);
+        NextLevel.gameObject.SetActive(false);
     }
 }

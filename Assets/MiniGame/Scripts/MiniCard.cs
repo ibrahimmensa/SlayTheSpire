@@ -10,6 +10,7 @@ public class MiniCard : MonoBehaviour
     public AnimationController animController;
     public Button CardBtn;
     public MiniGame MiniGame;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,10 +31,18 @@ public class MiniCard : MonoBehaviour
             miniGameManager.Fader.SetActive(true);
             if(animController.aAz)
             {
+                
                 if (card.aAz)
                 {
-                    Invoke(nameof(LevelCompleted), 0.3f);
                     MiniGame.winCounts++;
+                    if (MiniGame.totalTurns == 3)
+                    {
+                        Invoke(nameof(LevelCompleted), 0.3f);
+                    }
+                    else
+                    {
+                        Invoke(nameof(NextLevel), 0.3f);
+                    }
                 }
                 else
                 {
@@ -45,8 +54,15 @@ public class MiniCard : MonoBehaviour
             {
                 if (card.jAck)
                 {
-                    Invoke(nameof(LevelCompleted), 0.3f);
                     MiniGame.winCounts++;
+                    if (MiniGame.totalTurns == 3)
+                    {
+                        Invoke(nameof(LevelCompleted), 0.3f);
+                    }
+                    else
+                    {
+                        Invoke(nameof(NextLevel), 0.3f);
+                    }
                 }
                 else
                 {
@@ -58,8 +74,15 @@ public class MiniCard : MonoBehaviour
             {
                 if (card.parot)
                 {
-                    Invoke(nameof(LevelCompleted), 0.3f);
                     MiniGame.winCounts++;
+                    if (MiniGame.totalTurns == 3)
+                    {
+                        Invoke(nameof(LevelCompleted), 0.3f);
+                    }
+                    else
+                    {
+                        Invoke(nameof(NextLevel), 0.3f);
+                    }
                 }
                 else
                 {
@@ -77,4 +100,9 @@ public class MiniCard : MonoBehaviour
     {
         miniGameManager.ChangePanel(Panals.END);
     }
+    void NextLevel()
+    {
+        miniGameManager.ChangePanel(Panals.NEXTLEVEL);
+    }
+
 }

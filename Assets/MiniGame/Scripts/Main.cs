@@ -7,11 +7,13 @@ public class Main : MonoBehaviour
     public GameObject[] obj;
     public Animation gameAnimatons;
     public string[] AnimationNames;
-    public MiniGame MiniGame;
+    [SerializeField]
+    GameObject SelectedAnimators;
     private void OnEnable()
     {
-        obj[Random.Range(0,obj.Length)].SetActive(true);
-        GameAlgo();
+        SelectedAnimators = obj[Random.Range(0,obj.Length)];
+        SelectedAnimators.SetActive(true);
+        GameAlgo(SelectedAnimators.transform.GetChild(0).GetComponent<Animator>());
     }
     // Start is called before the first frame update
     void Start()
@@ -24,12 +26,8 @@ public class Main : MonoBehaviour
     {
         
     }
-    public void GameAlgo()
+    public void GameAlgo(Animator anim)
     {
-        if (MiniGame.totalTurns < 1)
-            return;
-
-      //  gameAnimatons[AnimationNames[0]].speed += 0.5f;
-
+      
     }
 }

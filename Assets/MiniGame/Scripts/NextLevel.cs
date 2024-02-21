@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Completed : MonoBehaviour
+public class NextLevel : MonoBehaviour
 {
-    public MiniGame MiniGame;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +18,6 @@ public class Completed : MonoBehaviour
     }
     public void Restart()
     {
-        MiniGame.totalTurns = 0;
-        MiniGame.winCounts = 0;
-        MiniGame.loseCounts = 0;
         SceneManager.LoadScene("MiniGame_01");
     }
 }
