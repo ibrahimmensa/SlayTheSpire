@@ -33,16 +33,21 @@ public class ShootGameManager : MonoBehaviour
     public float speed;
 
     [SerializeField]
-    GameObject failed;
+    public GameObject failed;
     public Scrollbar Slider;
 
     bool running;
+
+    public Animator anim1;
+    public Animator anim2;
+
+    public RuntimeAnimatorController enemyAnim;
 
     void Start()
     {
         playerHealth = 2;
         totalShoots = 0;
-        speed = 0.5f;
+        speed = 1f;
         currentTime = totalTime;
         running = true;
         // InvokeRepeating(nameof(ObjectSpawn), 0.5f, 3);
@@ -92,7 +97,14 @@ public class ShootGameManager : MonoBehaviour
         enemy.GetComponent<MiniGameEnemy>().ShootGameManager = this;
         enemy.transform.position = spawnlocations[Random.Range(0, spawnlocations.Length)].position;
         enemy.transform.SetSiblingIndex(2);
+        Slider.transform.parent = enemy.transform;
+        Slider.GetComponent<Image>().enabled = true;
+        Slider.GetComponent<Animator>().enabled = true;
+        Slider.enabled = true;
+        enemy.GetComponent<MiniGameEnemy>().anim.runtimeAnimatorController = enemyAnim;
+        enemy.GetComponent<MiniGameEnemy>().anim.enabled = true;
     }
+
     //--------------------------------------------------------------------------------------------------------------------------------
     public void ChangePlayerHealth(int health)
     {
@@ -111,7 +123,10 @@ public class ShootGameManager : MonoBehaviour
     {
         totalShoots = totalShoots + shoots;
 
-        if (totalShoots > 3) { speed = 0.7f; }
+        if (speed < 3) { speed = 1 + (0.05f * totalShoots);
+            anim1.speed = speed;
+            anim2.speed = speed;
+        }
             
     }
     public void restart()

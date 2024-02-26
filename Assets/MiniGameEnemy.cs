@@ -8,6 +8,8 @@ public class MiniGameEnemy : MonoBehaviour
     public ShootGameManager ShootGameManager;
     Image health;
     int speed;
+    public Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,9 +35,12 @@ public class MiniGameEnemy : MonoBehaviour
         else
         {
             ShootGameManager.ChangePlayerHealth(1);
+            ShootGameManager.Slider.transform.parent = ShootGameManager.transform;
+            ShootGameManager.Slider.transform.SetSiblingIndex(2);
             Destroy(gameObject);
         }
-        ShootGameManager.ObjectSpawn();
+        if (!ShootGameManager.failed.activeSelf)
+            ShootGameManager.ObjectSpawn();
     }
     public void Missed()
     {

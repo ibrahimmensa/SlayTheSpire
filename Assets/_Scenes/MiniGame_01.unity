@@ -369,6 +369,18 @@ MonoBehaviour:
   - {fileID: 1226130535}
   - {fileID: 1276301877}
   - {fileID: 25986407}
+  miniCards:
+  - {fileID: 1226130534}
+  - {fileID: 1294632317}
+  - {fileID: 1276301876}
+  miniCardsImage:
+  - {fileID: 1452271540}
+  - {fileID: 644178765}
+  - {fileID: 683416585}
+  miniCardSprites:
+  - {fileID: 21300000, guid: 6b5fb253667e5444eae747c3abfbabaa, type: 3}
+  - {fileID: 21300000, guid: 1778cc64ba4337b44a366f4b9411833f, type: 3}
+  - {fileID: 21300000, guid: 58acf2092e3c8604aa37b087186b8735, type: 3}
   cardBtn:
   - {fileID: 1494273732}
   - {fileID: 960407386}
@@ -797,6 +809,18 @@ MonoBehaviour:
   - {fileID: 1862944486}
   - {fileID: 988164765}
   - {fileID: 128081498}
+  miniCards:
+  - {fileID: 1862944485}
+  - {fileID: 1789978511}
+  - {fileID: 988164764}
+  miniCardsImage:
+  - {fileID: 1345501671}
+  - {fileID: 1171533696}
+  - {fileID: 1189842167}
+  miniCardSprites:
+  - {fileID: 21300000, guid: 6b5fb253667e5444eae747c3abfbabaa, type: 3}
+  - {fileID: 21300000, guid: 1778cc64ba4337b44a366f4b9411833f, type: 3}
+  - {fileID: 21300000, guid: 58acf2092e3c8604aa37b087186b8735, type: 3}
   cardBtn:
   - {fileID: 759375527}
   - {fileID: 29166285}
@@ -2652,6 +2676,18 @@ MonoBehaviour:
   - {fileID: 420712923}
   - {fileID: 142391912}
   - {fileID: 370211567}
+  miniCards:
+  - {fileID: 420712924}
+  - {fileID: 1088284779}
+  - {fileID: 142391913}
+  miniCardsImage:
+  - {fileID: 1222612004}
+  - {fileID: 441064275}
+  - {fileID: 300741526}
+  miniCardSprites:
+  - {fileID: 21300000, guid: 6b5fb253667e5444eae747c3abfbabaa, type: 3}
+  - {fileID: 21300000, guid: 1778cc64ba4337b44a366f4b9411833f, type: 3}
+  - {fileID: 21300000, guid: 58acf2092e3c8604aa37b087186b8735, type: 3}
   cardBtn:
   - {fileID: 923506776}
   - {fileID: 635002288}
@@ -5869,7 +5905,6 @@ MonoBehaviour:
   - {fileID: 1608216580}
   - {fileID: 1978943562}
   - {fileID: 1387307822}
-  - {fileID: 191801275}
   gameAnimatons: {fileID: 0}
   AnimationNames:
   - FL_NAJ
@@ -7488,6 +7523,18 @@ MonoBehaviour:
   - {fileID: 1345827604}
   - {fileID: 476738768}
   - {fileID: 1241745903}
+  miniCards:
+  - {fileID: 1345827603}
+  - {fileID: 136298714}
+  - {fileID: 476738767}
+  miniCardsImage:
+  - {fileID: 647368597}
+  - {fileID: 311025701}
+  - {fileID: 1162086878}
+  miniCardSprites:
+  - {fileID: 21300000, guid: 6b5fb253667e5444eae747c3abfbabaa, type: 3}
+  - {fileID: 21300000, guid: 1778cc64ba4337b44a366f4b9411833f, type: 3}
+  - {fileID: 21300000, guid: 58acf2092e3c8604aa37b087186b8735, type: 3}
   cardBtn:
   - {fileID: 1503019641}
   - {fileID: 529047277}
@@ -7781,6 +7828,9 @@ MonoBehaviour:
   - {fileID: 1445896903}
   - {fileID: 1172517336}
   - {fileID: 1274394880}
+  miniCards: []
+  miniCardsImage: []
+  miniCardSprites: []
   cardBtn:
   - {fileID: 1550902799}
   - {fileID: 676024}
@@ -11673,6 +11723,18 @@ MonoBehaviour:
   - {fileID: 1461812190}
   - {fileID: 1185500723}
   - {fileID: 1893106263}
+  miniCards:
+  - {fileID: 1461812189}
+  - {fileID: 1082749369}
+  - {fileID: 1185500722}
+  miniCardsImage:
+  - {fileID: 788882266}
+  - {fileID: 827955862}
+  - {fileID: 325054482}
+  miniCardSprites:
+  - {fileID: 21300000, guid: 6b5fb253667e5444eae747c3abfbabaa, type: 3}
+  - {fileID: 21300000, guid: 1778cc64ba4337b44a366f4b9411833f, type: 3}
+  - {fileID: 21300000, guid: 58acf2092e3c8604aa37b087186b8735, type: 3}
   cardBtn:
   - {fileID: 1828441138}
   - {fileID: 97434395}
@@ -12367,6 +12429,18 @@ MonoBehaviour:
   - {fileID: 615667602}
   - {fileID: 1804110411}
   - {fileID: 2127098865}
+  miniCards:
+  - {fileID: 615667601}
+  - {fileID: 1717724687}
+  - {fileID: 1804110410}
+  miniCardsImage:
+  - {fileID: 1419960989}
+  - {fileID: 1811590075}
+  - {fileID: 684796583}
+  miniCardSprites:
+  - {fileID: 21300000, guid: 6b5fb253667e5444eae747c3abfbabaa, type: 3}
+  - {fileID: 21300000, guid: 1778cc64ba4337b44a366f4b9411833f, type: 3}
+  - {fileID: 21300000, guid: 58acf2092e3c8604aa37b087186b8735, type: 3}
   cardBtn:
   - {fileID: 1641043132}
   - {fileID: 609963396}

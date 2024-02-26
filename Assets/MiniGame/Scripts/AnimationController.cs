@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class AnimationController : MonoBehaviour
 {
     public Animator[] cards;
+    public MiniCard[] miniCards;
+    public Image[] miniCardsImage;
+    public Sprite[] miniCardSprites;
     public Button[] cardBtn;
 
     public bool aAz, jAck,parot;
@@ -16,6 +20,33 @@ public class AnimationController : MonoBehaviour
 
     private void OnEnable()
     {
+        int[] indexArr = { 0, 1, 2 };
+        System.Random random = new System.Random();
+        indexArr = indexArr.OrderBy(x => random.Next()).ToArray();
+
+        for(int i=0;i<indexArr.Length;i++)
+        {
+            miniCardsImage[i].sprite = miniCardSprites[indexArr[i]];
+            if (indexArr[i] == 0)
+            {
+                miniCards[i].parot = true;
+                miniCards[i].aAz = false;
+                miniCards[i].jAck = false;
+            }
+            else if (indexArr[i] == 1)
+            {
+                miniCards[i].parot = false;
+                miniCards[i].aAz = true;
+                miniCards[i].jAck = false;
+            }
+            else if (indexArr[i] == 2)
+            {
+                miniCards[i].parot = false;
+                miniCards[i].aAz = false;
+                miniCards[i].jAck = true;
+            }
+        }
+
         if (MiniGame.totalTurns >= 3)
         {
             MiniGame.totalTurns = 0;
@@ -26,13 +57,13 @@ public class AnimationController : MonoBehaviour
         switch (MiniGame.winCounts)
         {
             case 0:
-                anim.SetFloat("Speed", 0.15f);
+                anim.SetFloat("Speed", 0.2f);
                 break;
             case 1:
-                anim.SetFloat("Speed",0.5f);
+                anim.SetFloat("Speed",0.38f);
                 break;
             case 2:
-                anim.SetFloat("Speed", 0.9f);
+                anim.SetFloat("Speed", 0.7f);
                 break;
         }
     }
