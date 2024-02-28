@@ -23,8 +23,10 @@ public class CardAnimationController : MonoBehaviour
     public float timeTakenBySingleShuffle;
 
     public Vector3[] positionsOfCards;
-    public float maxYValue;
-    public float minYValue;
+    public float maxYValueForNeighbourCards;
+    public float minYValueForNeighbourCards;
+    public float maxYValueForAlternateCards;
+    public float minYValueForAlternateCards;
 
     bool[] movesRecord = { false, false, false }; //0(card has moved straight) 1(card has moved from upwards) 2(card has moved from downwards)
 
@@ -107,11 +109,11 @@ public class CardAnimationController : MonoBehaviour
         }
 
         if (roundNo == 0)
-            timeTakenBySingleShuffle = 1.8f;
+            timeTakenBySingleShuffle = 1.5f;
         else if (roundNo == 1)
-            timeTakenBySingleShuffle = 1.4f;
+            timeTakenBySingleShuffle = 1.175f;
         else
-            timeTakenBySingleShuffle = 1f;
+            timeTakenBySingleShuffle = 0.85f;
     }
 
     public void onClickPlay()
@@ -155,12 +157,24 @@ public class CardAnimationController : MonoBehaviour
         }
 
         int[] indexArrCurrent = { cards[0].GetComponent<CardItem>().positionNumber, cards[1].GetComponent<CardItem>().positionNumber, cards[2].GetComponent<CardItem>().positionNumber };
-        int[] indexArrNext;
+        //int[] indexArrNext;
+        //do
+        //{
+        //    System.Random random = new System.Random();
+        //    indexArrNext = indexArrCurrent.OrderBy(x => random.Next()).ToArray();
+        //} while (indexArrCurrent[0] == indexArrNext[0] && indexArrCurrent[1] == indexArrNext[1] && indexArrCurrent[2] == indexArrNext[2]);
+
+        int randomInd1 = Random.Range(0, 3);
+        int randomInd2;
         do
         {
-            System.Random random = new System.Random();
-            indexArrNext = indexArrCurrent.OrderBy(x => random.Next()).ToArray();
-        } while (indexArrCurrent[0] == indexArrNext[0] && indexArrCurrent[1] == indexArrNext[1] && indexArrCurrent[2] == indexArrNext[2]);
+            randomInd2 = Random.Range(0, 3);
+        } while (randomInd1 == randomInd2);
+
+        int[] indexArrNext = indexArrCurrent.ToArray();
+
+        indexArrNext[randomInd1] = indexArrCurrent[randomInd2];
+        indexArrNext[randomInd2] = indexArrCurrent[randomInd1];
 
         for (int i = 0; i < cards.Length; i++)
         {
@@ -177,12 +191,12 @@ public class CardAnimationController : MonoBehaviour
             int ran = Random.Range(0, 2);
             if (ran == 0)
             {
-                yPosNext[0] = maxYValue;
+                yPosNext[0] = maxYValueForAlternateCards;
                 movesRecord[1] = true;
             }
             else if (ran == 1)
             {
-                yPosNext[0] = minYValue;
+                yPosNext[0] = minYValueForAlternateCards;
                 movesRecord[2] = true;
             }
         }
@@ -190,12 +204,12 @@ public class CardAnimationController : MonoBehaviour
         {
             if (movesRecord[1])
             {
-                yPosNext[1] = minYValue;
+                yPosNext[1] = minYValueForAlternateCards;
                 movesRecord[2] = true;
             }
             else if (movesRecord[2])
             {
-                yPosNext[1] = maxYValue;
+                yPosNext[1] = maxYValueForAlternateCards;
                 movesRecord[1] = true;
             }
         }
@@ -203,32 +217,32 @@ public class CardAnimationController : MonoBehaviour
         {
             if (movesRecord[1])
             {
-                yPosNext[2] = minYValue;
+                yPosNext[2] = minYValueForAlternateCards;
                 movesRecord[2] = true;
             }
             else if (movesRecord[2])
             {
-                yPosNext[2] = maxYValue;
+                yPosNext[2] = maxYValueForAlternateCards;
                 movesRecord[1] = true;
             }
         }
         if (!movesRecord[2])
         {
             if (yPosNext[0] == 0 && (indexArrCurrent[0] != indexArrNext[0]))
-                yPosNext[0] = minYValue;
+                yPosNext[0] = minYValueForNeighbourCards;
             else if (yPosNext[1] == 0 && (indexArrCurrent[1] != indexArrNext[1]))
-                yPosNext[1] = minYValue;
+                yPosNext[1] = minYValueForNeighbourCards;
             else if (yPosNext[2] == 0 && (indexArrCurrent[2] != indexArrNext[2]))
-                yPosNext[2] = minYValue;
+                yPosNext[2] = minYValueForNeighbourCards;
         }
         if (!movesRecord[1])
         {
             if (yPosNext[0] == 0 && (indexArrCurrent[0] != indexArrNext[0]))
-                yPosNext[0] = maxYValue;
+                yPosNext[0] = maxYValueForNeighbourCards;
             else if (yPosNext[1] == 0 && (indexArrCurrent[1] != indexArrNext[1]))
-                yPosNext[1] = maxYValue;
+                yPosNext[1] = maxYValueForNeighbourCards;
             else if (yPosNext[2] == 0 && (indexArrCurrent[2] != indexArrNext[2]))
-                yPosNext[2] = maxYValue;
+                yPosNext[2] = maxYValueForNeighbourCards;
         }
 
         Vector2 Card1StartPosition = tempCards[0].transform.localPosition;
@@ -277,8 +291,8 @@ public class CardAnimationController : MonoBehaviour
                 //3rd Card
                 tempCards[2].transform.localPosition = Vector2.Lerp(Card3StartPosition2, Card3endPosition, progress2);
             }
-            elapsedTime += Time.unscaledDeltaTime;
-            elapsedTime2 += Time.unscaledDeltaTime;
+            elapsedTime += Time.deltaTime;
+            elapsedTime2 += Time.deltaTime;
             progress = elapsedTime / timeTakenBySingleShuffle;
             progress2 = elapsedTime2 / (timeTakenBySingleShuffle / 2f);
             yield return null;
