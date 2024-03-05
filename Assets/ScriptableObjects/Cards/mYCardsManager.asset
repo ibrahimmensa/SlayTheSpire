@@ -15,7 +15,7 @@ MonoBehaviour:
   CardData: {fileID: 11400000, guid: 3df95f635e6d8284da624c9eed2e5b00, type: 2}
   Cursevalue: 0
   CurseActivated: 0
-  defanceValue: 0
-  DefanceActivated: 0
-  turns: 30
+  defanceValue: 1
+  DefanceActivated: 1
+  turns: 2
   twoMouseCardsUsed: 0

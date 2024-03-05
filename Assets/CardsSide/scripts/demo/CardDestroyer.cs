@@ -20,10 +20,6 @@ namespace demo {
         bool nextMove, NextTurnDamage,NextTurnDefence,twoTimesValuse;
         //int for turns counts
         int turn;
-        private void OnEnable()
-        {
-
-        }
         public void OnCardDestroyed(CardPlayed evt) {
             var CardM = evt.card.GetComponent<CardManager>();
             //InventoryCardManager.lootedCards.Add(CardM.gameObject);
@@ -42,9 +38,12 @@ namespace demo {
                             GameManager.Instance.activeEnemy.EnemyArmors--;
                         return;
                     }
+
+
                     Attack(CardM);
+
+
                     GameManager.Instance.LogMsg("Player Attack: ", CardM.EnemyDamage, Color.black);
-                    UnityEngine.Debug.Log("Attack: " + CardM.EnemyDamage);
                 }
                 else if (CardM.Defence)
                 {
