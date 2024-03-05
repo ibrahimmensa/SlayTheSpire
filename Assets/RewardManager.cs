@@ -15,6 +15,7 @@ public class RewardManager : MonoBehaviour
 
     private void OnEnable()
     {
+
         PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins", 0) + 25);
         foreach (CardsData card in CardManagement.CardData.AttackCards)
         {

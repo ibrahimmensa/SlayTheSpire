@@ -4304,7 +4304,7 @@ MonoBehaviour:
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
   - name: Supply Cache
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 0
@@ -4540,7 +4540,7 @@ MonoBehaviour:
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
   - name: Tactical Mastery
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 0
@@ -4579,7 +4579,7 @@ MonoBehaviour:
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
   - name: Tactical Advantage
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 0
@@ -4618,7 +4618,7 @@ MonoBehaviour:
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
   - name: Maverick Maneuver
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 0
@@ -4657,7 +4657,7 @@ MonoBehaviour:
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
   - name: Supply Satchel
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 0
@@ -4696,7 +4696,7 @@ MonoBehaviour:
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
   - name: Frontier Fortune
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 0
@@ -4735,7 +4735,7 @@ MonoBehaviour:
     cardSprite: {fileID: 21300000, guid: 8268e33da21847b44a891002b3c4c79f, type: 3}
     centerImg: {fileID: 21300000, guid: bb575b2132b9a174eb074bdcefb739b7, type: 3}
   - name: Wild West Windfall
-    canShow: 0
+    canShow: 1
     looted: 0
     Attack: 0
     Defence: 0

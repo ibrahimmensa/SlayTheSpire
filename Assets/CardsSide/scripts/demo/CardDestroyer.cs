@@ -90,7 +90,7 @@ namespace demo {
                 }
                 else if (CardM.Support)
                 {
-                    Medicated(CardM);
+                    Support(CardM);
                 }
                     container.DestroyCard(evt.card);
                 GameManager.Instance.activeEnemy.dpText++;
@@ -404,7 +404,7 @@ namespace demo {
             if (GameManager.Instance.activeEnemy.EnemyHealth > 0)
             {
                 container.playerCount -= CardM.Magic_power;
-                if (GameManager.Instance.dualShoter)
+                if (GameManager.Instance.dualShoter || twoTimesValuse)
                 {
                     CardM.BlockedDamage *= 2;
                 }
@@ -484,9 +484,29 @@ namespace demo {
 
         void Support(CardManager CardM)
         {
-            switch(CardM.name)
+            container.playerCount -= CardM.Magic_power;
+            switch (CardM.name)
             {
+                case "Supply Cache":
+                    //20% extra resources
+                    PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins", 0) + 5);
+                    break;
                 case "Dusty Duress":
+                    twoTimesValuse = true;
+                    break;
+                case "Tactical Mastery":
+                    StartCoroutine(Resguffle_Handscards(CardM));
+                    break;
+                case "Tactical Advantage":
+                    AditionalCardInHand();
+                    break;
+                case "Supply Satchel":
+                    CardM.Magic_power += CardM.IncreesedMagicPower;
+                    break;
+                case "Frontier Fortune":
+                    CardM.Magic_power += CardM.IncreesedMagicPower;
+                    break;
+                case "Wild West Windfall":
                     twoTimesValuse = true;
                     break;
             }
@@ -497,20 +517,31 @@ namespace demo {
 
         void AttackOnEnemy(int AttackValue)
         {
-            if (GameManager.Instance.dualShoter)
+            if (GameManager.Instance.dualShoter || twoTimesValuse)
             {
                 AttackValue *= 2;
+                twoTimesValuse = false;
             }
            
             GameManager.Instance.activeEnemy.EnemyHealth -= AttackValue;
         }
         void BackAttackOnPlayer(int AttackValue)
         {
+            if (twoTimesValuse)
+            {
+                AttackValue *= 2;
+                twoTimesValuse = false;
+            }
             GameManager.Instance.PlayerHealth -= AttackValue;
             GameManager.Instance.PlayerHelthTxt.text = GameManager.Instance.PlayerHealth.ToString() + "/20";
         }
         void HealPlayer(int Healpoints)
         {
+            if (twoTimesValuse)
+            {
+                Healpoints *= 2;
+                twoTimesValuse = false;
+            }
             GameManager.Instance.PlayerHealth += Healpoints;
             if (GameManager.Instance.PlayerHealth > 20)
                 GameManager.Instance.PlayerHealth = 20;

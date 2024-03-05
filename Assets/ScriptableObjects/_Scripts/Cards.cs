@@ -92,7 +92,7 @@ public class CardsData
     [Range(0, 10)]
     public int IncreesedMagicPower;
 
-    [Header("CheckMOveDamage")]
+    [Header("CheckMOve Damage")]
     public int checkMoveDamage;
     public int randomEnemyAttack;
     public int DamageOnNextTurn;
