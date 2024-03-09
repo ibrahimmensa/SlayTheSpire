@@ -20,6 +20,8 @@ namespace demo {
         bool nextMove, NextTurnDamage,NextTurnDefence,twoTimesValuse;
         //int for turns counts
         int turn;
+
+
         public void OnCardDestroyed(CardPlayed evt) {
             var CardM = evt.card.GetComponent<CardManager>();
             //InventoryCardManager.lootedCards.Add(CardM.gameObject);
@@ -34,6 +36,8 @@ namespace demo {
                         container.playerCount -= CardM.Magic_power;
                         container.PlayerCount.text = container.playerCount.ToString();
                         GameManager.Instance.enemydefenceActivated = false;
+
+
                         if (GameManager.Instance.activeEnemy.EnemyArmors > 0)
                             GameManager.Instance.activeEnemy.EnemyArmors--;
                         return;
@@ -348,6 +352,7 @@ namespace demo {
                 if(CardM.reduceEnemyArmor > 0) { GameManager.Instance.activeEnemy.EnemyArmors -= CardM.reduceEnemyArmor; }
 
                 if (CardM.stun) { GameManager.Instance.activeEnemy.enemyAnimator.enabled = false; }
+
                 if(CardM.name == "Swift Dodge" || CardM.name == "Reinforced Tactics")
                 {
                     container.CardManagement.twoMouseCardsUsed = true;
@@ -511,6 +516,17 @@ namespace demo {
             }
         }
 
+        //Relics
+        void CheckForRelics()
+        {
+
+        }
+
+        //Portions
+        void checkForPortions()
+        {
+
+        }
 
         //common cards funtionalities
 

@@ -13,9 +13,245 @@ MonoBehaviour:
   m_Name: mYCardsManager
   m_EditorClassIdentifier: 
   CardData: {fileID: 11400000, guid: 3df95f635e6d8284da624c9eed2e5b00, type: 2}
+  aquiredRelic:
+  - name: 
+    discription: 
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: 
+    discription: 
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: 
+    discription: 
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
   Cursevalue: 0
   CurseActivated: 0
-  defanceValue: 1
-  DefanceActivated: 1
-  turns: 2
+  defanceValue: 0
+  DefanceActivated: 0
+  relicName:
+  - name: Lucky Horseshoe
+    discription: 'Increases the chance of critical hits by 2%. '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Gold Rush Lantern
+    discription: 'Reveals enemy hidden Cards '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Bandit's Mask
+    discription: 'Allows the player to steal 1 health from opponents with each successful
+      attack. '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Ranger's Compass
+    discription: ' Grants a 5% chance to evade enemy damage'
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Wrangler's Lasso
+    discription: 'Allows the player not miss the damage. '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Spirit Totem
+    discription: Grants immunity to debuffs
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Desperado's Hat
+    discription: 'Doubles 2x the effectiveness of healing abilities and items. '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Bounty Hunter's Badge
+    discription: 'Increasing damage dealt to enemy by x2 on each turn '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Cactus Weeds
+    discription: 'Restrict enemy to use portion '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: 'Prospector''s Pickaxe '
+    discription: '10% chance of dropping a relic or a horse '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Rum Kick
+    discription: All cards stats to +1
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Vatality Booster
+    discription: 5 extra health
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Maiden's touch
+    discription: '2 extra magic power '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Ruby pendent
+    discription: '3 extra magic power '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Reaver
+    discription: 10 extra health
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Swifty Satchel
+    discription: 'Gain 1 extra card '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: 'Moon Glaze '
+    discription: '5 extra magic power '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Gold Nugget
+    discription: 'Gain x2 extra resource or currency at the end of each combat encounter. '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Whiskey Flask
+    discription: 'At the start of your turn, heal 1 health. '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Sheriff's Badge
+    discription: 'Gain 1 temporary evasion at the start of each combat. '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  portionName:
+  - name: Ghost Pepper Elixir
+    discription: ' Increases damage dealt by x2 for 3 turns. '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Cactus Juice
+    discription: 'Grants immunity to debuffs and status ailments for 2 turns. '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Buffalo Stampede Potion
+    discription: Increases stun duration by 1 turn
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Snake Oil
+    discription: 'Restores 10% of max health and grants 1 temporary evasion. '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Tornado Tonic
+    discription: 'Shuffles the opponent''s deck and reveals their hand. '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Lucky Horseshoe Brew
+    discription: 'Increases critical hit chance by 20% for 3 turns. '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Gunslinger's Grog
+    discription: ' Grants double damage on the next attack but reduces range by 50%
+      for 1 turn. '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Ranger's Resolve Potion
+    discription: ' Grants immunity to debuffs for 2 turns. '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Toughhide Tonic
+    discription: ' Increases armor by 2 for 2 turns. '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  - name: Defender's Draft
+    discription: 'Blocks the next 2 incoming attacks. '
+    common: 0
+    rare: 0
+    unCommon: 0
+    legendary: 0
+    epic: 0
+  turns: 4
   twoMouseCardsUsed: 0
